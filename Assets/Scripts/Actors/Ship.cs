@@ -33,7 +33,6 @@ public class Ship : MonoBehaviour
 
 
         int increment = (int)(1/(1 - GameManager.instance.CalculateMood()));
-        print(increment);
         
         for (int i = meteors.Count-1; i >= 0; --i) {
             if (!meteors[i].Damage(increment)) {
