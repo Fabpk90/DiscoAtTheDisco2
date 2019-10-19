@@ -12,6 +12,7 @@ public class StateFree_Idle : State_Free {
 
     public override void Enter() {
         Debug.Log("Entering Idle state");
+        machine.controller.render.material.color = Color.blue;
         machine.controller.rigidBody.velocity = Vector2.zero;
     }
 
@@ -20,13 +21,11 @@ public class StateFree_Idle : State_Free {
     }
 
     public override void Move(Vector2 direction, float speed) {
-        if(speed != 0 && direction != Vector2.zero) {
-            machine.ChangeState(new StateFree_Move(machine));
+        if (!machine.controller.jobPossess) {
+            if (speed != 0 && direction != Vector2.zero) {
+                machine.ChangeState(new StateFree_Move(machine));
+            }
         }
-    }
-
-    public override void Interact() {
-
     }
 
     public override void Exit() {

@@ -12,7 +12,7 @@ public class StateWork_DJ : State_Work
     }
 
     public override void Enter() {
-
+        machine.controller.render.material.color = Color.blue;
     }
 
     public override void Update() {
@@ -23,8 +23,10 @@ public class StateWork_DJ : State_Work
         base.Move(direction, speed);
     }
 
-    public override void Interact() {
-
+    public override void Interact(eINPUT_INTERACT input) {
+        if(input == eINPUT_INTERACT.A) {
+            GameManager.instance.AddMood(machine.controller.jobInRange.moodWeight);
+        }
     }
 
     public override void Exit() {

@@ -12,6 +12,7 @@ public class StateFree_Move : State_Free
 
     public override void Enter() {
         Debug.Log("Entering Move state");
+        machine.controller.render.material.color = Color.blue;
     }
 
     public override void Update() {
@@ -24,10 +25,6 @@ public class StateFree_Move : State_Free
         } else {
             machine.controller.rigidBody.velocity = direction.normalized * speed;
         }
-    }
-
-    public override void Interact() {
-
     }
 
     public override void Exit() {

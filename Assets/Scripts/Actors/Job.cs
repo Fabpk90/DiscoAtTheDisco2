@@ -22,7 +22,7 @@ public class Job : MonoBehaviour
     void Update()
     {
         //TODO : Should be triggered by a listener to the controller Interact button instead of being called each frame
-        HandleMood();
+        //HandleMood();
     }
 
     private void HandleMood() {
@@ -31,10 +31,12 @@ public class Job : MonoBehaviour
         }
     }
 
-    public void Join(PlayerController tController) {
+    public bool Join(PlayerController tController) {
         if (!controller) {
             controller = tController;
+            return true;
         }
+        return false;
     }
 
     public void Exit() {

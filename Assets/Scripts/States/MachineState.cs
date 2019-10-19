@@ -20,8 +20,12 @@ public class MachineState
         currentState.Move(direction, speed);
     }
 
-    public void Interact() {
+    public void Interact(eINPUT_INTERACT input) {
+        currentState.Interact(input);
+    }
 
+    public void Exit() {
+        ChangeState(new StateFree_Idle(this));
     }
 
     public void ChangeState(State_Base newState) {
