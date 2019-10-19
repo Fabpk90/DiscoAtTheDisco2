@@ -30,7 +30,7 @@ public class Controls : IInputActionCollection, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""8b1e7c66-46d5-469c-b9bd-37d7d6398701"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -150,7 +150,7 @@ public class Controls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""0299e9ad-e89b-4065-a465-dbef9824b9c6"",
                     ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",

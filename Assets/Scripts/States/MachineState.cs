@@ -20,6 +20,10 @@ public class MachineState
         currentState.Move(direction, speed);
     }
 
+    public void Interact() {
+
+    }
+
     public void ChangeState(State_Base newState) {
         currentState?.Exit();
         currentState = newState;
