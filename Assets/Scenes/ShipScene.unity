@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -295,7 +295,6 @@ GameObject:
   - component: {fileID: 673916161}
   - component: {fileID: 673916160}
   - component: {fileID: 673916159}
-  - component: {fileID: 673916158}
   - component: {fileID: 673916157}
   m_Layer: 0
   m_Name: Ship
@@ -330,18 +329,6 @@ EdgeCollider2D:
   - {x: -0.0026859045, y: 3.4657328}
   - {x: -2.3807597, y: 2.5032203}
   - {x: -3.4, y: 0.5}
---- !u!114 &673916158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673916156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd1e9546a26cab4db63b5a04914e3c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &673916159
 Rigidbody2D:
   serializedVersion: 4
@@ -436,9 +423,8 @@ GameObject:
   m_Component:
   - component: {fileID: 772235205}
   - component: {fileID: 772235204}
-  - component: {fileID: 772235203}
-  - component: {fileID: 772235202}
   - component: {fileID: 772235200}
+  - component: {fileID: 772235203}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Untagged
@@ -462,18 +448,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.6
---- !u!114 &772235202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772235199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd1e9546a26cab4db63b5a04914e3c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &772235203
 Rigidbody2D:
   serializedVersion: 4
@@ -1061,7 +1035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.000029087, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829539615
@@ -1133,6 +1107,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0.0000047684, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.000030518, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
