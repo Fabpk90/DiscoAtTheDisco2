@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public enum eINPUT_INTERACT { A, E, SPACE, R};
 
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     public JobInfo jobInRange;
 
     private MachineState machineState;
+    private bool possess;
 
     private void Awake()
     {
@@ -39,30 +41,55 @@ public class PlayerController : MonoBehaviour
         inputs.currentActionMap["Movement"].performed += context => OnMovement(context);
         inputs.currentActionMap["Movement"].canceled += context => OnMovement(context);
 
-        inputs.currentActionMap["Interact"].started += context => OnInteract(context);
+        inputs.currentActionMap["Button1"].started += OnButton1;
+        inputs.currentActionMap["Button2"].started += OnButton2;
+        inputs.currentActionMap["Button3"].started += OnButton3;
+        inputs.currentActionMap["Button4"].started += OnButton4;
+
+        possess = false;
+        
+        inputs.currentActionMap["PossessJob"].started += OnJobPossess;
 
         machineState = new MachineState(this);
     }
 
-    private void OnInteract(InputAction.CallbackContext context)
+    private void OnJobPossess(InputAction.CallbackContext obj)
     {
-        switch (context.action.activeControl.name) {
-            case "buttonSouth":
-                if (jobInRange.jobObject && !jobInRange.possess) {
-                    jobInRange.jobObject.Join(this);
-                    jobInRange.possess = true;
-                }
-                break;
-            case "buttonNorth":
-                break;
-            case "buttonEast":
-                if (jobInRange.jobObject && jobInRange.possess) {
-                    machineState.Interact(eINPUT_INTERACT.A);
-                }
-                break;
-            case "buttonWest":
-                break;
+        if (jobInRange.jobObject)
+        {
+            if (!jobInRange.possess)
+            {
+                jobInRange.jobObject.Join(this);
+                jobInRange.possess = true;
+            }
+            else
+            {
+                jobInRange.jobObject.Exit();
+                jobInRange.possess = false;
+            }
         }
+    }
+
+    private void OnButton4(InputAction.CallbackContext obj)
+    {
+        
+    }
+
+    private void OnButton3(InputAction.CallbackContext obj)
+    {
+        
+    }
+
+    private void OnButton2(InputAction.CallbackContext obj)
+    {
+        if (jobInRange.jobObject && jobInRange.possess) {
+            machineState.Interact(eINPUT_INTERACT.A);
+        }
+    }
+
+    private void OnButton1(InputAction.CallbackContext obj)
+    {
+       
     }
 
     //Called by unity (sendMessage)
@@ -75,19 +102,6 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         inputs.actions.Disable();
-    }
-
-    void Update()
-    {
-    }
-
-    public void JobPossess(bool possess) {
-        if (possess) {
-
-        } else {
-            jobInRange.jobObject.Exit();
-            jobInRange.possess = false;
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
