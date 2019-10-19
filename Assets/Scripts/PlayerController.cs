@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     //STORAGE
     private Vector2 movement;
+    private PlayerInput inputs;
 
     //REFERENCES
     public Rigidbody2D rigidBody { get; private set; }
@@ -19,15 +20,25 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        inputs = GetComponent<PlayerInput>();
         rigidBody = this.GetComponent<Rigidbody2D>();
+
+        inputs.actions.Enable();
+        inputs.currentActionMap["Movement"].performed += context => OnMovement(context);
+        inputs.currentActionMap["Movement"].canceled += context => OnMovement(context);
         machineState = new MachineState(this);
     }
 
     //Called by unity (sendMessage)
-    private void OnMovement(InputValue value)
+    private void OnMovement(InputAction.CallbackContext value)
     {
-        movement = value.Get<Vector2>();
+        movement = value.ReadValue<Vector2>();
         machineState?.Move(movement, movementSpeed);
+    }
+
+    private void OnDisable()
+    {
+        inputs.actions.Disable();
     }
 
     void Update()
