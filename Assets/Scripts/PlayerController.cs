@@ -6,6 +6,11 @@ using UnityEngine.InputSystem;
 
 public enum eINPUT_INTERACT { A, E, SPACE, R};
 
+public struct JobInfo {
+    public Job jobObject;
+    public bool possess;
+}
+
 public class PlayerController : MonoBehaviour
 {
     //PARAMETERS
@@ -20,8 +25,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator { get; private set; }
     public MeshRenderer render { get; private set; }
 
-    public Job jobInRange { get; private set; }
-    public bool jobPossess;
+    public JobInfo jobInRange;
 
     private MachineState machineState;
 
@@ -42,7 +46,23 @@ public class PlayerController : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext context)
     {
-        print("Button pressed ");
+        switch (context.action.activeControl.name) {
+            case "buttonSouth":
+                if (jobInRange.jobObject && !jobInRange.possess) {
+                    jobInRange.jobObject.Join(this);
+                    jobInRange.possess = true;
+                }
+                break;
+            case "buttonNorth":
+                break;
+            case "buttonEast":
+                if (jobInRange.jobObject && jobInRange.possess) {
+                    machineState.Interact(eINPUT_INTERACT.A);
+                }
+                break;
+            case "buttonWest":
+                break;
+        }
     }
 
     //Called by unity (sendMessage)
@@ -59,27 +79,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button0)) {
-            if (jobInRange) {
-                if (!jobPossess) {
-                    jobInRange.Join(this);
-                    jobPossess = true;
-                }
-            }
+    }
 
+    public void JobPossess(bool possess) {
+        if (possess) {
+        } else {
+            jobInRange.jobObject.Exit();
+            jobInRange.possess = false;
         }
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Joystick1Button1)) {
-            if(jobInRange && jobPossess) {
-                machineState.Interact(eINPUT_INTERACT.A);
-            }
-        }
-        //transform.Translate(movement * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (!jobInRange && !jobPossess) {
+        if (!jobInRange.jobObject) {
             if (collision.CompareTag("Job")) {
-                jobInRange = collision.GetComponent<Job>();
+                jobInRange.jobObject = collision.GetComponent<Job>();
                 Debug.Log("Assigned jobInRange");
             }
         }

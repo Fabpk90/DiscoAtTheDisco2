@@ -24,7 +24,7 @@ public abstract class State_Work : State_Base
     public override void Move(Vector2 direction, float speed) {
         if(direction != Vector2.zero && speed != 0) {
             machine.ChangeState(new StateFree_Idle(machine));
-            machine.controller.jobPossess = false;
+            machine.controller.jobInRange.possess = false;
         }
     }
 
