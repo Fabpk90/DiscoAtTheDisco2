@@ -25,8 +25,7 @@ public abstract class State_Base
         machine.controller.rigidBody.velocity = direction.normalized * speed;
     }
 
-    public virtual void Interact() {
-
+    public virtual void Interact(eINPUT_INTERACT input) {
     }
 
     public virtual void Exit() {

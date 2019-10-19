@@ -30,7 +30,7 @@ public class Controls : IInputActionCollection, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""8b1e7c66-46d5-469c-b9bd-37d7d6398701"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
