@@ -49,6 +49,7 @@ public class Job : MonoBehaviour
                 currentInput = 0;
             }
             GameManager.instance.AddMood(moodWeight);
+            print("Success");
         }
     }
 
