@@ -33,7 +33,7 @@ public class AiManager : MonoBehaviour
         AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
         ai.MoodAmount = startingMood;
         ai.danceFloorPosition = danceFloorPosition;
-        
+
         ais.Add(ai);
     }
 

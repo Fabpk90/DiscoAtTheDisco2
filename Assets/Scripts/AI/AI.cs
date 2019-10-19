@@ -17,6 +17,7 @@ public class AI : MonoBehaviour
     }
 
     public Transform danceFloorPosition;
+    private Vector3 spawningPosition;
 
     private bool isEntering;
 
@@ -27,6 +28,8 @@ public class AI : MonoBehaviour
         color.a = 0;
         spRenderer.color = color;
         isEntering = true;
+
+        spawningPosition = transform.position;
     }
 
     private void Start()
@@ -49,6 +52,7 @@ public class AI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moodAmount -= GameManager.instance.moodPerSec * Time.deltaTime;
         if (isEntering)
         {
             transform.position =
@@ -60,12 +64,13 @@ public class AI : MonoBehaviour
 
         if (moodAmount < 0)
         {
-            GoAway();
+            transform.position =
+                Vector3.MoveTowards(transform.position, spawningPosition, Time.deltaTime);
+            if ((transform.position - danceFloorPosition.position).magnitude < 0.5f)
+            {
+                AiManager.instance.ais.Remove(this);
+                Destroy(gameObject);
+            }
         }
-    }
-
-    private void GoAway()
-    {
-        
     }
 }
