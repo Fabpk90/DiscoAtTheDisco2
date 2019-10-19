@@ -51,6 +51,11 @@ public class GameManager : MonoBehaviour
         return mood * AiManager.instance.ais.Count;
     }
 
+    public float GetMaxMood()
+    {
+        return AiManager.instance.ais.Count;
+    }
+
     public void AddMood(float value) {
         mood = Mathf.Clamp01(mood + value);
     }
