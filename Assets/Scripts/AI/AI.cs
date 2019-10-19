@@ -52,7 +52,7 @@ public class AI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moodAmount -= GameManager.instance.moodPerSec * Time.deltaTime;
+       
         if (isEntering)
         {
             transform.position =
@@ -61,16 +61,19 @@ public class AI : MonoBehaviour
             if ((transform.position - danceFloorPosition.position).magnitude < 0.5f)
                 isEntering = false;
         }
-
-        if (moodAmount < 0)
+        else if (moodAmount < 0)
         {
             transform.position =
                 Vector3.MoveTowards(transform.position, spawningPosition, Time.deltaTime);
-            if ((transform.position - danceFloorPosition.position).magnitude < 0.5f)
+            if ((transform.position - spawningPosition).magnitude < 0.5f)
             {
                 AiManager.instance.ais.Remove(this);
                 Destroy(gameObject);
             }
+        }
+        else
+        {
+            moodAmount -= GameManager.instance.moodPerSec * Time.deltaTime;
         }
     }
 }
