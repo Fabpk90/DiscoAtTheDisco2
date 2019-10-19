@@ -7,9 +7,7 @@ using UnityEngine;
 public class AI : MonoBehaviour
 {
     private SpriteRenderer spRenderer;
-
-    public Transform danceFloorPosition;
-    private Vector3 spawningPosition;
+    
 
     private bool isEntering;
 
@@ -29,6 +27,8 @@ public class AI : MonoBehaviour
         set => drinkyness = value;
     }
 
+    public float moodAmount { get; set; }
+
     private void Awake()
     {
         spRenderer = GetComponent<SpriteRenderer>();
@@ -36,8 +36,6 @@ public class AI : MonoBehaviour
         color.a = 0;
         spRenderer.color = color;
         isEntering = true;
-
-        spawningPosition = transform.position;
     }
 
     private void Start()
@@ -64,16 +62,16 @@ public class AI : MonoBehaviour
         if (isEntering)
         {
             transform.position =
-                Vector3.MoveTowards(transform.position, danceFloorPosition.position, Time.deltaTime);
+                Vector3.MoveTowards(transform.position, AiManager.instance.danceFloorPosition.position, Time.deltaTime);
 
-            if ((transform.position - danceFloorPosition.position).magnitude < 0.5f)
+            if ((transform.position - AiManager.instance.danceFloorPosition.position).magnitude < 0.5f)
                 isEntering = false;
         }
         else if (drinkyness < 0 || dirtyness < 0)
         {
             transform.position =
-                Vector3.MoveTowards(transform.position, spawningPosition, Time.deltaTime);
-            if ((transform.position - spawningPosition).magnitude < 0.5f)
+                Vector3.MoveTowards(transform.position, AiManager.instance.spawnPoint.position, Time.deltaTime);
+            if ((transform.position - AiManager.instance.spawnPoint.position).magnitude < 0.5f)
             {
                 AiManager.instance.ais.Remove(this);
                 Destroy(gameObject);

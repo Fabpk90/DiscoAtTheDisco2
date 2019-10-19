@@ -48,11 +48,11 @@ public class GameManager : MonoBehaviour
     }
 
     public float CalculateMood() {
-        return mood;
+        return mood * AiManager.instance.ais.Count;
     }
 
     public void AddMood(float value) {
-        mood += value;
+        mood = Mathf.Clamp01(mood + value);
     }
 
     public void ApplyDamages(float value) {
