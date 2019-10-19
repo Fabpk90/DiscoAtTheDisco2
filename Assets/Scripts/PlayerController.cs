@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
 
     public void JobPossess(bool possess) {
         if (possess) {
+
         } else {
             jobInRange.jobObject.Exit();
             jobInRange.possess = false;
