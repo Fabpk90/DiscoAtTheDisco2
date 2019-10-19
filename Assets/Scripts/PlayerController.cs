@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         inputs.currentActionMap["Movement"].canceled += context => OnMovement(context);
 
         inputs.currentActionMap["Interact"].started += context => OnInteract(context);
-        
+
         machineState = new MachineState(this);
     }
 
