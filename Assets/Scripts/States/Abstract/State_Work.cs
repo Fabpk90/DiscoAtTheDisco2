@@ -22,7 +22,7 @@ public abstract class State_Work : State_Base
     }
 
     public override void Move(Vector2 direction, float speed) {
-        base.Move(direction, speed);
+
     }
 
     public override void Interact() {
