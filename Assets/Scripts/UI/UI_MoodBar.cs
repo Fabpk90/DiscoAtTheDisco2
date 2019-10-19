@@ -9,6 +9,7 @@ public class UI_MoodBar : MonoBehaviour
     
     void Update()
     {
-        moodBar.value = GameManager.instance.CalculateMood();
+        moodBar.maxValue = AiManager.instance.GetMaxMood();
+        moodBar.value = AiManager.instance.TotalMood();
     }
 }
