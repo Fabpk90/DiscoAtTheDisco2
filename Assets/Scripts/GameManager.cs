@@ -4,19 +4,39 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public void OnPlayerJoined()
-    {
-        print("yay a player joined");
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    //Singleton
+    public static GameManager instance { get; private set; }
+
+    [Header("PARAMETERS")]
+    public float moodPerSec;
+
+    private float mood;
+
+    private void Awake() {
+        if (!instance) {
+            instance = this;
+        } else {
+            Destroy(this.gameObject);
+        }
     }
 
-    // Update is called once per frame
+    public void OnPlayerJoined() {
+        print("yay a player joined");
+    }
+    
+    void Start()
+    {
+        mood = 1f;
+    }
+    
     void Update()
     {
-        
+        if(mood > 0) {
+            mood -= moodPerSec * Time.deltaTime;
+        }
+    }
+
+    public float CalculateMood() {
+        return mood;
     }
 }
