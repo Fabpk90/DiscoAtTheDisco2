@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moodWeight: 0.01
-  state: 1
+  state: 0
 --- !u!1 &825960698
 GameObject:
   m_ObjectHideFlags: 0

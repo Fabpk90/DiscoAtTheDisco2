@@ -27,10 +27,42 @@ public class Controls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Interact"",
+                    ""name"": ""Button1"",
                     ""type"": ""Button"",
                     ""id"": ""8b1e7c66-46d5-469c-b9bd-37d7d6398701"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Button2"",
+                    ""type"": ""Button"",
+                    ""id"": ""082f9245-2f91-4778-ae50-0acf2c510b3f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Button3"",
+                    ""type"": ""Button"",
+                    ""id"": ""172e2326-28cf-43f5-919e-ab409aed77a0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Button4"",
+                    ""type"": ""Button"",
+                    ""id"": ""c27a78e4-8348-4124-985d-a8fbeed3be98"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""PossessJob"",
+                    ""type"": ""Button"",
+                    ""id"": ""bbc45a1f-3cfc-45a9-9c93-96e9b4109a4b"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -148,45 +180,122 @@ public class Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""0299e9ad-e89b-4065-a465-dbef9824b9c6"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""32a6b99d-c510-413b-940c-fc67a6c29bee"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5f309730-0f6f-4c83-8ea8-fbc8bdcece85"",
+                    ""id"": ""a6106599-f6e6-468a-bd8e-d1cc63edc272"",
                     ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Interact"",
+                    ""action"": ""Button2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a691c892-cb2e-4833-8ba4-0753580e276e"",
+                    ""id"": ""f98eeb33-3ac7-4669-a0d6-9bb11b3a5dbd"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""70f9d812-fbac-47d4-8c01-b82ea9c59a88"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""deec37a3-da47-4e00-863b-e272fa62199a"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c01f9471-692c-4271-98a0-396c1ca140cc"",
                     ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Interact"",
+                    ""action"": ""Button4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ef15211b-78ef-490e-8e5b-03ffbe9a4013"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fbae96cc-2839-4cbe-8391-12cbd7b1df5d"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PossessJob"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""16e829e7-ab74-4b09-a78e-86724dab8ebb"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PossessJob"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4c9857e1-1298-445f-a5b9-f558db47ca99"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PossessJob"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8abcfbab-97fc-4c3e-935d-d71123735afe"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d02c3acc-63bc-4a03-a512-2ae8ba73a4ad"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Button1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -198,7 +307,11 @@ public class Controls : IInputActionCollection, IDisposable
         // Character
         m_Character = asset.FindActionMap("Character", throwIfNotFound: true);
         m_Character_Movement = m_Character.FindAction("Movement", throwIfNotFound: true);
-        m_Character_Interact = m_Character.FindAction("Interact", throwIfNotFound: true);
+        m_Character_Button1 = m_Character.FindAction("Button1", throwIfNotFound: true);
+        m_Character_Button2 = m_Character.FindAction("Button2", throwIfNotFound: true);
+        m_Character_Button3 = m_Character.FindAction("Button3", throwIfNotFound: true);
+        m_Character_Button4 = m_Character.FindAction("Button4", throwIfNotFound: true);
+        m_Character_PossessJob = m_Character.FindAction("PossessJob", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -249,13 +362,21 @@ public class Controls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Character;
     private ICharacterActions m_CharacterActionsCallbackInterface;
     private readonly InputAction m_Character_Movement;
-    private readonly InputAction m_Character_Interact;
+    private readonly InputAction m_Character_Button1;
+    private readonly InputAction m_Character_Button2;
+    private readonly InputAction m_Character_Button3;
+    private readonly InputAction m_Character_Button4;
+    private readonly InputAction m_Character_PossessJob;
     public struct CharacterActions
     {
         private Controls m_Wrapper;
         public CharacterActions(Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Character_Movement;
-        public InputAction @Interact => m_Wrapper.m_Character_Interact;
+        public InputAction @Button1 => m_Wrapper.m_Character_Button1;
+        public InputAction @Button2 => m_Wrapper.m_Character_Button2;
+        public InputAction @Button3 => m_Wrapper.m_Character_Button3;
+        public InputAction @Button4 => m_Wrapper.m_Character_Button4;
+        public InputAction @PossessJob => m_Wrapper.m_Character_PossessJob;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -268,9 +389,21 @@ public class Controls : IInputActionCollection, IDisposable
                 Movement.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
                 Movement.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
                 Movement.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
-                Interact.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnInteract;
-                Interact.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnInteract;
-                Interact.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnInteract;
+                Button1.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton1;
+                Button1.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton1;
+                Button1.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton1;
+                Button2.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton2;
+                Button2.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton2;
+                Button2.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton2;
+                Button3.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton3;
+                Button3.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton3;
+                Button3.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton3;
+                Button4.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton4;
+                Button4.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton4;
+                Button4.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnButton4;
+                PossessJob.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPossessJob;
+                PossessJob.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPossessJob;
+                PossessJob.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPossessJob;
             }
             m_Wrapper.m_CharacterActionsCallbackInterface = instance;
             if (instance != null)
@@ -278,9 +411,21 @@ public class Controls : IInputActionCollection, IDisposable
                 Movement.started += instance.OnMovement;
                 Movement.performed += instance.OnMovement;
                 Movement.canceled += instance.OnMovement;
-                Interact.started += instance.OnInteract;
-                Interact.performed += instance.OnInteract;
-                Interact.canceled += instance.OnInteract;
+                Button1.started += instance.OnButton1;
+                Button1.performed += instance.OnButton1;
+                Button1.canceled += instance.OnButton1;
+                Button2.started += instance.OnButton2;
+                Button2.performed += instance.OnButton2;
+                Button2.canceled += instance.OnButton2;
+                Button3.started += instance.OnButton3;
+                Button3.performed += instance.OnButton3;
+                Button3.canceled += instance.OnButton3;
+                Button4.started += instance.OnButton4;
+                Button4.performed += instance.OnButton4;
+                Button4.canceled += instance.OnButton4;
+                PossessJob.started += instance.OnPossessJob;
+                PossessJob.performed += instance.OnPossessJob;
+                PossessJob.canceled += instance.OnPossessJob;
             }
         }
     }
@@ -288,6 +433,10 @@ public class Controls : IInputActionCollection, IDisposable
     public interface ICharacterActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnInteract(InputAction.CallbackContext context);
+        void OnButton1(InputAction.CallbackContext context);
+        void OnButton2(InputAction.CallbackContext context);
+        void OnButton3(InputAction.CallbackContext context);
+        void OnButton4(InputAction.CallbackContext context);
+        void OnPossessJob(InputAction.CallbackContext context);
     }
 }
