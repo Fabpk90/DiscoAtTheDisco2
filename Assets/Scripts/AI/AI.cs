@@ -8,18 +8,26 @@ public class AI : MonoBehaviour
 {
     private SpriteRenderer spRenderer;
 
-    private float moodAmount;
-
-    public float MoodAmount
-    {
-        get => moodAmount;
-        set => moodAmount = value;
-    }
-
     public Transform danceFloorPosition;
     private Vector3 spawningPosition;
 
     private bool isEntering;
+
+    private int dirtyness;
+
+    public int Dirtyness
+    {
+        get => dirtyness;
+        set => dirtyness = value;
+    }
+    
+    private int drinkyness;
+
+    public int Drinkyness
+    {
+        get => drinkyness;
+        set => drinkyness = value;
+    }
 
     private void Awake()
     {
@@ -61,7 +69,7 @@ public class AI : MonoBehaviour
             if ((transform.position - danceFloorPosition.position).magnitude < 0.5f)
                 isEntering = false;
         }
-        else if (moodAmount < 0)
+        else if (drinkyness < 0 || dirtyness < 0)
         {
             transform.position =
                 Vector3.MoveTowards(transform.position, spawningPosition, Time.deltaTime);
@@ -71,9 +79,17 @@ public class AI : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        else
-        {
-            moodAmount -= GameManager.instance.moodPerSec * Time.deltaTime;
-        }
+    }
+
+    IEnumerator LookForADrink()
+    {
+        //go to the bar, checks if there is enough drink
+        //if not drinkyness--;
+        yield return null;
+    }
+
+    IEnumerator CheckTheFloor()
+    {
+        yield return null;
     }
 }

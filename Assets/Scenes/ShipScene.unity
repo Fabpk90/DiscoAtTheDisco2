@@ -502,7 +502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef49e683b0c141c4187fc7dde44184aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMood: 10
+  startingDrinkness: 3
+  startingDirtyness: 5
   prefabAI: {fileID: 5701188749285259059, guid: 887e6970cd024d440a969f84326b2954,
     type: 3}
   ais: []

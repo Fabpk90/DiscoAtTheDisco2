@@ -6,8 +6,10 @@ using UnityEngine;
 public class AiManager : MonoBehaviour
 {
     public static AiManager instance;
-
-    public float startingMood;
+    
+    public int startingDrinkness;
+    public int startingDirtyness;
+    
     public AI prefabAI;
 
     public List<AI> ais;
@@ -31,7 +33,8 @@ public class AiManager : MonoBehaviour
     public void SpawnAI()
     {
         AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
-        ai.MoodAmount = startingMood;
+        ai.Dirtyness = startingDirtyness;
+        ai.Drinkyness = startingDrinkness;
         ai.danceFloorPosition = danceFloorPosition;
 
         ais.Add(ai);
@@ -43,14 +46,17 @@ public class AiManager : MonoBehaviour
 
         foreach (AI ai in ais)
         {
-            totalMood += ai.MoodAmount;
+            totalMood += (ai.Dirtyness + ai.Drinkyness);
         }
-
-        return totalMood;
+        
+        if(ais.Count != 0)
+            return totalMood / ais.Count;
+        else
+            return 0;
     }
 
     public float GetMaxMood()
     {
-        return ais.Count * startingMood;
+        return ais.Count * (startingDirtyness + startingDrinkness);
     }
 }
