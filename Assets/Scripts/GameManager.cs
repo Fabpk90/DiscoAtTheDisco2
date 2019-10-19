@@ -39,4 +39,8 @@ public class GameManager : MonoBehaviour
     public float CalculateMood() {
         return mood;
     }
+
+    public void AddMood(float value) {
+        mood += value;
+    }
 }

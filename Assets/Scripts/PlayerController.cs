@@ -6,26 +6,32 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
+    //PARAMETERS
+    public float movementSpeed;
 
+    //STORAGE
     private Vector2 movement;
-    private Rigidbody2D rigidBody;
+
+    //REFERENCES
+    public Rigidbody2D rigidBody { get; private set; }
+    public Animator animator { get; private set; }
+    private MachineState machineState;
 
     private void Awake()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
+        machineState = new MachineState(this);
     }
 
     //Called by unity (sendMessage)
     private void OnMovement(InputValue value)
     {
         movement = value.Get<Vector2>();
+        machineState?.Move(movement, movementSpeed);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        rigidBody.velocity = movement.normalized * speed;
         //transform.Translate(movement * Time.deltaTime);
     }
 }

@@ -25,6 +25,14 @@ public class Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""8b1e7c66-46d5-469c-b9bd-37d7d6398701"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -137,6 +145,17 @@ public class Controls : IInputActionCollection, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0299e9ad-e89b-4065-a465-dbef9824b9c6"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -146,6 +165,7 @@ public class Controls : IInputActionCollection, IDisposable
         // Character
         m_Character = asset.FindActionMap("Character", throwIfNotFound: true);
         m_Character_Movement = m_Character.FindAction("Movement", throwIfNotFound: true);
+        m_Character_Interact = m_Character.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -196,11 +216,13 @@ public class Controls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Character;
     private ICharacterActions m_CharacterActionsCallbackInterface;
     private readonly InputAction m_Character_Movement;
+    private readonly InputAction m_Character_Interact;
     public struct CharacterActions
     {
         private Controls m_Wrapper;
         public CharacterActions(Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Character_Movement;
+        public InputAction @Interact => m_Wrapper.m_Character_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -213,6 +235,9 @@ public class Controls : IInputActionCollection, IDisposable
                 Movement.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
                 Movement.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
                 Movement.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
+                Interact.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnInteract;
+                Interact.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnInteract;
+                Interact.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_CharacterActionsCallbackInterface = instance;
             if (instance != null)
@@ -220,6 +245,9 @@ public class Controls : IInputActionCollection, IDisposable
                 Movement.started += instance.OnMovement;
                 Movement.performed += instance.OnMovement;
                 Movement.canceled += instance.OnMovement;
+                Interact.started += instance.OnInteract;
+                Interact.performed += instance.OnInteract;
+                Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -227,5 +255,6 @@ public class Controls : IInputActionCollection, IDisposable
     public interface ICharacterActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }
