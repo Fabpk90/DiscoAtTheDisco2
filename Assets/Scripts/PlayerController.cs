@@ -26,14 +26,20 @@ public class PlayerController : MonoBehaviour
         inputs.actions.Enable();
         inputs.currentActionMap["Movement"].performed += context => OnMovement(context);
         inputs.currentActionMap["Movement"].canceled += context => OnMovement(context);
+        inputs.currentActionMap["Interact"].performed += context => OnInteract(context);
+
         machineState = new MachineState(this);
     }
-
-    //Called by unity (sendMessage)
+    
     private void OnMovement(InputAction.CallbackContext value)
     {
         movement = value.ReadValue<Vector2>();
         machineState?.Move(movement, movementSpeed);
+    }
+
+    private void OnInteract(InputAction.CallbackContext value)
+    {
+        Debug.Log(value.started);
     }
 
     private void OnDisable()
