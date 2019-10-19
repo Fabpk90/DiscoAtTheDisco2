@@ -52,11 +52,6 @@ public class PlayerController : MonoBehaviour
         machineState?.Move(movement, movementSpeed);
     }
 
-    private void OnInteract(InputAction.CallbackContext value)
-    {
-        Debug.Log(value.started);
-    }
-
     private void OnDisable()
     {
         inputs.actions.Disable();
