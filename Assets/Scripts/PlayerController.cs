@@ -36,6 +36,11 @@ public class PlayerController : MonoBehaviour
         machineState?.Move(movement, movementSpeed);
     }
 
+    private void OnDisable()
+    {
+        inputs.actions.Disable();
+    }
+
     void Update()
     {
         //transform.Translate(movement * Time.deltaTime);
