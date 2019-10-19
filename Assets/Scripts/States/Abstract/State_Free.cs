@@ -28,14 +28,7 @@ public abstract class State_Free : State_Base
     }
 
     public override void Interact(eINPUT_INTERACT input) {
-        switch (input) {
-            case eINPUT_INTERACT.A:
-                if(machine.controller.jobInRange.jobObject.state == eSTATE_WORK.DJ) {
-                    Debug.Log("hell");
-                    machine.ChangeState(new StateWork_DJ(machine));
-                }
-                break;
-        }
+        machine.ChangeState(new State_Work(machine));
     }
 
     public override void Exit() {

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
-public enum eINPUT_INTERACT { A, E, SPACE, R};
+public enum eINPUT_INTERACT { BT1, BT2, BT3, BT4};
 
 public struct JobInfo {
     public Job jobObject;
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         inputs.currentActionMap["Button4"].started += OnButton4;
 
         possess = false;
-        
+
         inputs.currentActionMap["PossessJob"].started += OnJobPossess;
 
         machineState = new MachineState(this);
@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnJobPossess(InputAction.CallbackContext obj)
     {
+        Debug.Log("Possess job");
         if (jobInRange.jobObject)
         {
             if (!jobInRange.possess)
@@ -70,26 +71,29 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnButton4(InputAction.CallbackContext obj)
-    {
-        
+    private void OnButton4(InputAction.CallbackContext obj) {
+        if (jobInRange.jobObject && jobInRange.possess) {
+            machineState.Interact(eINPUT_INTERACT.BT4);
+        }
     }
 
-    private void OnButton3(InputAction.CallbackContext obj)
-    {
-        
+    private void OnButton3(InputAction.CallbackContext obj) {
+        if (jobInRange.jobObject && jobInRange.possess) {
+            machineState.Interact(eINPUT_INTERACT.BT3);
+        }
     }
 
     private void OnButton2(InputAction.CallbackContext obj)
     {
         if (jobInRange.jobObject && jobInRange.possess) {
-            machineState.Interact(eINPUT_INTERACT.A);
+            machineState.Interact(eINPUT_INTERACT.BT2);
         }
     }
 
-    private void OnButton1(InputAction.CallbackContext obj)
-    {
-       
+    private void OnButton1(InputAction.CallbackContext obj) {
+        if (jobInRange.jobObject && jobInRange.possess) {
+            machineState.Interact(eINPUT_INTERACT.BT1);
+        }
     }
 
     //Called by unity (sendMessage)

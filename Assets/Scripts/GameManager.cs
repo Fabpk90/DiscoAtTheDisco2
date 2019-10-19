@@ -59,6 +59,10 @@ public class GameManager : MonoBehaviour
         mood += value;
     }
 
+    public void ApplyDamages(float value) {
+        hp -= value;
+    }
+
     [ContextMenu("Spawn")]
     public void Spawn() {
         Vector3 spawnPoint = FindPoint(Vector3.zero, 25f, Random.Range(0, 360));

@@ -132,8 +132,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc03c2ae307b744f98eea9a92db5384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleLevels:
-  - 0.25
-  - 0.5
-  - 0.75
-  scaleIndex: 0
+  damages: 0.05
+  hp: 0

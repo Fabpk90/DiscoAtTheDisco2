@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum eSTATE_WORK { DJ, BARMAN, CLEANER };
 
-public abstract class State_Work : State_Base
+public class State_Work : State_Base
 {
 
     public State_Work(MachineState tMachine) :
@@ -29,7 +29,7 @@ public abstract class State_Work : State_Base
     }
 
     public override void Interact(eINPUT_INTERACT input) {
-        
+        machine.controller.jobInRange.jobObject.Interact(input);
     }
 
     public override void Exit() {

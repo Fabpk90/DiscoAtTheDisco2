@@ -24,7 +24,7 @@ public class StateWork_DJ : State_Work
     }
 
     public override void Interact(eINPUT_INTERACT input) {
-        if(input == eINPUT_INTERACT.A) {
+        if(input == eINPUT_INTERACT.BT1) {
             GameManager.instance.AddMood(machine.controller.jobInRange.jobObject.moodWeight);
         }
     }

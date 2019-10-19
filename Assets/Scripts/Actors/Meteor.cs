@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Meteor : MonoBehaviour
 {
+    [Header("PARAMETERS")]
+    public float damages;
     //STORAGE
     public int hp;
     //REFERENCES
@@ -24,7 +26,8 @@ public class Meteor : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Ship")) {
-            //Destroy(gameObject);
+            GameManager.instance.ApplyDamages(damages * hp);
+            Destroy(gameObject);
         }
     }
 
