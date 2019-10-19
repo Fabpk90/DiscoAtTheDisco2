@@ -10,16 +10,21 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 movement;
     private Rigidbody2D rigidBody;
+    private PlayerInput inputs;
 
     private void Awake()
     {
+        inputs = GetComponent<PlayerInput>();
         rigidBody = this.GetComponent<Rigidbody2D>();
+        
+        inputs.actions.Enable();
+        inputs.currentActionMap["Movement"].performed += context => OnMovement(context);
     }
 
     //Called by unity (sendMessage)
-    private void OnMovement(InputValue value)
+    private void OnMovement(InputAction.CallbackContext value)
     {
-        movement = value.Get<Vector2>();
+        movement = value.ReadValue<Vector2>();
     }
 
     // Update is called once per frame
