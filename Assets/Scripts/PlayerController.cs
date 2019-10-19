@@ -55,9 +55,19 @@ public class PlayerController : MonoBehaviour
 
     private void OnJobPossess(InputAction.CallbackContext obj)
     {
-        possess = !possess;
-        print(possess);
-        JobPossess(possess);
+        if (jobInRange.jobObject)
+        {
+            if (!jobInRange.possess)
+            {
+                jobInRange.jobObject.Join(this);
+                jobInRange.possess = true;
+            }
+            else
+            {
+                jobInRange.jobObject.Exit();
+                jobInRange.possess = false;
+            }
+        }
     }
 
     private void OnButton4(InputAction.CallbackContext obj)
@@ -92,19 +102,6 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         inputs.actions.Disable();
-    }
-    
-    public void JobPossess(bool possess) {
-        if (possess)
-        {
-            if (jobInRange.jobObject && !jobInRange.possess) {
-                jobInRange.jobObject.Join(this);
-                jobInRange.possess = true;
-            }
-        } else {
-            jobInRange.jobObject.Exit();
-            jobInRange.possess = false;
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
