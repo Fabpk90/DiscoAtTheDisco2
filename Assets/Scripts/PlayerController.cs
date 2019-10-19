@@ -26,7 +26,15 @@ public class PlayerController : MonoBehaviour
         inputs.actions.Enable();
         inputs.currentActionMap["Movement"].performed += context => OnMovement(context);
         inputs.currentActionMap["Movement"].canceled += context => OnMovement(context);
+
+        inputs.currentActionMap["Interact"].started += context => OnInteract(context);
+        
         machineState = new MachineState(this);
+    }
+
+    private void OnInteract(InputAction.CallbackContext context)
+    {
+        print("Button pressed ");
     }
 
     //Called by unity (sendMessage)
