@@ -27,10 +27,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnPlayerJoined() {
-        print("yay a player joined");
-    }
-    
     void Start()
     {
         StartCoroutine(SpawnMeteor());
