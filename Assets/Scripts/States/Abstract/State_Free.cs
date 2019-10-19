@@ -14,7 +14,7 @@ public abstract class State_Free : State_Base
     }
 
     public override void Enter() {
-
+        
     }
 
     public override void Update() {
@@ -22,11 +22,19 @@ public abstract class State_Free : State_Base
     }
 
     public override void Move(Vector2 direction, float speed) {
-        base.Move(direction, speed);
+        if (!machine.controller.jobPossess) {
+            base.Move(direction, speed);
+        }
     }
 
-    public override void Interact() {
-
+    public override void Interact(eINPUT_INTERACT input) {
+        switch (input) {
+            case eINPUT_INTERACT.A:
+                if(machine.controller.jobInRange.state == eSTATE_WORK.DJ) {
+                    machine.ChangeState(new StateWork_DJ(machine));
+                }
+                break;
+        }
     }
 
     public override void Exit() {

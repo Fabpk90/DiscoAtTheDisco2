@@ -22,11 +22,14 @@ public abstract class State_Work : State_Base
     }
 
     public override void Move(Vector2 direction, float speed) {
-
+        if(direction != Vector2.zero && speed != 0) {
+            machine.ChangeState(new StateFree_Idle(machine));
+            machine.controller.jobPossess = false;
+        }
     }
 
-    public override void Interact() {
-
+    public override void Interact(eINPUT_INTERACT input) {
+        
     }
 
     public override void Exit() {
