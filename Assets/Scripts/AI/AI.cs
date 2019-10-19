@@ -57,5 +57,15 @@ public class AI : MonoBehaviour
             if ((transform.position - danceFloorPosition.position).magnitude < 0.5f)
                 isEntering = false;
         }
+
+        if (moodAmount < 0)
+        {
+            GoAway();
+        }
+    }
+
+    private void GoAway()
+    {
+        
     }
 }
