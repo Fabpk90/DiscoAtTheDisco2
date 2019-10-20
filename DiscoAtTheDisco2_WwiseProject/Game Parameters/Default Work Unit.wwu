@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EAAC1BDD-4329-4585-9D00-4B61EFC6365A}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{EAAC1BDD-4329-4585-9D00-4B61EFC6365A}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Ship_Health" ID="{740D041C-BB6E-47ED-9109-51387C9945CA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

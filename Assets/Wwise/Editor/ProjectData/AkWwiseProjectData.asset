@@ -1,0 +1,586 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a63ef5b06857b2439e3f2bc29885d3e, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ec989527cf27a6448eeb0df93d4501d0
+    GuidInternal: 
+    m_lastTime: -8586301038500507391
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 1b18c2e73db5db4c9fd8adbceb89c5d8
+    GuidInternal: 
+    m_lastTime: -8586300237575664800
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 394b630c158e254a833440683f868099
+    GuidInternal: 
+    m_lastTime: -8586300242380100160
+    List:
+    - name: All
+      guid: 96a62b7a0fdaf44da1676cddd1427eb9
+      id: 1100754030
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 7
+      Path: Default Work Unit\All
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 42459a4fbbc8ab45a02d2ef753c71191
+    GuidInternal: 
+    m_lastTime: -8586300332217734054
+    List:
+    - name: Play_Backup
+      guid: 5a1d7e431a442d40ab93cbe3b713f1dd
+      id: 632701952
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Backup
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Backup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barman_Action_00
+      guid: e5efcfae25b9ff48a18034b0e77d1853
+      id: 4159239375
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Barman
+        ObjectType: 4
+      - ElementName: Play_Barman_Action_00
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_00
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barman_Action_01
+      guid: 6a6ee8e2e965f6469d4dcac205cbae50
+      id: 4159239374
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Barman
+        ObjectType: 4
+      - ElementName: Play_Barman_Action_01
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barman_Action_02
+      guid: 503dcc4cf0d76c4fbf19e71d069482d9
+      id: 4159239373
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Barman
+        ObjectType: 4
+      - ElementName: Play_Barman_Action_02
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barman_Get_In
+      guid: a384bf16020d9a46b05fd8df2e257e82
+      id: 2174041464
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Barman
+        ObjectType: 4
+      - ElementName: Play_Barman_Get_In
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Get_In
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barman_Get_Out
+      guid: 446ea1fd60d17c49967d69f010c5817f
+      id: 1827943071
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Barman
+        ObjectType: 4
+      - ElementName: Play_Barman_Get_Out
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Get_Out
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Cleaner_Action
+      guid: 0ec6d92f672fdb4bb6933b5cc8456f86
+      id: 3644223421
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Cleaner
+        ObjectType: 4
+      - ElementName: Play_Cleaner_Action
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Cleaner_Get_In
+      guid: 178eac54876cf3478ec159d8b15cc3eb
+      id: 500632261
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Cleaner
+        ObjectType: 4
+      - ElementName: Play_Cleaner_Get_In
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_In
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Cleaner_Get_Out
+      guid: b978e1467f49e54cbd662c2e1d1d09ab
+      id: 3549765580
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Cleaner
+        ObjectType: 4
+      - ElementName: Play_Cleaner_Get_Out
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_Out
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_CoreGame
+      guid: c0aa328c49da1d46bac33e73dd04e5fd
+      id: 710392401
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_CoreGame
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_CoreGame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Crowd_Boo
+      guid: 709110637b171a4cbb4e81027f566b12
+      id: 63524048
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Crowd
+        ObjectType: 4
+      - ElementName: Play_Crowd_Boo
+        ObjectType: 3
+      Path: Default Work Unit\World\Crowd\Play_Crowd_Boo
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Crowd_Cheer
+      guid: a59a450680352346a977b572771e1247
+      id: 555714483
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Crowd
+        ObjectType: 4
+      - ElementName: Play_Crowd_Cheer
+        ObjectType: 3
+      Path: Default Work Unit\World\Crowd\Play_Crowd_Cheer
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DJ_Action
+      guid: b78ff797fc7a3140b2502ff1ea68a07b
+      id: 3272327121
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: DJ
+        ObjectType: 4
+      - ElementName: Play_DJ_Action
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Action
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DJ_Get_In
+      guid: 5488d64eaa541147a2c8fea601453430
+      id: 2053058505
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: DJ
+        ObjectType: 4
+      - ElementName: Play_DJ_Get_In
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Get_In
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DJ_Get_Out
+      guid: 82be60b3a383f547af4cfb0b1272b432
+      id: 1909703784
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: DJ
+        ObjectType: 4
+      - ElementName: Play_DJ_Get_Out
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Get_Out
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Generic_Action_Fail
+      guid: b1f2d4d91d37364d83edeead3e92055a
+      id: 3800239409
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Generic
+        ObjectType: 4
+      - ElementName: Play_Generic_Action_Fail
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Fail
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Generic_Action_Success
+      guid: 6ed8b386f89717448749b908cc1eb8cf
+      id: 1701898702
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Generic
+        ObjectType: 4
+      - ElementName: Play_Generic_Action_Success
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Success
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Generic_Get_In
+      guid: 79c2ff88c4cf364aa43c2c031deff35e
+      id: 2084885510
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Generic
+        ObjectType: 4
+      - ElementName: Play_Generic_Get_In
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Generic\Play_Generic_Get_In
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Generic_Get_Out
+      guid: 87a804229bc3f54f849f61db7b083c66
+      id: 3244882441
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Generic
+        ObjectType: 4
+      - ElementName: Play_Generic_Get_Out
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Generic\Play_Generic_Get_Out
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Jacky_Action
+      guid: 364c5c149743c747af8cf4b30826df45
+      id: 1985990985
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Jacky
+        ObjectType: 4
+      - ElementName: Play_Jacky_Action
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Jacky_Get_In
+      guid: 6b461e3242dc9f4585fc60e5c53f9480
+      id: 3327247393
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Jacky
+        ObjectType: 4
+      - ElementName: Play_Jacky_Get_In
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_In
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Jacky_Get_Out
+      guid: 1935226f4bd1344dbfb96d7084fda1a9
+      id: 1756586912
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Jacky
+        ObjectType: 4
+      - ElementName: Play_Jacky_Get_Out
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_Out
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Meteor_Hit
+      guid: 0cc66e4db320394bb3cbf18a4f4b5fce
+      id: 3950732764
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Meteor
+        ObjectType: 4
+      - ElementName: Play_Meteor_Hit
+        ObjectType: 3
+      Path: Default Work Unit\World\Meteor\Play_Meteor_Hit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Meteor_Move
+      guid: 90469724ac6b8b4bbc2de93b5b7775d4
+      id: 3675512654
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Meteor
+        ObjectType: 4
+      - ElementName: Play_Meteor_Move
+        ObjectType: 3
+      Path: Default Work Unit\World\Meteor\Play_Meteor_Move
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Meteor_Reduce
+      guid: 49365f66faaa7c4b9f33c52146ffeb49
+      id: 273422311
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Meteor
+        ObjectType: 4
+      - ElementName: Play_Meteor_Reduce
+        ObjectType: 3
+      Path: Default Work Unit\World\Meteor\Play_Meteor_Reduce
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SpaceShip_Damage_000
+      guid: 5275baa45df42840abfae6f21b3d872a
+      id: 1235252603
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: SpaceShip
+        ObjectType: 4
+      - ElementName: Play_SpaceShip_Damage_000
+        ObjectType: 3
+      Path: Default Work Unit\World\SpaceShip\Play_SpaceShip_Damage_000
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: dd1bacea294385459d004b61efc6365a
+    GuidInternal: 
+    m_lastTime: -8586300332217214931
+    List:
+    - name: Ship_Health
+      guid: 1c040d746ebbed47910951387c9945ca
+      id: 3580550148
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship_Health
+        ObjectType: 13
+      Path: Default Work Unit\Ship_Health
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: e813fb3d555dc04f881586456d2c912f
+    GuidInternal: 
+    m_lastTime: -8586300280617135270
+    List:
+    - name: Mood
+      guid: 17a1897fe3a7e64fab34bc12b1e74c87
+      id: 3128647864
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mood
+        ObjectType: 9
+      Path: Default Work Unit\Mood
+      values:
+      - name: Mood_Level_00
+        guid: ae215fc3c995244eb02d51558895c57b
+        id: 1218563522
+        PathAndIcons:
+        - ElementName: Mood_Level_00
+          ObjectType: 8
+      - name: Mood_Level_01
+        guid: 211fdc34599ed14e81ea2e407b956d20
+        id: 1218563523
+        PathAndIcons:
+        - ElementName: Mood_Level_01
+          ObjectType: 8
+      - name: Mood_Level_02
+        guid: 069cadf488fefd4cab834733a7bef248
+        id: 1218563520
+        PathAndIcons:
+        - ElementName: Mood_Level_02
+          ObjectType: 8
+      - name: Mood_Level_03
+        guid: 2f606c9caf1301468073cb763239c3c7
+        id: 1218563521
+        PathAndIcons:
+        - ElementName: Mood_Level_03
+          ObjectType: 8
+      - name: None
+        guid: 41e9846770dde845b43056ab95b5151b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f77687b3c1739a4c954749c54afdcea7
+    GuidInternal: 
+    m_lastTime: -8586300254816659440
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2b6c625a5725574aa8242ea7f0099456
+    GuidInternal: 
+    m_lastTime: -8586300332217304660
+    List: []
+  ExpandedItems:
+  - /Disco at the DISCO - PreWork
+  - /Disco at the DISCO - PreWork/Events
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/Music
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

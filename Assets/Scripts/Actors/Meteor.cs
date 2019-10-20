@@ -11,6 +11,9 @@ public class Meteor : MonoBehaviour
     //REFERENCES
     private Rigidbody2D rigidBody;
 
+    [Header("SOUNDS")]
+    public AK.Wwise.Event meteorHit;
+
     public void Init(Vector2 direction, float speed, int tHp) {
         rigidBody = this.GetComponent<Rigidbody2D>();
         rigidBody.velocity = direction * speed;
@@ -27,6 +30,7 @@ public class Meteor : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Ship")) {
             GameManager.instance.ApplyDamages(damages * hp);
+            meteorHit.Post(gameObject);
             Destroy(gameObject);
         }
     }

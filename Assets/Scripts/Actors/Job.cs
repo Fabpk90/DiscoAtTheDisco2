@@ -12,6 +12,13 @@ public class Job : MonoBehaviour
     public eSTATE_WORK state;
     public eINPUT_INTERACT[] requiredInputs;
 
+    //SOUNDS
+    [Header("SOUNDS")]
+    public AK.Wwise.Event actionSuccess;
+    public AK.Wwise.Event actionFail;
+    public AK.Wwise.Event getIn;
+    public AK.Wwise.Event getOut;
+
     //STORAGE
     protected int currentInput;
 
@@ -26,6 +33,7 @@ public class Job : MonoBehaviour
     public bool Join(PlayerController tController) {
         if (!controller) {
             controller = tController;
+            getIn.Post(gameObject);
             return true;
         }
         return false;
@@ -35,11 +43,11 @@ public class Job : MonoBehaviour
         if(inputTriggered == requiredInputs[currentInput]) {
             if (currentInput < requiredInputs.Length-1) {
                 ++currentInput;
-
+                actionSuccess.Post(gameObject);
                 return eJOB_STATUT.NEXT;
             } else {
                 currentInput = 0;
-
+                actionFail.Post(gameObject);
                 return eJOB_STATUT.SUCCEEDED;
             }
         }
@@ -50,6 +58,7 @@ public class Job : MonoBehaviour
         if (controller) {
             currentInput = 0;
             controller = null;
+            getOut.Post(gameObject);
         }
     }
 }
