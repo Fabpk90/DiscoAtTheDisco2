@@ -7,6 +7,8 @@ public class AiManager : MonoBehaviour
 {
     public static AiManager instance;
 
+    public RuntimeAnimatorController[] animators;
+
     public int maxAI;
     public float secondsBeforeThirst;
 
@@ -45,7 +47,8 @@ public class AiManager : MonoBehaviour
             AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
             ai.Dirtyness = startingDirtynessHandling;
             ai.Drinkyness = secondsBeforeThirst;
-
+            ai.GetComponent<Animator>().runtimeAnimatorController = animators[(int)UnityEngine.Random.Range(0, animators.Length)];
+            ai.GetComponent<Animator>().SetFloat("speed", .5f);
             ais.Add(ai);
         }
         

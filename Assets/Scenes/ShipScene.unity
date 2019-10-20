@@ -652,6 +652,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef49e683b0c141c4187fc7dde44184aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animators:
+  - {fileID: 9100000, guid: 247f18457d1e75842a2a87750c2ac8da, type: 2}
+  - {fileID: 22100000, guid: 46380e9f7bb6bcc4797ddf380e757043, type: 2}
+  - {fileID: 22100000, guid: c57962801dac8e94da5a3aded58daa9d, type: 2}
+  - {fileID: 22100000, guid: b002e3d0abcc783419a9280367a202e2, type: 2}
+  - {fileID: 22100000, guid: 01a80bc78098d834f93de63a6c65f421, type: 2}
+  - {fileID: 22100000, guid: c4d0360b0173f144b9040dac6b0ad2b0, type: 2}
+  - {fileID: 22100000, guid: 5bc298f47e3bfec468a7ab9db099dd93, type: 2}
   maxAI: 10
   secondsBeforeThirst: 15
   startingDirtynessHandling: 1
@@ -1080,6 +1088,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3b729a0d7974d9246be81f2b08d52d27,
         type: 2}
+    - target: {fileID: 6729309847590161019, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6729309847590161016, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6729309847590161016, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.39
+      objectReference: {fileID: 0}
     - target: {fileID: 527673813871434465, guid: a950e06a5fd15fb4d96b090d580ab544,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1111,21 +1134,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2575011021175017401, guid: bbbb32b615d96bf4eb46c6f1b03028fe,
         type: 3}
-    - target: {fileID: 6729309847590161019, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6729309847590161016, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 6729309847590161016, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 6.39
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a950e06a5fd15fb4d96b090d580ab544, type: 3}
 --- !u!1001 &4971214380702777174
