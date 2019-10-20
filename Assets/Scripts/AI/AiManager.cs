@@ -48,7 +48,7 @@ public class AiManager : MonoBehaviour
             ai.Dirtyness = startingDirtynessHandling;
             ai.Drinkyness = secondsBeforeThirst;
             ai.GetComponent<Animator>().runtimeAnimatorController = animators[(int)UnityEngine.Random.Range(0, animators.Length)];
-            ai.GetComponent<Animator>().SetFloat("speed", .5f);
+            ai.GetComponent<Animator>().SetFloat("speed", .25f);
             ais.Add(ai);
         }
         

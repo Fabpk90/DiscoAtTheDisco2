@@ -646,8 +646,8 @@ MonoBehaviour:
   Callbacks:
   - Flags:
       value: 8192
-    FunctionName: 
-    GameObject: {fileID: 0}
+    FunctionName: MusicBeat
+    GameObject: {fileID: 1219957671}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
@@ -683,7 +683,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef49e683b0c141c4187fc7dde44184aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animators: []
+  animators:
+  - {fileID: 9100000, guid: 247f18457d1e75842a2a87750c2ac8da, type: 2}
+  - {fileID: 22100000, guid: 5bc298f47e3bfec468a7ab9db099dd93, type: 2}
+  - {fileID: 22100000, guid: cff9d177521627045bee089d73f5effe, type: 2}
+  - {fileID: 22100000, guid: 46380e9f7bb6bcc4797ddf380e757043, type: 2}
+  - {fileID: 22100000, guid: c57962801dac8e94da5a3aded58daa9d, type: 2}
+  - {fileID: 22100000, guid: b002e3d0abcc783419a9280367a202e2, type: 2}
+  - {fileID: 22100000, guid: 01a80bc78098d834f93de63a6c65f421, type: 2}
+  - {fileID: 22100000, guid: c4d0360b0173f144b9040dac6b0ad2b0, type: 2}
   maxAI: 10
   secondsBeforeThirst: 15
   startingDirtynessHandling: 1
@@ -1162,6 +1170,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
+        type: 3}
+      propertyPath: cleaner
+      value: 
+      objectReference: {fileID: 575034500}
+    - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
+        type: 3}
+      propertyPath: moodPerSec
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4971214381994937366, guid: b3dffd1580f813649a1122af43f045fa,
         type: 3}
