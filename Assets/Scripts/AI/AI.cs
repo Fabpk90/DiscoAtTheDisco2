@@ -12,23 +12,25 @@ public class AI : MonoBehaviour
     private bool isEntering;
     private bool isLeaving;
 
-    private int dirtyness;
+    private float dirtyness;
 
-    public int Dirtyness
+    public float Dirtyness
     {
         get => dirtyness;
         set => dirtyness = value;
     }
     
-    private int drinkyness;
+    private float drinkyness;
 
-    public int Drinkyness
+    public float Drinkyness
     {
         get => drinkyness;
         set => drinkyness = value;
     }
 
     public float moodAmount { get; set; }
+
+    private bool isEnteringBar;
 
     private void Awake()
     {
@@ -37,6 +39,7 @@ public class AI : MonoBehaviour
         color.a = 0;
         spRenderer.color = color;
         isEntering = true;
+        isEnteringBar = false;
     }
 
     private void Start()
@@ -97,32 +100,39 @@ public class AI : MonoBehaviour
     {
         //go to the bar, checks if there is enough drink
         //if not drinkyness--;
-        while (drinkyness != 0)
+        while (drinkyness > 0)
         {
-            isEntering = true;
-            yield return new WaitForSeconds(AiManager.instance.timeBeforeLookForDrink);
-            
-            while ((transform.position - AiManager.instance.barPosition.position).magnitude > 0.5f)
+            if (drinkyness < 0.5f)
             {
-                transform.position = Vector3.MoveTowards(transform.position, AiManager.instance.barPosition.position,
-                    0.05f);
-                yield return new WaitForEndOfFrame();
+                while (!isEnteringBar && !isEntering)
+                {
+                    print("moooving");
+                    transform.position = Vector3.MoveTowards(transform.position, AiManager.instance.barPosition.position,
+                        0.05f);
+                    yield return new WaitForEndOfFrame();
+                }
             }
+
+            drinkyness -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+            
         }
 
+        print("Ai leaving because there's no drink");
         isLeaving = true;
     }
 
     IEnumerator CheckTheFloor()
     {
-        while (dirtyness != 0)
+        while (dirtyness > 0)
         {
             yield return new WaitForSeconds(AiManager.instance.timeBeforeLookForDirty);
+            
+            float percentageDirty =
+                AiManager.instance.cleaner.items.Count / (float) AiManager.instance.cleaner.maxItems;
 
-            //check here for dirty level
+            dirtyness -= percentageDirty * 0.1f;
         }
-
-        isLeaving = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -131,14 +141,24 @@ public class AI : MonoBehaviour
 
         if (barman)
         {
+            isEnteringBar = true;
+            isEntering = true;
             if (barman.items.Count > 0)
             {
                 barman.DestroyItem();
+                drinkyness = AiManager.instance.secondsBeforeThirst;
+
+                print("drinking");
             }
-            else
-            {
-                drinkyness--;
-            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        Job_Barman barman = other.gameObject.GetComponent<Job_Barman>();
+
+        if (barman)
+        {
+            isEnteringBar = false;
         }
     }
 }

@@ -813,17 +813,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef49e683b0c141c4187fc7dde44184aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAI: 0
-  startingDrinkness: 3
-  startingDirtyness: 5
-  timeBeforeLookForDrink: 0
-  timeBeforeLookForDirty: 0
+  maxAI: 10
+  secondsBeforeThirst: 5
+  startingDirtyness: 1
+  timeBeforeLookForDrink: 10
+  timeBeforeLookForDirty: 5
   prefabAI: {fileID: 5701188749285259059, guid: 887e6970cd024d440a969f84326b2954,
     type: 3}
   ais: []
   spawnPoint: {fileID: 383994616}
   danceFloorPosition: {fileID: 1801899115}
   barPosition: {fileID: 823641000}
+  cleaner: {fileID: 1565856065}
 --- !u!4 &1677600196
 Transform:
   m_ObjectHideFlags: 0
