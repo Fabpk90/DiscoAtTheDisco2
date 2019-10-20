@@ -63,7 +63,7 @@ public class AI : MonoBehaviour
 
     IEnumerator FadeOut()
     {
-        for (int i = 10; i > 0; i--)
+        for (int i = 10; i >= 0; i--)
         {
             Color color = spRenderer.color;
             color.a = i * 0.1f;
@@ -126,6 +126,7 @@ public class AI : MonoBehaviour
 
         print("Ai leaving because there's no drink");
         isLeaving = true;
+        StartCoroutine(FadeOut());
     }
 
     IEnumerator CheckTheFloor()
@@ -142,6 +143,7 @@ public class AI : MonoBehaviour
 
         print("Ai leaving because it's dirty as fuck");
         isLeaving = true;
+        StartCoroutine(FadeOut());
     }
 
     private void OnTriggerEnter2D(Collider2D other)
