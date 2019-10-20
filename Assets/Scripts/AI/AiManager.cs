@@ -6,7 +6,8 @@ using UnityEngine;
 public class AiManager : MonoBehaviour
 {
     public static AiManager instance;
-    
+
+    public int maxAI;
     public int startingDrinkness;
     public int startingDirtyness;
 

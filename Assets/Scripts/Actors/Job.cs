@@ -9,7 +9,6 @@ public class Job : MonoBehaviour
 {
     //PARAMETERS
     [Header("PARAMETERS")]
-    public float moodWeight;
     public eSTATE_WORK state;
     public eINPUT_INTERACT[] requiredInputs;
 
@@ -22,12 +21,6 @@ public class Job : MonoBehaviour
     protected virtual void Start() {
         
         currentInput = 0;
-    }
-
-    private void HandleMood() {
-        if (controller) {
-            GameManager.instance.AddMood(moodWeight);
-        }
     }
 
     public bool Join(PlayerController tController) {
