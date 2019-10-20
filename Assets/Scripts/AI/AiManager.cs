@@ -40,10 +40,14 @@ public class AiManager : MonoBehaviour
 
     public void SpawnAI()
     {
-        AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
-        ai.Dirtyness = startingDirtynessHandling;
-        ai.Drinkyness = secondsBeforeThirst;
+        if (maxAI >= ais.Count)
+        {
+            AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
+            ai.Dirtyness = startingDirtynessHandling;
+            ai.Drinkyness = secondsBeforeThirst;
 
-        ais.Add(ai);
+            ais.Add(ai);
+        }
+        
     }
 }

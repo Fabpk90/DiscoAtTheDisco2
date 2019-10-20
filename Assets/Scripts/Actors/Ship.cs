@@ -24,8 +24,17 @@ public class Ship : MonoBehaviour
 
         while (true)
         {
+            wave.transform.localScale = Vector3.one;
             yield return new WaitForSeconds(waveRefresh);
-
+            if ( GameManager.instance.CalculateMood() > 0)
+            {
+                float moodPercentage = GameManager.instance.CalculateMood() / GameManager.instance.GetMaxMood();
+            
+                float scale = 2.1f + 4 * moodPercentage;
+            
+                wave.transform.localScale = new Vector3(scale, scale, 1);
+            }
+          
 
             int increment = (int)(1/(1 - GameManager.instance.CalculateMood()));
 
@@ -42,6 +51,8 @@ public class Ship : MonoBehaviour
                     Destroy(tmp);
                 }
             }
+            
+            yield return new WaitForSeconds(waveRefresh);
         }
     }
 
