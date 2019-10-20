@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         inputs = GetComponent<PlayerInput>();
         rigidBody = this.GetComponent<Rigidbody2D>();
         render = this.GetComponent<SpriteRenderer>();
+        animator = this.GetComponent<Animator>();
 
         inputs.actions.Enable();
         inputs.currentActionMap["Movement"].performed += context => OnMovement(context);

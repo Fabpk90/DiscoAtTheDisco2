@@ -12,6 +12,13 @@ public class StateFree_Move : State_Free
 
     public override void Enter() {
         Debug.Log("Entering Move state");
+        machine.controller.animator.SetBool("Move", true);
+        machine.controller.animator.SetBool("Iddle", false);
+        machine.controller.animator.SetBool("DJ", false);
+        machine.controller.animator.SetBool("Bar", false);
+        machine.controller.animator.SetBool("Tech", false);
+        machine.controller.animator.SetBool("Jacky", false);
+
     }
 
     public override void Update() {
@@ -23,6 +30,16 @@ public class StateFree_Move : State_Free
             machine.ChangeState(new StateFree_Idle(machine));
         } else {
             machine.controller.rigidBody.velocity = direction.normalized * speed;
+            if (direction.x < 0)
+            {
+                machine.controller.GetComponent<SpriteRenderer>().flipX = true;
+                machine.controller.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else
+            {
+                machine.controller.GetComponent<SpriteRenderer>().flipX = false;
+                machine.controller.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+            }
         }
     }
 
