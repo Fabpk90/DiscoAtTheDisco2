@@ -581,7 +581,7 @@ MonoBehaviour:
   Callbacks:
   - Flags:
       value: 256
-    FunctionName: PostGetInSound
+    FunctionName: MusicBeat
     GameObject: {fileID: 1219957671}
   playingId: 0
   soundEmitterObject: {fileID: 0}

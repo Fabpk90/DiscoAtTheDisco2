@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PostGetIn : MonoBehaviour
 {
-
     public AK.Wwise.Event getInSound;
 
     public void PostGetInSound()
