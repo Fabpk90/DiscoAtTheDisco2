@@ -19,7 +19,6 @@ public class AiManager : MonoBehaviour
 
     public List<AI> ais;
     public Transform spawnPoint;
-    public Transform danceFloorPosition;
 
     public Transform barPosition;
 
