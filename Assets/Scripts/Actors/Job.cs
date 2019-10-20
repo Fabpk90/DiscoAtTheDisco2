@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum eJOB_STATUT { FAILED, SUCCEEDED, NEXT };
+
 public class Job : MonoBehaviour
 {
     //PARAMETERS
@@ -11,7 +13,7 @@ public class Job : MonoBehaviour
     public eINPUT_INTERACT[] requiredInputs;
 
     //STORAGE
-    private int currentInput;
+    protected int currentInput;
 
     //REFERENCES
     public PlayerController controller { get; private set; }
@@ -19,12 +21,6 @@ public class Job : MonoBehaviour
     void Start()
     {
         currentInput = 0;
-    }
-    
-    void Update()
-    {
-        //TODO : Should be triggered by a listener to the controller Interact button instead of being called each frame
-        //HandleMood();
     }
 
     private void HandleMood() {
@@ -41,16 +37,19 @@ public class Job : MonoBehaviour
         return false;
     }
 
-    public void Interact(eINPUT_INTERACT inputTriggered) {
+    public virtual eJOB_STATUT Interact(eINPUT_INTERACT inputTriggered) {
         if(inputTriggered == requiredInputs[currentInput]) {
             if (currentInput < requiredInputs.Length-1) {
                 ++currentInput;
+
+                return eJOB_STATUT.NEXT;
             } else {
                 currentInput = 0;
+
+                return eJOB_STATUT.SUCCEEDED;
             }
-            GameManager.instance.AddMood(moodWeight);
-            print("Success");
         }
+        return eJOB_STATUT.FAILED;
     }
 
     public void Exit() {

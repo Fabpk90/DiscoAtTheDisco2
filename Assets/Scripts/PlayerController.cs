@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     //REFERENCES
     public Rigidbody2D rigidBody { get; private set; }
     public Animator animator { get; private set; }
-    public MeshRenderer render { get; private set; }
+    public SpriteRenderer render { get; private set; }
 
     public JobInfo jobInRange;
 
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         inputs = GetComponent<PlayerInput>();
         rigidBody = this.GetComponent<Rigidbody2D>();
-        render = this.GetComponent<MeshRenderer>();
+        render = this.GetComponent<SpriteRenderer>();
 
         inputs.actions.Enable();
         inputs.currentActionMap["Movement"].performed += context => OnMovement(context);
