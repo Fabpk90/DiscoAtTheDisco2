@@ -133,10 +133,6 @@ sysinfo.txt
 *.unitypackage
 *.symbols.zip
 
-DiscoAtTheDisco2_WwiseProject/*
-!.cache/
-!GeneratedSoundBanks
-
 # Crashlytics generated file
 
 

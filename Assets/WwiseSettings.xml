@@ -9,5 +9,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks/</SoundbankPath>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>D:\Programmes\Wwise App</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../DiscoAtTheDisco2_WwiseProject/Disco at the DISCO - PreWork.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../DiscoAtTheDisco2/DiscoAtTheDisco2_WwiseProject/Disco at the DISCO - PreWork.wproj</WwiseProjectPath>
 </WwiseSettings>
