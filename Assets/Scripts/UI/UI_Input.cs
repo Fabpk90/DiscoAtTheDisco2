@@ -12,14 +12,17 @@ public class UI_Input : MonoBehaviour
 
     public void Init(Transform ToFollow) {
         follow = ToFollow;
+        imgButton.enabled = false;
         jobReference = follow.GetComponent<Job>();
         transform.position = Camera.main.WorldToScreenPoint(follow.position);
 
         jobReference.newInput += ShowInput;
+        jobReference.onDetection += ShowImage;
     }
 
     private void OnDisable() {
         jobReference.newInput -= ShowInput;
+        jobReference.onDetection -= ShowImage;
     }
 
     private void ShowImage(bool show) {

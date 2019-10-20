@@ -25,6 +25,9 @@ public class Job : MonoBehaviour
     //REFERENCES
     public PlayerController controller { get; private set; }
 
+    public delegate void Detection(bool enter);
+    public event Detection onDetection;
+
     public delegate void Input(eINPUT_INTERACT input);
     public event Input onInteract; 
     public event Input newInput; 
@@ -37,6 +40,7 @@ public class Job : MonoBehaviour
 
     public bool Join(PlayerController tController) {
         if (!controller) {
+            onDetection?.Invoke(true);
             controller = tController;
             getIn.Post(gameObject);
             newInput?.Invoke(requiredInputs[currentInput]);
@@ -73,6 +77,7 @@ public class Job : MonoBehaviour
         if (controller) {
             currentInput = 0;
             controller = null;
+            onDetection?.Invoke(false);
             getOut.Post(gameObject);
         }
     }

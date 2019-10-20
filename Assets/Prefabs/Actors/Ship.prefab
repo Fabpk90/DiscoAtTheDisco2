@@ -398,6 +398,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   requiredInputs: 000000000100000002000000
+  actionSuccess:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  actionFail:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  getIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  getOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   valuePerSuccess: 0.1
   valuePerSec: 0.2
 --- !u!1 &2896383398005905004
@@ -938,6 +954,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   requiredInputs: 000000000100000002000000
+  actionSuccess:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  actionFail:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  getIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  getOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   permissionRate: 5
   nbSpawnPermitted: 3
   spawnParent: {fileID: 0}
@@ -1097,6 +1129,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   requiredInputs: 0000000001000000
+  actionSuccess:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+      type: 2}
+  actionFail:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+      type: 2}
+  getIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+      type: 2}
+  getOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+      type: 2}
   maxItems: 5
   itemPrefab: {fileID: 5345780397046894237, guid: 93f418f8be1438340ba51e60cbc2fa5d,
     type: 3}
@@ -1227,6 +1279,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   requiredInputs: 000000000100000003000000
+  actionSuccess:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  actionFail:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  getIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  getOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   maxItems: 8
   itemPrefab: {fileID: 8306409045911209794, guid: 10098c95a907aac47862a3807690e033,
     type: 3}

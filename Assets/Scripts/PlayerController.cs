@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision) {
         if (jobInRange.jobObject) {
             if (collision.CompareTag("Job")) {
+                jobInRange.jobObject.Exit();
                 jobInRange.jobObject = null;
                 Debug.Log("Removed jobInRange");
             }
