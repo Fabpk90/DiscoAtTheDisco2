@@ -18,30 +18,10 @@
 						</Event>
 						<Event Name="Play_CoreGame" ID="{8C32AAC0-DA49-461D-BAC3-3E73DD04E5FD}">
 							<ChildrenList>
-								<Action Name="" ID="{584E438D-ADF8-47D3-85F8-B9370F16BB0E}" ShortID="979841255">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SpaceShip_Destroyed" ID="{B96BDCE2-6C65-457F-BB7E-DF251DD144E3}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{64E44538-543E-4F09-969B-9E6EC4D90B31}" ShortID="1068510381">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="CoreGame" ID="{F6DF53B9-DB94-4872-A36C-124B711FD8A7}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{2E17E309-53E5-4CD7-95D9-D9DE3F77C53B}" ShortID="38065746">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SpaceShip_Damage_000" ID="{ADC46D35-F877-4C5E-BCBD-F2E871E565A2}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -408,6 +388,16 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="CoreGame" ID="{F6DF53B9-DB94-4872-A36C-124B711FD8A7}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{B2AD9FE1-EEFD-4281-91C7-16F826E247F0}" ShortID="851144614">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SpaceShip_Damage_000" ID="{ADC46D35-F877-4C5E-BCBD-F2E871E565A2}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

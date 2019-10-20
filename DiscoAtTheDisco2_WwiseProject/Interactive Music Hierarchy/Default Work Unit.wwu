@@ -4641,6 +4641,13 @@
 							</ChildrenList>
 						</Folder>
 						<MusicPlaylistContainer Name="BeatCallback" ID="{2686E850-116C-43BE-87C3-E9639CC80263}" ShortID="988528530">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
