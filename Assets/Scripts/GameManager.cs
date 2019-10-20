@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     private float mood;
     public float hp { get; private set; }
 
+    public delegate void Beat();
+    public event Beat onMusicBeat;
+
     private void Awake() {
         if (!instance) {
             instance = this;
@@ -83,5 +86,9 @@ public class GameManager : MonoBehaviour
 
     Vector3 FindPoint(Vector3 center, float radius, int angle) {
         return center + Quaternion.AngleAxis(angle, Vector3.forward) * (Vector3.right * radius);
+    }
+
+    public void MusicBeat() {
+        onMusicBeat?.Invoke();
     }
 }

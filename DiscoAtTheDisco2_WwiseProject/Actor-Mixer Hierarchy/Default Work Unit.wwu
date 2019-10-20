@@ -56,6 +56,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Meteor_Reduce_000" ID="{E622CC17-A820-4DE6-9F59-D29F5F41877F}" ShortID="1003632801">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -75,6 +79,10 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Meteor_Reduce_001" ID="{07F8CC7E-544C-4D58-B8D7-D8B9E2BDB162}" ShortID="815017910">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -94,6 +102,10 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Meteor_Reduce_002" ID="{A7CB4F95-7B2D-44E6-82AD-AA468927C7F9}" ShortID="681195444">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -191,6 +203,7 @@
 									<ChildrenList>
 										<Sound Name="Meteor_Hit_000" ID="{D95EE2A8-3EDA-4867-AAD7-DC6244D8538C}" ShortID="225027634">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -221,6 +234,7 @@
 										</Sound>
 										<Sound Name="Meteor_Hit_001" ID="{F2A283CD-538C-4B96-80B4-4C0D51D00C56}" ShortID="102292970">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -243,6 +257,7 @@
 										</Sound>
 										<Sound Name="Meteor_Hit_002" ID="{9BC2D082-DF96-494A-9F2A-8217EC5E423E}" ShortID="547738336">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -265,6 +280,7 @@
 										</Sound>
 										<Sound Name="Meteor_Hit_003" ID="{FE9E7124-7342-4E6B-8461-DF3F1A8A1D40}" ShortID="491298438">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -342,6 +358,13 @@
 											</ReferenceList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Barman_Get_Out" ID="{0E8AD41A-7AC0-4B6C-9A4F-79462689AC55}" ShortID="444802876">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -350,8 +373,36 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Barman_Get_Out_000" ID="{60308357-7543-4A28-B9EA-0B3E7632EEEF}" ShortID="405128718">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Barman_Get_Out_000" ID="{F64982C5-900E-4C0A-8EEA-E1D6E12DEC15}" ShortID="370700897">
+															<Language>SFX</Language>
+															<AudioFile>Barman_Get_Out_000.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Barman_Get_Out_000" ID="{F64982C5-900E-4C0A-8EEA-E1D6E12DEC15}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Barman_Get_In" ID="{60281242-1249-4B52-BF8B-63D26973F772}" ShortID="670369331">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -360,6 +411,27 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Barman_Get_In_000" ID="{09C91468-4077-4FB9-BC07-291DA10A8FE8}" ShortID="755571316">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Barman_Get_In_000" ID="{46A0A3A5-E1F6-4138-8151-7B2721D606A5}" ShortID="445889983">
+															<Language>SFX</Language>
+															<AudioFile>Barman_Get_In_000.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Barman_Get_In_000" ID="{46A0A3A5-E1F6-4138-8151-7B2721D606A5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Barman_Action_01" ID="{44B66505-F128-4490-8F96-B9C580C2554B}" ShortID="492700191">
 											<ReferenceList>
@@ -393,7 +465,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="DJ_Action" ID="{DB4A591F-CBE0-410D-88D8-17A7695D9225}" ShortID="160054709">
+										<RandomSequenceContainer Name="DJ_Action_Success" ID="{DB4A591F-CBE0-410D-88D8-17A7695D9225}" ShortID="160054709">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -402,6 +481,31 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="DJ_Action_Success_000" ID="{93D3D89D-99A7-46BE-8506-D6243BBAC804}" ShortID="182597810">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DJ_Action_Success_000" ID="{ECCAE080-B99E-4A2B-AEDB-09F7CAAC85F4}" ShortID="414832841">
+															<Language>SFX</Language>
+															<AudioFile>DJ_Action_Success_000.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DJ_Action_Success_000" ID="{ECCAE080-B99E-4A2B-AEDB-09F7CAAC85F4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="DJ_Get_In" ID="{74E11A52-075C-4B97-B495-6C0FB3B3B997}" ShortID="595400767">
 											<ReferenceList>
@@ -423,6 +527,48 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="DJ_Action_Fail" ID="{E7693723-2D48-4FEC-BF2F-837A483333D9}" ShortID="650329107">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="DJ_Action_Fail_000" ID="{DD9C7822-76CF-42CA-B47A-755B584E9204}" ShortID="766953627">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DJ_Action_Fail_000" ID="{5802FF31-25AA-4DE1-9040-124624420073}" ShortID="801998266">
+															<Language>SFX</Language>
+															<AudioFile>DJ_Action_Fail_000.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DJ_Action_Fail_000" ID="{5802FF31-25AA-4DE1-9040-124624420073}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Jacky" ID="{D4EFEE7E-8F9B-4829-A12A-ED8C8CD9EA64}" ShortID="263311110">
@@ -436,6 +582,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Jacky_Get_In" ID="{C0FFCF80-7A47-446D-B554-E0F639EB7FB3}" ShortID="852219786">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -444,20 +597,30 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Jacky_Get_In_000" ID="{6BAAEACE-980C-4BCB-816D-159DF90F8B36}" ShortID="431291581">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Jacky_Get_In_000" ID="{5203032D-725D-453E-896A-B6C245A4EFEE}" ShortID="558255976">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Get_In_000.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Jacky_Get_In_000" ID="{5203032D-725D-453E-896A-B6C245A4EFEE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Jacky_Get_Out" ID="{BD386E5C-6517-4666-98CE-F2358C683599}" ShortID="827984806">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Jacky_Action" ID="{941FC7AF-4685-4A8E-BAF6-B30F85F9B62A}" ShortID="1064352361">
 											<PropertyList>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-3</Value>
@@ -473,7 +636,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Jacky_Action_000" ID="{0F6EA2EF-D754-4198-8118-E6A59D57DB8D}" ShortID="387865612">
+												<Sound Name="Jacky_Get_Out_000" ID="{80DEE5FC-867D-44F4-814D-5697FD84C071}" ShortID="318367684">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -483,16 +646,55 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Jacky_Action_000" ID="{4F3B2A26-BE59-48A5-98B2-5DC436579089}" ShortID="616281622">
+														<AudioFileSource Name="Jacky_Get_Out_000" ID="{3506D5CB-09A1-43FC-BB81-C9A32093CE52}" ShortID="141134150">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Get_Out_000.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Jacky_Get_Out_000" ID="{3506D5CB-09A1-43FC-BB81-C9A32093CE52}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Jacky_Action" ID="{941FC7AF-4685-4A8E-BAF6-B30F85F9B62A}" ShortID="1064352361">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Jacky_Action_000" ID="{D0F130E6-258A-4819-8521-1FD9722E3784}" ShortID="458439091">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Jacky_Action_000" ID="{F80D2B5E-33EB-4CD9-BACD-46C7E57B7ECA}" ShortID="837119444">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_000.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Jacky_Action_000" ID="{4F3B2A26-BE59-48A5-98B2-5DC436579089}" Platform="Linked"/>
+														<ActiveSource Name="Jacky_Action_000" ID="{F80D2B5E-33EB-4CD9-BACD-46C7E57B7ECA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Jacky_Action_001" ID="{3ABCA3B7-F287-416B-B007-95FA2AA3C802}" ShortID="920332423">
+												<Sound Name="Jacky_Action_001" ID="{B1474DB2-2692-442C-84C5-A3C6DA5B8E57}" ShortID="842440855">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -502,16 +704,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Jacky_Action_001" ID="{5C740B8E-E200-469D-B41C-1FE8BDBA9AC5}" ShortID="801968730">
+														<AudioFileSource Name="Jacky_Action_001" ID="{EF0F2220-F477-4C7D-A2C6-5F80AFD318C6}" ShortID="166061243">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_001.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Jacky_Action_001" ID="{5C740B8E-E200-469D-B41C-1FE8BDBA9AC5}" Platform="Linked"/>
+														<ActiveSource Name="Jacky_Action_001" ID="{EF0F2220-F477-4C7D-A2C6-5F80AFD318C6}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Jacky_Action_002" ID="{E24C93D6-7536-4E94-A530-947838FBCB27}" ShortID="926651355">
+												<Sound Name="Jacky_Action_002" ID="{7510AD9E-987F-4A48-812A-91B77125F9ED}" ShortID="586175108">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -521,16 +723,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Jacky_Action_002" ID="{2F5016A4-F021-48E6-8DF2-67DB59A0BB55}" ShortID="461674923">
+														<AudioFileSource Name="Jacky_Action_002" ID="{90FCA353-9F2A-4C83-83DD-E6775890CF8D}" ShortID="5457203">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_002.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Jacky_Action_002" ID="{2F5016A4-F021-48E6-8DF2-67DB59A0BB55}" Platform="Linked"/>
+														<ActiveSource Name="Jacky_Action_002" ID="{90FCA353-9F2A-4C83-83DD-E6775890CF8D}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Jacky_Action_003" ID="{ECF764D9-9CFB-4D00-8A4B-34EE02E399E6}" ShortID="793289546">
+												<Sound Name="Jacky_Action_003" ID="{764447F5-9F61-43F6-99D2-2A18DDF38276}" ShortID="650936842">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -540,16 +742,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Jacky_Action_003" ID="{7A23E8CF-D769-4CBB-82C8-7FD62BC5DE99}" ShortID="406137508">
+														<AudioFileSource Name="Jacky_Action_003" ID="{82ADFF5D-C82E-4EA7-BE1C-BE3B7F4348A5}" ShortID="1034967452">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_003.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Jacky_Action_003" ID="{7A23E8CF-D769-4CBB-82C8-7FD62BC5DE99}" Platform="Linked"/>
+														<ActiveSource Name="Jacky_Action_003" ID="{82ADFF5D-C82E-4EA7-BE1C-BE3B7F4348A5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Jacky_Action_004" ID="{F669B52D-4388-4C51-8FB6-59B544C66BAD}" ShortID="962869973">
+												<Sound Name="Jacky_Action_004" ID="{A1034F99-50E5-4EB4-A426-26593CEC58F4}" ShortID="757298611">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -559,16 +761,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Jacky_Action_004" ID="{C983671A-2BA5-4969-9A80-6AF3DC36474B}" ShortID="928612575">
+														<AudioFileSource Name="Jacky_Action_004" ID="{FC05A307-AA87-40AB-A34A-1E7A0911F9C1}" ShortID="982915286">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_004.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Jacky_Action_004" ID="{C983671A-2BA5-4969-9A80-6AF3DC36474B}" Platform="Linked"/>
+														<ActiveSource Name="Jacky_Action_004" ID="{FC05A307-AA87-40AB-A34A-1E7A0911F9C1}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Jacky_Action_005" ID="{A02355E3-5CAE-400D-A101-4D7F5BD91386}" ShortID="390873085">
+												<Sound Name="Jacky_Action_005" ID="{78E936E7-5454-445E-82A9-03A01BE6D535}" ShortID="133391483">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -578,16 +780,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Jacky_Action_005" ID="{DE0C5DB8-154B-4397-AD17-5A4C924D9B31}" ShortID="977806536">
+														<AudioFileSource Name="Jacky_Action_005" ID="{2082B6CD-E320-45F0-BBD9-B49717EA9D80}" ShortID="312952495">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_005.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Jacky_Action_005" ID="{DE0C5DB8-154B-4397-AD17-5A4C924D9B31}" Platform="Linked"/>
+														<ActiveSource Name="Jacky_Action_005" ID="{2082B6CD-E320-45F0-BBD9-B49717EA9D80}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Jacky_Action_006" ID="{CE01CAAE-8657-48AF-B9D8-2A0AC038C778}" ShortID="784824602">
+												<Sound Name="Jacky_Action_006" ID="{15283853-E995-44F4-9072-E5A7EBBFD81E}" ShortID="27182540">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -597,13 +799,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Jacky_Action_006" ID="{F60A8A99-13E7-41A0-B7D8-0203E05B492D}" ShortID="140264669">
+														<AudioFileSource Name="Jacky_Action_006" ID="{04D68C7C-56BC-4844-A775-44B4D2940CEB}" ShortID="852560802">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_006.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Jacky_Action_006" ID="{F60A8A99-13E7-41A0-B7D8-0203E05B492D}" Platform="Linked"/>
+														<ActiveSource Name="Jacky_Action_006" ID="{04D68C7C-56BC-4844-A775-44B4D2940CEB}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -620,7 +822,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Cleaner_Action" ID="{4189864D-5DE0-49C7-8C40-666C99C1FDA0}" ShortID="187330370">
+										<RandomSequenceContainer Name="Cleaner_Action_Success" ID="{4189864D-5DE0-49C7-8C40-666C99C1FDA0}" ShortID="187330370">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -650,6 +852,16 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Cleaner_Action_Fail" ID="{2A6D686B-33D7-459F-8421-B9C962CCF38D}" ShortID="328428987">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Generic" ID="{34C3B0C7-71EA-4725-ACA4-9BBEE548E431}" ShortID="269564148">
@@ -664,6 +876,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Generic_Action_Fail" ID="{720A48A6-F6ED-4B9E-B16B-48DB0EA18867}" ShortID="952010982">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -677,9 +890,10 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-1</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -693,6 +907,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Generic_Action_Fail_000" ID="{5BEDD1A8-323F-47E9-B3FD-7F41AE659E98}" ShortID="305511283">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -712,6 +930,10 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Generic_Action_Fail_001" ID="{B0ECF697-EC00-4EC9-8EC3-668CC39BB58E}" ShortID="99008162">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -731,6 +953,14 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{D7C380DB-8D2B-4BB7-8030-3EAC2B11DF95}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="95.9839357429719"/>
+														<Property Name="PanY" Type="Real64" Value="78.7234042553192"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Generic_Get_In" ID="{83775EE9-2A8B-4629-B169-BF81B07C249A}" ShortID="607984381">
 											<PropertyList>
@@ -750,6 +980,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Generic_Get_In_000" ID="{25107C22-84B8-4748-B40A-FDE1BF4ABB7C}" ShortID="453980003">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -774,7 +1008,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -788,6 +1022,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Generic_Action_Success_000" ID="{E5380C51-ECB4-4883-9166-2D5709DB32AE}" ShortID="408685680">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -807,6 +1045,10 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Generic_Action_Success_001" ID="{5B25287D-487A-456A-AADC-899963F43B54}" ShortID="135543016">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -838,6 +1080,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Generic_Get_Out_000" ID="{D347C51B-4C0E-4DD5-AD03-61E271CA2EE7}" ShortID="429997210">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -984,6 +1230,32 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SpaceShip_Damage_000" ID="{12525162-5326-406D-B3D9-E2077CAD8527}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SpaceShip_Destroyed" ID="{B96BDCE2-6C65-457F-BB7E-DF251DD144E3}" ShortID="751112645">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SpaceShip_Destroyed_000" ID="{911A9BB6-FB97-436C-8751-2B5795792544}" ShortID="777641258">
+											<Language>SFX</Language>
+											<AudioFile>SpaceShip_Destroyed_000.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SpaceShip_Destroyed_000" ID="{911A9BB6-FB97-436C-8751-2B5795792544}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
