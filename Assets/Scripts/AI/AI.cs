@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class AI : MonoBehaviour
@@ -32,6 +33,8 @@ public class AI : MonoBehaviour
 
     private bool isEnteringBar;
 
+    private Vector3 danceFloorPosition;
+
     private void Awake()
     {
         spRenderer = GetComponent<SpriteRenderer>();
@@ -40,6 +43,10 @@ public class AI : MonoBehaviour
         spRenderer.color = color;
         isEntering = true;
         isEnteringBar = false;
+
+        
+        //randomize dance floor position
+        danceFloorPosition = (Random.insideUnitCircle * 3) + Vector2.one;
     }
 
     private void Start()
@@ -79,9 +86,9 @@ public class AI : MonoBehaviour
         if (isEntering)
         {
             transform.position =
-                Vector3.MoveTowards(transform.position, AiManager.instance.danceFloorPosition.position, 0.05f);
+                Vector3.MoveTowards(transform.position, danceFloorPosition, 0.05f);
 
-            if ((transform.position - AiManager.instance.danceFloorPosition.position).magnitude < 0.5f)
+            if ((transform.position - danceFloorPosition).magnitude < 0.5f)
                 isEntering = false;
         }
         else if (isLeaving)
@@ -110,7 +117,8 @@ public class AI : MonoBehaviour
             {
                 while (!isEnteringBar && !isEntering)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, AiManager.instance.barPosition.position,
+                    transform.position = Vector3.MoveTowards(transform.position,
+                        AiManager.instance.barPosition.position,
                         0.05f);
                     yield return new WaitForEndOfFrame();
                 }

@@ -7,6 +7,8 @@ public class AiManager : MonoBehaviour
 {
     public static AiManager instance;
 
+    public RuntimeAnimatorController[] animators;
+
     public int maxAI;
     public float secondsBeforeThirst;
 
@@ -19,7 +21,6 @@ public class AiManager : MonoBehaviour
 
     public List<AI> ais;
     public Transform spawnPoint;
-    public Transform danceFloorPosition;
 
     public Transform barPosition;
 
@@ -41,10 +42,15 @@ public class AiManager : MonoBehaviour
 
     public void SpawnAI()
     {
-        AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
-        ai.Dirtyness = startingDirtynessHandling;
-        ai.Drinkyness = secondsBeforeThirst;
-
-        ais.Add(ai);
+        if (maxAI >= ais.Count)
+        {
+            AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
+            ai.Dirtyness = startingDirtynessHandling;
+            ai.Drinkyness = secondsBeforeThirst;
+            ai.GetComponent<Animator>().runtimeAnimatorController = animators[(int)UnityEngine.Random.Range(0, animators.Length)];
+            ai.GetComponent<Animator>().SetFloat("speed", .5f);
+            ais.Add(ai);
+        }
+        
     }
 }
