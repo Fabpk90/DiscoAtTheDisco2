@@ -47,6 +47,15 @@ TagManager:
   - name: Background
     uniqueID: 2326666353
     locked: 0
+  - name: Ground
+    uniqueID: 3543336595
+    locked: 0
+  - name: Obstacles
+    uniqueID: 1777004867
+    locked: 0
   - name: Actors
     uniqueID: 2498534471
+    locked: 0
+  - name: Foreground
+    uniqueID: 1434602191
     locked: 0
