@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Wwise\Disco at the DISCO\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Wwise\Disco at the DISCO\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Wwise\Disco at the DISCO\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1100754030" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\All</ObjectPath>
+			<ShortName>All</ShortName>
+			<Path>All.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4159239375" Name="Play_Barman_Action_00" ObjectPath="\Events\Default Work Unit\World\Jobs\Barman\Play_Barman_Action_00" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4159239374" Name="Play_Barman_Action_01" ObjectPath="\Events\Default Work Unit\World\Jobs\Barman\Play_Barman_Action_01" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4159239373" Name="Play_Barman_Action_02" ObjectPath="\Events\Default Work Unit\World\Jobs\Barman\Play_Barman_Action_02" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2174041464" Name="Play_Barman_Get_In" ObjectPath="\Events\Default Work Unit\World\Jobs\Barman\Play_Barman_Get_In" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1827943071" Name="Play_Barman_Get_Out" ObjectPath="\Events\Default Work Unit\World\Jobs\Barman\Play_Barman_Get_Out" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3644223421" Name="Play_Cleaner_Action" ObjectPath="\Events\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="500632261" Name="Play_Cleaner_Get_In" ObjectPath="\Events\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_In" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3549765580" Name="Play_Cleaner_Get_Out" ObjectPath="\Events\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_Out" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="710392401" Name="Play_CoreGame" ObjectPath="\Events\Default Work Unit\Music\Play_CoreGame" DurationType="Infinite"/>
+				<Event Id="3272327121" Name="Play_DJ_Action" ObjectPath="\Events\Default Work Unit\World\Jobs\DJ\Play_DJ_Action" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2053058505" Name="Play_DJ_Get_In" ObjectPath="\Events\Default Work Unit\World\Jobs\DJ\Play_DJ_Get_In" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1909703784" Name="Play_DJ_Get_Out" ObjectPath="\Events\Default Work Unit\World\Jobs\DJ\Play_DJ_Get_Out" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3800239409" Name="Play_Generic_Action_Fail" ObjectPath="\Events\Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Fail" DurationType="OneShot" DurationMin="1.247155" DurationMax="1.277739"/>
+				<Event Id="1701898702" Name="Play_Generic_Action_Success" ObjectPath="\Events\Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Success" DurationType="OneShot" DurationMin="1.139500" DurationMax="1.139688"/>
+				<Event Id="2084885510" Name="Play_Generic_Get_In" ObjectPath="\Events\Default Work Unit\World\Jobs\Generic\Play_Generic_Get_In" DurationType="OneShot" DurationMin="1.529333" DurationMax="1.529333"/>
+				<Event Id="3244882441" Name="Play_Generic_Get_Out" ObjectPath="\Events\Default Work Unit\World\Jobs\Generic\Play_Generic_Get_Out" DurationType="OneShot" DurationMin="1.529333" DurationMax="1.529333"/>
+				<Event Id="1985990985" Name="Play_Jacky_Action" ObjectPath="\Events\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action" DurationType="OneShot" DurationMin="2.405250" DurationMax="3.488667"/>
+				<Event Id="3327247393" Name="Play_Jacky_Get_In" ObjectPath="\Events\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_In" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1756586912" Name="Play_Jacky_Get_Out" ObjectPath="\Events\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_Out" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3950732764" Name="Play_Meteor_Hit" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Hit" DurationType="OneShot" DurationMin="2.493145" DurationMax="4.390636"/>
+				<Event Id="3675512654" Name="Play_Meteor_Move" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Move" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="273422311" Name="Play_Meteor_Reduce" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Reduce" DurationType="OneShot" DurationMin="1.443498" DurationMax="1.620272"/>
+				<Event Id="1235252603" Name="Play_SpaceShip_Damage_000" ObjectPath="\Events\Default Work Unit\World\SpaceShip\Play_SpaceShip_Damage_000" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="14538183" Language="SFX">
+					<ShortName>Meteor_Reduce_002.wav</ShortName>
+					<Path>SFX\Meteor_Reduce_002_10C4C929.wem</Path>
+				</File>
+				<File Id="103637727" Language="SFX">
+					<ShortName>Music_Lead.wav</ShortName>
+					<Path>SFX\Music_Lead_D79FB2B7.wem</Path>
+				</File>
+				<File Id="108870373" Language="SFX">
+					<ShortName>Music_Claps_002.wav</ShortName>
+					<Path>SFX\Music_Claps_002_D79FB2B7.wem</Path>
+				</File>
+				<File Id="140264669" Language="SFX">
+					<ShortName>Jacky_Action_006.wav</ShortName>
+					<Path>SFX\Jacky_Action_006_10C4C929.wem</Path>
+				</File>
+				<File Id="161137043" Language="SFX">
+					<ShortName>Music_Stingers_Low.wav</ShortName>
+					<Path>SFX\Music_Stingers_Low_D79FB2B7.wem</Path>
+				</File>
+				<File Id="174488723" Language="SFX">
+					<ShortName>Generic_Action_Success_000.wav</ShortName>
+					<Path>SFX\Generic_Action_Success_000_10C4C929.wem</Path>
+				</File>
+				<File Id="222216638" Language="SFX">
+					<ShortName>Music_Plucks.wav</ShortName>
+					<Path>SFX\Music_Plucks_D79FB2B7.wem</Path>
+				</File>
+				<File Id="312860004" Language="SFX">
+					<ShortName>Music_Stingers_High.wav</ShortName>
+					<Path>SFX\Music_Stingers_High_D79FB2B7.wem</Path>
+				</File>
+				<File Id="315456736" Language="SFX">
+					<ShortName>Music_Bass_003.wav</ShortName>
+					<Path>SFX\Music_Bass_003_D79FB2B7.wem</Path>
+				</File>
+				<File Id="369655351" Language="SFX">
+					<ShortName>Music_Bass_002.wav</ShortName>
+					<Path>SFX\Music_Bass_002_D79FB2B7.wem</Path>
+				</File>
+				<File Id="399901834" Language="SFX">
+					<ShortName>Music_Shakers.wav</ShortName>
+					<Path>SFX\Music_Shakers_D79FB2B7.wem</Path>
+				</File>
+				<File Id="406137508" Language="SFX">
+					<ShortName>Jacky_Action_003.wav</ShortName>
+					<Path>SFX\Jacky_Action_003_10C4C929.wem</Path>
+				</File>
+				<File Id="420879243" Language="SFX">
+					<ShortName>Music_Bass_001.wav</ShortName>
+					<Path>SFX\Music_Bass_001_D79FB2B7.wem</Path>
+				</File>
+				<File Id="422562431" Language="SFX">
+					<ShortName>Music_DiscoArp.wav</ShortName>
+					<Path>SFX\Music_DiscoArp_D79FB2B7.wem</Path>
+				</File>
+				<File Id="425647770" Language="SFX">
+					<ShortName>Music_ClosedHH.wav</ShortName>
+					<Path>SFX\Music_ClosedHH_D79FB2B7.wem</Path>
+				</File>
+				<File Id="431482776" Language="SFX">
+					<ShortName>Meteor_Reduce_000.wav</ShortName>
+					<Path>SFX\Meteor_Reduce_000_10C4C929.wem</Path>
+				</File>
+				<File Id="461674923" Language="SFX">
+					<ShortName>Jacky_Action_002.wav</ShortName>
+					<Path>SFX\Jacky_Action_002_10C4C929.wem</Path>
+				</File>
+				<File Id="475450222" Language="SFX">
+					<ShortName>Meteor_Hit_000.wav</ShortName>
+					<Path>SFX\Meteor_Hit_000_10C4C929.wem</Path>
+				</File>
+				<File Id="477865040" Language="SFX">
+					<ShortName>Music_Claps_001.wav</ShortName>
+					<Path>SFX\Music_Claps_001_D79FB2B7.wem</Path>
+				</File>
+				<File Id="616281622" Language="SFX">
+					<ShortName>Jacky_Action_000.wav</ShortName>
+					<Path>SFX\Jacky_Action_000_10C4C929.wem</Path>
+				</File>
+				<File Id="617545581" Language="SFX">
+					<ShortName>SpaceShip_Damage_000.wav</ShortName>
+					<Path>SFX\SpaceShip_Damage_000_4C98FEF4.wem</Path>
+				</File>
+				<File Id="648678112" Language="SFX">
+					<ShortName>Music_Percs.wav</ShortName>
+					<Path>SFX\Music_Percs_D79FB2B7.wem</Path>
+				</File>
+				<File Id="672687142" Language="SFX">
+					<ShortName>Generic_Action_Fail_001.wav</ShortName>
+					<Path>SFX\Generic_Action_Fail_001_10C4C929.wem</Path>
+				</File>
+				<File Id="708722263" Language="SFX">
+					<ShortName>Music_Snaps.wav</ShortName>
+					<Path>SFX\Music_Snaps_D79FB2B7.wem</Path>
+				</File>
+				<File Id="723774473" Language="SFX">
+					<ShortName>Crowd_Boo_001.wav</ShortName>
+					<Path>SFX\Crowd_Boo_001_D79FB2B7.wem</Path>
+				</File>
+				<File Id="742445045" Language="SFX">
+					<ShortName>Meteor_Hit_003.wav</ShortName>
+					<Path>SFX\Meteor_Hit_003_10C4C929.wem</Path>
+				</File>
+				<File Id="776083523" Language="SFX">
+					<ShortName>Music_OpenHH.wav</ShortName>
+					<Path>SFX\Music_OpenHH_D79FB2B7.wem</Path>
+				</File>
+				<File Id="797694622" Language="SFX">
+					<ShortName>Music_Pad_002.wav</ShortName>
+					<Path>SFX\Music_Pad_002_D79FB2B7.wem</Path>
+				</File>
+				<File Id="801968730" Language="SFX">
+					<ShortName>Jacky_Action_001.wav</ShortName>
+					<Path>SFX\Jacky_Action_001_10C4C929.wem</Path>
+				</File>
+				<File Id="816585607" Language="SFX">
+					<ShortName>Crowd_Cheers_001.wav</ShortName>
+					<Path>SFX\Crowd_Cheers_001_D79FB2B7.wem</Path>
+				</File>
+				<File Id="825116115" Language="SFX">
+					<ShortName>Music_Pad_001.wav</ShortName>
+					<Path>SFX\Music_Pad_001_D79FB2B7.wem</Path>
+				</File>
+				<File Id="852166026" Language="SFX">
+					<ShortName>Generic_Get_In_000.wav</ShortName>
+					<Path>SFX\Generic_Get_In_000_10C4C929.wem</Path>
+				</File>
+				<File Id="856439384" Language="SFX">
+					<ShortName>Meteor_Hit_001.wav</ShortName>
+					<Path>SFX\Meteor_Hit_001_10C4C929.wem</Path>
+				</File>
+				<File Id="856741483" Language="SFX">
+					<ShortName>Music_Stabs.wav</ShortName>
+					<Path>SFX\Music_Stabs_D79FB2B7.wem</Path>
+				</File>
+				<File Id="870439918" Language="SFX">
+					<ShortName>Meteor_Reduce_001.wav</ShortName>
+					<Path>SFX\Meteor_Reduce_001_10C4C929.wem</Path>
+				</File>
+				<File Id="905867592" Language="SFX">
+					<ShortName>Meteor_Hit_002.wav</ShortName>
+					<Path>SFX\Meteor_Hit_002_10C4C929.wem</Path>
+				</File>
+				<File Id="928612575" Language="SFX">
+					<ShortName>Jacky_Action_004.wav</ShortName>
+					<Path>SFX\Jacky_Action_004_10C4C929.wem</Path>
+				</File>
+				<File Id="977806536" Language="SFX">
+					<ShortName>Jacky_Action_005.wav</ShortName>
+					<Path>SFX\Jacky_Action_005_10C4C929.wem</Path>
+				</File>
+				<File Id="980014843" Language="SFX">
+					<ShortName>Generic_Get_Out_000.wav</ShortName>
+					<Path>SFX\Generic_Get_Out_000_10C4C929.wem</Path>
+				</File>
+				<File Id="990707279" Language="SFX">
+					<ShortName>Generic_Action_Success_001.wav</ShortName>
+					<Path>SFX\Generic_Action_Success_001_10C4C929.wem</Path>
+				</File>
+				<File Id="998259781" Language="SFX">
+					<ShortName>Music_Kickdrums.wav</ShortName>
+					<Path>SFX\Music_Kickdrums_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1004889871" Language="SFX">
+					<ShortName>Music_Ride.wav</ShortName>
+					<Path>SFX\Music_Ride_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1072798714" Language="SFX">
+					<ShortName>Generic_Action_Fail_000.wav</ShortName>
+					<Path>SFX\Generic_Action_Fail_000_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
