@@ -534,6 +534,7 @@ GameObject:
   - component: {fileID: 1671570242}
   - component: {fileID: 1671570241}
   - component: {fileID: 1671570243}
+  - component: {fileID: 1671570244}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -623,6 +624,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858b721fae461434095882affdbfc76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1671570244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671570239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 951d0b0763c025448a6d3dd86d9379af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 65ff6df23484b8f44a573cac531cf6a3,
+      type: 2}
+  useCallbacks: 1
+  Callbacks:
+  - Flags:
+      value: 0
+    FunctionName: 
+    GameObject: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &1677600194
 GameObject:
   m_ObjectHideFlags: 0
