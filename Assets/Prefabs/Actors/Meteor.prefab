@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1796432825
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 37651237daf0689469e81d08d5a544d7, type: 3}
   m_Color: {r: 0.5283019, g: 0.15699537, b: 0.15699537, a: 1}
@@ -134,8 +134,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damages: 0.05
   hp: 0
-  meteorHit:
+  hitSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3b729a0d7974d9246be81f2b08d52d27,
+      type: 2}
+  reduceSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f5175023ec1591240a828e168e33a48b,
+      type: 2}
+  moveSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3bb9dc43300570548a9b8eed2d52f8b9,
       type: 2}
