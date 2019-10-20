@@ -578,12 +578,8 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6b07b05e686b528468836cc4891fad8a,
       type: 2}
-  useCallbacks: 1
-  Callbacks:
-  - Flags:
-      value: 256
-    FunctionName: PostGetInSound
-    GameObject: {fileID: 1219957671}
+  useCallbacks: 0
+  Callbacks: []
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
