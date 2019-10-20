@@ -814,10 +814,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAI: 10
-  secondsBeforeThirst: 5
-  startingDirtyness: 1
-  timeBeforeLookForDrink: 10
-  timeBeforeLookForDirty: 5
+  secondsBeforeThirst: 15
+  startingDirtynessHandling: 1
+  timeBeforeLookForDirty: 2.5
   prefabAI: {fileID: 5701188749285259059, guid: 887e6970cd024d440a969f84326b2954,
     type: 3}
   ais: []

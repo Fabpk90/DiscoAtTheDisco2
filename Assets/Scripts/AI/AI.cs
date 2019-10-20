@@ -133,6 +133,9 @@ public class AI : MonoBehaviour
 
             dirtyness -= percentageDirty * 0.1f;
         }
+
+        print("Ai leaving because it's dirty as fuck");
+        isLeaving = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
