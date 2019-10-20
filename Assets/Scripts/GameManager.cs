@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     [Header("REFERENCES")]
     public GameObject meteor;
+    public Job_Cleaner cleaner;
 
     //STORAGE
     private float mood;
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnMeteor());
-        mood = 1f;
+        StartCoroutine(SpawnJunk());
         hp = 1f;
     }
     
@@ -43,6 +44,12 @@ public class GameManager : MonoBehaviour
         if(mood > 0) {
             mood -= moodPerSec * Time.deltaTime;
         }
+    }
+
+    private IEnumerator SpawnJunk() {
+        yield return new WaitForSeconds(5f);
+        cleaner.SpawnItem();
+        StartCoroutine(SpawnJunk());
     }
 
     public IEnumerator SpawnMeteor() {

@@ -166,7 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveRefresh: 0.5
-  waveObject: {fileID: 0}
+  waveObject: {fileID: 2575011021175017401, guid: bbbb32b615d96bf4eb46c6f1b03028fe,
+    type: 3}
 --- !u!1 &2860590675307454541
 GameObject:
   m_ObjectHideFlags: 0
