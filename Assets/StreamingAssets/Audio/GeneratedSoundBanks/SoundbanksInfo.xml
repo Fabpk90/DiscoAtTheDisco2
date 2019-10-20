@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Wwise\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Wwise\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
