@@ -269,6 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638606621}
   - component: {fileID: 638606620}
+  - component: {fileID: 638606619}
   - component: {fileID: 638606618}
   m_Layer: 0
   m_Name: WwiseGlobal
