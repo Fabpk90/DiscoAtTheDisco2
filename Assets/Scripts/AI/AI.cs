@@ -99,6 +99,7 @@ public class AI : MonoBehaviour
         //if not drinkyness--;
         while (drinkyness != 0)
         {
+            isEntering = true;
             yield return new WaitForSeconds(AiManager.instance.timeBeforeLookForDrink);
             
             while ((transform.position - AiManager.instance.barPosition.position).magnitude > 0.5f)
@@ -107,8 +108,6 @@ public class AI : MonoBehaviour
                     0.05f);
                 yield return new WaitForEndOfFrame();
             }
-            
-            //check here for drink availability
         }
 
         isLeaving = true;
@@ -128,6 +127,18 @@ public class AI : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        Job_Barman barman = other.gameObject.GetComponent<Job_Barman>();
+
+        if (barman)
+        {
+            if (barman.items.Count > 0)
+            {
+                barman.DestroyItem();
+            }
+            else
+            {
+                drinkyness--;
+            }
+        }
     }
 }
