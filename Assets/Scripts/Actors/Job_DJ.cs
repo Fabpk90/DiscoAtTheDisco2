@@ -27,6 +27,7 @@ public class Job_DJ : Job
             case eJOB_STATUT.SUCCEEDED:
                 if(efficiency < 1) {
                     efficiency += (valuePerSuccess > 1-efficiency) ? 1-efficiency : valuePerSuccess;
+                    GameManager.instance.AddMood(efficiency / 2);
                 }
                 break;
         }
