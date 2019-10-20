@@ -12,13 +12,6 @@ public class Job : MonoBehaviour
     public eSTATE_WORK state;
     public eINPUT_INTERACT[] requiredInputs;
 
-    //SOUNDS
-    [Header("SOUNDS")]
-    public AK.Wwise.Event actionSuccess;
-    public AK.Wwise.Event actionFail;
-    public AK.Wwise.Event getIn;
-    public AK.Wwise.Event getOut;
-
     //STORAGE
     protected int currentInput;
 
@@ -30,8 +23,15 @@ public class Job : MonoBehaviour
 
     public delegate void Input(eINPUT_INTERACT input);
     public event Input onInteract; 
-    public event Input newInput; 
-    
+    public event Input newInput;
+
+    //SOUNDS
+    [Header("SOUNDS")]
+    public AK.Wwise.Event actionSuccessSound;
+    public AK.Wwise.Event actionFailSound;
+    public AK.Wwise.Event getInSound;
+    public AK.Wwise.Event getOutSound;
+
     protected virtual void Start() {
         
         currentInput = 0;
@@ -42,8 +42,8 @@ public class Job : MonoBehaviour
         if (!controller) {
             onDetection?.Invoke(true);
             controller = tController;
-            getIn.Post(gameObject);
             newInput?.Invoke(requiredInputs[currentInput]);
+            getInSound.Post(gameObject);
             return true;
         }
         return false;
@@ -56,16 +56,17 @@ public class Job : MonoBehaviour
             if (currentInput < requiredInputs.Length-1) {
                 ++currentInput;
                 newInput?.Invoke(requiredInputs[currentInput]);
-                actionSuccess.Post(gameObject);
                 statut = eJOB_STATUT.NEXT;
+                actionSuccessSound.Post(gameObject);
             } else {
                 currentInput = 0;
                 newInput?.Invoke(requiredInputs[currentInput]);
-                actionFail.Post(gameObject);
                 statut = eJOB_STATUT.SUCCEEDED;
+                actionSuccessSound.Post(gameObject);
             }
         } else {
             statut = eJOB_STATUT.FAILED;
+            actionFailSound.Post(gameObject);
         }
 
         Debug.Log(statut);
@@ -78,7 +79,7 @@ public class Job : MonoBehaviour
             currentInput = 0;
             controller = null;
             onDetection?.Invoke(false);
-            getOut.Post(gameObject);
+            getOutSound.Post(gameObject);
         }
     }
 }

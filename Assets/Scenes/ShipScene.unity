@@ -468,6 +468,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c220bccba4e2ccc418a188e290d0dfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1219957671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4971214381994937449, guid: b3dffd1580f813649a1122af43f045fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 4971214380702777174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1219957672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219957671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658dbd6342d2ca947ad6663ad677a595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getInSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+      type: 2}
 --- !u!1 &1494425190
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,8 +577,12 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6b07b05e686b528468836cc4891fad8a,
       type: 2}
-  useCallbacks: 0
-  Callbacks: []
+  useCallbacks: 1
+  Callbacks:
+  - Flags:
+      value: 256
+    FunctionName: PostGetInSound
+    GameObject: {fileID: 1219957671}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
@@ -1048,6 +1075,144 @@ PrefabInstance:
       propertyPath: Meteor_Hit.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 3b729a0d7974d9246be81f2b08d52d27,
+        type: 2}
+    - target: {fileID: 8107460620202135576, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionSuccessSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+        type: 2}
+    - target: {fileID: 8107460620202135576, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionFailSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+        type: 2}
+    - target: {fileID: 8107460620202135576, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getInSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+        type: 2}
+    - target: {fileID: 8107460620202135576, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getOutSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionSuccess.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionFail.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getIn.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getOut.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionSuccessSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionFailSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getInSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getOutSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+        type: 2}
+    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionSuccess.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 334900c30e3c978438bf835b2e742e40,
+        type: 2}
+    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getIn.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+        type: 2}
+    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getOut.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+        type: 2}
+    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionFailSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+        type: 2}
+    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getInSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+        type: 2}
+    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getOutSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+        type: 2}
+    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionSuccessSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 334900c30e3c978438bf835b2e742e40,
+        type: 2}
+    - target: {fileID: 9135663263836666242, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionSuccessSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+        type: 2}
+    - target: {fileID: 9135663263836666242, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionFailSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+        type: 2}
+    - target: {fileID: 9135663263836666242, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getInSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+        type: 2}
+    - target: {fileID: 9135663263836666242, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getOutSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a950e06a5fd15fb4d96b090d580ab544, type: 3}
