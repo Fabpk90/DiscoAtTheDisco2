@@ -102,7 +102,7 @@ public class AI : MonoBehaviour
         //if not drinkyness--;
         while (drinkyness > 0)
         {
-            if (drinkyness < 0.5f)
+            if (drinkyness < AiManager.instance.secondsBeforeThirst / 2)
             {
                 while (!isEnteringBar && !isEntering)
                 {
