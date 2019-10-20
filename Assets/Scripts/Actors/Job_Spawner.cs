@@ -15,6 +15,7 @@ public class Job_Spawner : Job
     //REFERENCES
     [SerializeField]
     private Transform spawnParent;
+    public float spawnRadius;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -25,10 +26,6 @@ public class Job_Spawner : Job
 
     public override eJOB_STATUT Interact(eINPUT_INTERACT inputTriggered) {
         eJOB_STATUT statut = base.Interact(inputTriggered);
-        Debug.Log(statut);
-        if (statut == eJOB_STATUT.FAILED) {
-            Debug.Log("Expected : " + requiredInputs[currentInput]);
-        }
         switch (statut) {
             case eJOB_STATUT.SUCCEEDED:
                 if (spawnIfSucceed) {
@@ -46,7 +43,7 @@ public class Job_Spawner : Job
     }
 
     public void SpawnItem() {
-        items.Add(Instantiate(itemPrefab, (Vector2)spawnParent.position + Random.insideUnitCircle, Quaternion.identity, spawnParent));
+        items.Add(Instantiate(itemPrefab, (Vector2)spawnParent.position + Random.insideUnitCircle * spawnRadius, Quaternion.identity, spawnParent));
     }
 
     public void DestroyItem() {

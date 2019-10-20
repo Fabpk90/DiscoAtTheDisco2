@@ -134,3 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damages: 0.05
   hp: 0
+  meteorHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3b729a0d7974d9246be81f2b08d52d27,
+      type: 2}

@@ -24,9 +24,7 @@ public class Ship : MonoBehaviour
 
         while (true)
         {
-            wave.transform.localScale = new Vector3(2.33f, 2.33f, 1f);
             yield return new WaitForSeconds(waveRefresh);
-            wave.transform.localScale = new Vector3(1f, 1f, 1f);
 
 
             int increment = (int)(1/(1 - GameManager.instance.CalculateMood()));
