@@ -468,6 +468,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c220bccba4e2ccc418a188e290d0dfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1219957671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4971214381994937449, guid: b3dffd1580f813649a1122af43f045fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 4971214380702777174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1219957672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219957671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658dbd6342d2ca947ad6663ad677a595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getInSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+      type: 2}
 --- !u!1 &1494425190
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,8 +577,12 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6b07b05e686b528468836cc4891fad8a,
       type: 2}
-  useCallbacks: 0
-  Callbacks: []
+  useCallbacks: 1
+  Callbacks:
+  - Flags:
+      value: 256
+    FunctionName: MusicBeat
+    GameObject: {fileID: 1219957671}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0

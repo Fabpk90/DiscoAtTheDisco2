@@ -581,6 +581,7 @@ MonoBehaviour:
   - /Disco at the DISCO - PreWork
   - /Disco at the DISCO - PreWork/Events
   - /Disco at the DISCO - PreWork/Events/Default Work Unit
-  - /Disco at the DISCO - PreWork/Events/Default Work Unit/Music
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Meteor
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
