@@ -241,6 +241,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &575034500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9135663263836666242, guid: a950e06a5fd15fb4d96b090d580ab544,
+    type: 3}
+  m_PrefabInstance: {fileID: 2788714849557352661}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdbd6dfaea840c439666bde15ee9d6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &591462435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 869881059083205928, guid: a950e06a5fd15fb4d96b090d580ab544,
+    type: 3}
+  m_PrefabInstance: {fileID: 2788714849557352661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &825960698
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,9 +632,10 @@ MonoBehaviour:
   prefabAI: {fileID: 5701188749285259059, guid: 887e6970cd024d440a969f84326b2954,
     type: 3}
   ais: []
-  spawnPoint: {fileID: 383994616}
+  spawnPoint: {fileID: 591462435}
   danceFloorPosition: {fileID: 1801899115}
   barPosition: {fileID: 898300200987545569}
+  cleaner: {fileID: 575034500}
 --- !u!4 &1677600196
 Transform:
   m_ObjectHideFlags: 0
