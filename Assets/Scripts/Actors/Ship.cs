@@ -22,7 +22,7 @@ public class Ship : MonoBehaviour
 
     private IEnumerator DamageMeteors() {
 
-        while (GameManager.instance.CalculateMood() > 0f)
+        while (true)
         {
             yield return new WaitForSeconds(waveRefresh);
 
