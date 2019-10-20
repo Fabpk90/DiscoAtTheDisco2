@@ -8,12 +8,13 @@ public class AiManager : MonoBehaviour
     public static AiManager instance;
 
     public int maxAI;
-    public int startingDrinkness;
-    public int startingDirtyness;
+    public float secondsBeforeThirst;
 
-    public float timeBeforeLookForDrink;
-    public float timeBeforeLookForDirty;
+    [Range(0f, 1f)]
+    public float startingDirtynessHandling;
     
+    public float timeBeforeLookForDirty;
+
     public AI prefabAI;
 
     public List<AI> ais;
@@ -21,6 +22,8 @@ public class AiManager : MonoBehaviour
     public Transform danceFloorPosition;
 
     public Transform barPosition;
+
+    public Job_Cleaner cleaner;
 
     private void Awake()
     {
@@ -39,8 +42,8 @@ public class AiManager : MonoBehaviour
     public void SpawnAI()
     {
         AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
-        ai.Dirtyness = startingDirtyness;
-        ai.Drinkyness = startingDrinkness;
+        ai.Dirtyness = startingDirtynessHandling;
+        ai.Drinkyness = secondsBeforeThirst;
 
         ais.Add(ai);
     }
