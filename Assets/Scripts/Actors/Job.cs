@@ -24,34 +24,49 @@ public class Job : MonoBehaviour
 
     //REFERENCES
     public PlayerController controller { get; private set; }
+
+    public delegate void Input(eINPUT_INTERACT input);
+    public event Input onInteract; 
+    public event Input newInput; 
     
     protected virtual void Start() {
         
         currentInput = 0;
+        UI_Manager.instance.AddInputWidget(transform);
     }
 
     public bool Join(PlayerController tController) {
         if (!controller) {
             controller = tController;
             getIn.Post(gameObject);
+            newInput?.Invoke(requiredInputs[currentInput]);
             return true;
         }
         return false;
     }
 
     public virtual eJOB_STATUT Interact(eINPUT_INTERACT inputTriggered) {
-        if(inputTriggered == requiredInputs[currentInput]) {
+        onInteract?.Invoke(inputTriggered);
+        eJOB_STATUT statut;
+        if (inputTriggered == requiredInputs[currentInput]) {
             if (currentInput < requiredInputs.Length-1) {
                 ++currentInput;
+                newInput?.Invoke(requiredInputs[currentInput]);
                 actionSuccess.Post(gameObject);
-                return eJOB_STATUT.NEXT;
+                statut = eJOB_STATUT.NEXT;
             } else {
                 currentInput = 0;
+                newInput?.Invoke(requiredInputs[currentInput]);
                 actionFail.Post(gameObject);
-                return eJOB_STATUT.SUCCEEDED;
+                statut = eJOB_STATUT.SUCCEEDED;
             }
+        } else {
+            statut = eJOB_STATUT.FAILED;
         }
-        return eJOB_STATUT.FAILED;
+
+        Debug.Log(statut);
+
+        return statut;
     }
 
     public void Exit() {
