@@ -43,6 +43,7 @@ public class AI : MonoBehaviour
     {
         StartCoroutine(FadeIn());
         StartCoroutine(LookForADrink());
+        StartCoroutine(CheckTheFloor());
     }
 
     IEnumerator FadeIn()
@@ -100,7 +101,6 @@ public class AI : MonoBehaviour
         {
             yield return new WaitForSeconds(AiManager.instance.timeBeforeLookForDrink);
             
-
             while ((transform.position - AiManager.instance.barPosition.position).magnitude > 0.5f)
             {
                 transform.position = Vector3.MoveTowards(transform.position, AiManager.instance.barPosition.position,
@@ -108,7 +108,7 @@ public class AI : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
             
-            //check for drink availability
+            //check here for drink availability
         }
 
         isLeaving = true;
@@ -116,7 +116,13 @@ public class AI : MonoBehaviour
 
     IEnumerator CheckTheFloor()
     {
-        //checks the floor state
-        yield return null;
+        while (dirtyness != 0)
+        {
+            yield return new WaitForSeconds(AiManager.instance.timeBeforeLookForDirty);
+
+            //check here for dirty level
+        }
+
+        isLeaving = true;
     }
 }
