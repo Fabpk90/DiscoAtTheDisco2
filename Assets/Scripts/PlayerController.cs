@@ -55,13 +55,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnJobPossess(InputAction.CallbackContext obj)
     {
-        Debug.Log("Possess job");
         if (jobInRange.jobObject)
         {
-            if (!jobInRange.possess)
-            {
+            if (!jobInRange.possess) {
+                Debug.Log("Possess job");
                 jobInRange.jobObject.Join(this);
                 jobInRange.possess = true;
+                machineState.ChangeState(new State_Work(machineState));
             }
             else
             {
@@ -113,6 +113,15 @@ public class PlayerController : MonoBehaviour
             if (collision.CompareTag("Job")) {
                 jobInRange.jobObject = collision.GetComponent<Job>();
                 Debug.Log("Assigned jobInRange");
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        if (jobInRange.jobObject) {
+            if (collision.CompareTag("Job")) {
+                jobInRange.jobObject = null;
+                Debug.Log("Removed jobInRange");
             }
         }
     }

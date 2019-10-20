@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum eJOB_STATUT { FAILED, SUCCEEDED, NEXT };
+public enum eSTATE_WORK { DJ, BARMAN, CLEANER, JACKY };
 
 public class Job : MonoBehaviour
 {
@@ -18,8 +19,8 @@ public class Job : MonoBehaviour
     //REFERENCES
     public PlayerController controller { get; private set; }
     
-    void Start()
-    {
+    protected virtual void Start() {
+        
         currentInput = 0;
     }
 

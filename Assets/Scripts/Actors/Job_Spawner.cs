@@ -17,14 +17,18 @@ public class Job_Spawner : Job
     private Transform spawnParent;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         items = new List<GameObject>();
     }
 
     public override eJOB_STATUT Interact(eINPUT_INTERACT inputTriggered) {
         eJOB_STATUT statut = base.Interact(inputTriggered);
         Debug.Log(statut);
+        if (statut == eJOB_STATUT.FAILED) {
+            Debug.Log("Expected : " + requiredInputs[currentInput]);
+        }
         switch (statut) {
             case eJOB_STATUT.SUCCEEDED:
                 if (spawnIfSucceed) {
