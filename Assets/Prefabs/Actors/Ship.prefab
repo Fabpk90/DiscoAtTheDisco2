@@ -166,7 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveRefresh: 0.5
-  waveObject: {fileID: 0}
+  waveObject: {fileID: 2575011021175017401, guid: bbbb32b615d96bf4eb46c6f1b03028fe,
+    type: 3}
 --- !u!1 &2860590675307454541
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +322,11 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 07a1ee19cf8f287478e976108195f0b3,
+      type: 2}
+  actionNextSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
       type: 2}
   actionFailSound:
     idInternal: 0
@@ -902,6 +908,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 334900c30e3c978438bf835b2e742e40,
       type: 2}
+  actionNextSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+      type: 2}
   actionFailSound:
     idInternal: 0
     valueGuidInternal: 
@@ -1081,6 +1092,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3ba2a2a16f71bb642887a040ec9f84ea,
       type: 2}
+  actionNextSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+      type: 2}
   actionFailSound:
     idInternal: 0
     valueGuidInternal: 
@@ -1210,7 +1226,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.88, y: 4.06}
+  m_Size: {x: 3, y: 3.5}
   m_EdgeRadius: 0
 --- !u!114 &9135663263836666242
 MonoBehaviour:
@@ -1227,6 +1243,11 @@ MonoBehaviour:
   state: 2
   requiredInputs: 000000000100000003000000
   actionSuccessSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+      type: 2}
+  actionNextSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,

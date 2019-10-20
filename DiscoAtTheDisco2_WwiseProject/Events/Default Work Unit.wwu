@@ -90,6 +90,17 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="Play_Barman_Action_Fail_TEST" ID="{A815207A-09B3-4968-868A-CADBCC8C8C42}">
+											<ChildrenList>
+												<Action Name="" ID="{66A57AD4-25E2-48D2-B987-3EBF6B6A39ED}" ShortID="582839744">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Generic_Action_Fail" ID="{720A48A6-F6ED-4B9E-B16B-48DB0EA18867}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="DJ" ID="{1905FB40-0702-44C9-969A-368D6B0F3BB6}" ShortID="813647964">
