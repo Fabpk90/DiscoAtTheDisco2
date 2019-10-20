@@ -6,10 +6,13 @@
 				<SoundBank Name="All" ID="{7A2BA696-DA0F-4DF4-A167-6CDDD1427EB9}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_SpaceShip_Damage_000" ID="{A4BA7552-F45D-4028-ABFA-E6F21B3D872A}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Backup" ID="{437E1D5A-441A-402D-AB93-CBE3B713F1DD}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_DJ_Action_Success" ID="{97F78FB7-7AFC-4031-B250-2FF1EA68A07B}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Generic_Action_Success" ID="{86B3D86E-97F8-4417-8749-B908CC1EB8CF}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_DJ_Action_Fail" ID="{C1BD0277-2DAE-4490-B20B-E6AEEBC97447}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Jacky_Get_In" ID="{321E466B-DC42-459F-85FC-60E5C53F9480}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_CoreGame" ID="{8C32AAC0-DA49-461D-BAC3-3E73DD04E5FD}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Crowd_Cheer" ID="{06459AA5-3580-4623-A977-B572771E1247}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Barman_Get_In" ID="{16BF84A3-0D02-469A-B05F-D8DF2E257E82}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_DJ_Get_In" ID="{4ED68854-54AA-4711-A2C8-FEA601453430}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Jacky_Action_Succes" ID="{145C4C36-4397-47C7-AF8C-F4B30826DF45}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
@@ -18,14 +21,18 @@
 						<ObjectRef Name="Play_BeatCallback" ID="{3C7C9182-A3AF-486A-981A-5ED48309DDCA}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Barman_Action_Success" ID="{AECFEFE5-B925-48FF-A180-34B0E77D1853}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Barman_Get_Out" ID="{FDA16E44-D160-497C-967D-69F010C5817F}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Barman_Action_Fail" ID="{3D5F0EDE-B501-49A6-B3C8-AD088B1E918A}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Generic_Get_In" ID="{88FFC279-CFC4-4A36-A43C-2C031DEFF35E}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Meteor_Hit" ID="{4D6EC60C-20B3-4B39-B3CB-F18A4F4B5FCE}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Meteor_Reduce" ID="{665F3649-AAFA-4B7C-9F33-C52146FFEB49}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Meteor_Move" ID="{24974690-6BAC-4B8B-BC2D-E93B5B7775D4}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SpaceShip_Destroyed" ID="{FEA5285B-B5A9-4BAC-82A6-86EADF105BE4}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Cleaner_Action" ID="{2FD9C60E-2F67-4BDB-B693-3B5CC8456F86}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Crowd_Boo" ID="{63109170-177B-4C1A-BB4E-81027F566B12}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Cleaner_Get_Out" ID="{46E178B9-497F-4CE5-BD66-2C2E1D1D09AB}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Jacky_Get_Out" ID="{6F223519-D14B-4D34-BFB9-6D7084FDA1A9}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Generic_Action_Fail" ID="{D9D4F2B1-371D-4D36-83ED-EEAD3E92055A}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Jacky_Action_Fail" ID="{A8FBFCD1-3A7F-4F08-AE00-D5B244AEF94E}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Generic_Get_Out" ID="{2204A887-C39B-4FF5-849F-61DB7B083C66}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
