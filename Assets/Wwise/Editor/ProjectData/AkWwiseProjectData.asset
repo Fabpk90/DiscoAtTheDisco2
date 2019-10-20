@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 394b630c158e254a833440683f868099
     GuidInternal: 
-    m_lastTime: -8586300030328033393
+    m_lastTime: -8586300016409873457
     List:
     - name: All
       guid: 96a62b7a0fdaf44da1676cddd1427eb9
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 42459a4fbbc8ab45a02d2ef753c71191
     GuidInternal: 
-    m_lastTime: -8586300030327708831
+    m_lastTime: -8586300006428349606
     List:
     - name: Play_Backup
       guid: 5a1d7e431a442d40ab93cbe3b713f1dd
@@ -132,6 +132,20 @@ MonoBehaviour:
       - ElementName: Play_Barman_Get_Out
         ObjectType: 3
       Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Get_Out
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BeatCallback
+      guid: 82917c3cafa36a48981a5ed48309ddca
+      id: 950314379
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_BeatCallback
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_BeatCallback
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -615,9 +629,9 @@ MonoBehaviour:
   - /Disco at the DISCO - PreWork
   - /Disco at the DISCO - PreWork/Events
   - /Disco at the DISCO - PreWork/Events/Default Work Unit
-  - /Disco at the DISCO - PreWork/Events/Default Work Unit/Music
   - /Disco at the DISCO - PreWork/Events/Default Work Unit/World
   - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs/Cleaner
   - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs/DJ
   - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs/Generic
   autoPopulateEnabled: 1

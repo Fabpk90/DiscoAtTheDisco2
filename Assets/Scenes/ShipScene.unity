@@ -645,7 +645,7 @@ MonoBehaviour:
   useCallbacks: 1
   Callbacks:
   - Flags:
-      value: 0
+      value: 8192
     FunctionName: 
     GameObject: {fileID: 0}
   playingId: 0
@@ -683,6 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef49e683b0c141c4187fc7dde44184aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animators: []
   maxAI: 10
   secondsBeforeThirst: 15
   startingDirtynessHandling: 1
@@ -691,7 +692,6 @@ MonoBehaviour:
     type: 3}
   ais: []
   spawnPoint: {fileID: 591462435}
-  danceFloorPosition: {fileID: 1801899115}
   barPosition: {fileID: 898300200987545569}
   cleaner: {fileID: 575034500}
 --- !u!4 &1677600196

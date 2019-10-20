@@ -32,6 +32,7 @@ public class Job : MonoBehaviour
     //SOUNDS
     [Header("SOUNDS")]
     public AK.Wwise.Event actionSuccessSound;
+    public AK.Wwise.Event actionNextSound;
     public AK.Wwise.Event actionFailSound;
     public AK.Wwise.Event getInSound;
     public AK.Wwise.Event getOutSound;
@@ -71,7 +72,7 @@ public class Job : MonoBehaviour
                     ++currentInput;
                     newInput?.Invoke(requiredInputs[currentInput]);
                     statut = eJOB_STATUT.NEXT;
-                    actionSuccessSound.Post(gameObject);
+                    actionNextSound.Post(gameObject);
                 } else {
                     currentInput = 0;
                     newInput?.Invoke(requiredInputs[currentInput]);
