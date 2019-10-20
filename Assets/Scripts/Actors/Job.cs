@@ -32,6 +32,7 @@ public class Job : MonoBehaviour
     //SOUNDS
     [Header("SOUNDS")]
     public AK.Wwise.Event actionSuccessSound;
+    public AK.Wwise.Event actionNextSound;
     public AK.Wwise.Event actionFailSound;
     public AK.Wwise.Event getInSound;
     public AK.Wwise.Event getOutSound;
