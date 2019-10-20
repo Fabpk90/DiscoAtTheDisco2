@@ -398,22 +398,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   requiredInputs: 000000000100000002000000
-  actionSuccess:
+  actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  actionFail:
+    WwiseObjectReference: {fileID: 11400000, guid: 07a1ee19cf8f287478e976108195f0b3,
+      type: 2}
+  actionFailSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  getIn:
+    WwiseObjectReference: {fileID: 11400000, guid: ff3dcc379c6267a499072464d03576b3,
+      type: 2}
+  getInSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  getOut:
+    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+      type: 2}
+  getOutSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+      type: 2}
   valuePerSuccess: 0.1
   valuePerSec: 0.2
 --- !u!1 &2896383398005905004
@@ -954,22 +958,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 3
   requiredInputs: 000000000100000002000000
-  actionSuccess:
+  actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  actionFail:
+    WwiseObjectReference: {fileID: 11400000, guid: 334900c30e3c978438bf835b2e742e40,
+      type: 2}
+  actionFailSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  getIn:
+    WwiseObjectReference: {fileID: 11400000, guid: a5cfdef12a2571b43bd19aadbf688199,
+      type: 2}
+  getInSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  getOut:
+    WwiseObjectReference: {fileID: 11400000, guid: fb488f1677d843f45be12381b18b3fb8,
+      type: 2}
+  getOutSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 5f70d3d77c4b5eb41a6555d6d75a4a57,
+      type: 2}
   permissionRate: 5
   nbSpawnPermitted: 3
   spawnParent: {fileID: 0}
@@ -1129,25 +1137,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   requiredInputs: 0000000001000000
-  actionSuccess:
+  actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+    WwiseObjectReference: {fileID: 11400000, guid: 3ba2a2a16f71bb642887a040ec9f84ea,
       type: 2}
-  actionFail:
+  actionFailSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+    WwiseObjectReference: {fileID: 11400000, guid: 098fe4890fdc6804da83b74bd1127f17,
       type: 2}
-  getIn:
+  getInSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+    WwiseObjectReference: {fileID: 11400000, guid: 172fd8e38e3ba5c4baaa200e1e916f5a,
       type: 2}
-  getOut:
+  getOutSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+    WwiseObjectReference: {fileID: 11400000, guid: bda0bd5b20512844abc6664f90687243,
       type: 2}
   maxItems: 5
   itemPrefab: {fileID: 5345780397046894237, guid: 93f418f8be1438340ba51e60cbc2fa5d,
@@ -1279,22 +1287,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   requiredInputs: 000000000100000003000000
-  actionSuccess:
+  actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  actionFail:
+    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+      type: 2}
+  actionFailSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  getIn:
+    WwiseObjectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+      type: 2}
+  getInSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  getOut:
+    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+      type: 2}
+  getOutSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+      type: 2}
   maxItems: 8
   itemPrefab: {fileID: 8306409045911209794, guid: 10098c95a907aac47862a3807690e033,
     type: 3}
