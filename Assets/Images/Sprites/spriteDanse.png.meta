@@ -1,4 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: f1a101bcb267569439b10a6ca5e72cec
+TextureImporter:
+  internalIDToNameTable: []
+=======
 guid: e760aeabb91b6e34593f3c8164aaea78
 TextureImporter:
   internalIDToNameTable:
@@ -50,11 +55,16 @@ TextureImporter:
   - first:
       213: -192098958379241747
     second: spriteDanse_15
+>>>>>>> Guillaume
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
+    enableMipMap: 1
+=======
     enableMipMap: 0
+>>>>>>> Guillaume
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -79,6 +89,18 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+=======
     filterMode: 0
     aniso: -1
     mipBias: -100
@@ -89,10 +111,20 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
+>>>>>>> Guillaume
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+=======
   spritePixelsToUnits: 13
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -100,6 +132,7 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
+>>>>>>> Guillaume
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -118,6 +151,15 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+=======
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -473,6 +515,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 2783c6f4b5ccda44ca33e8e2a797a7eb
+>>>>>>> Guillaume
     internalID: 0
     vertices: []
     indices: 
