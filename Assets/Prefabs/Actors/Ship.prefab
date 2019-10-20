@@ -1253,6 +1253,7 @@ MonoBehaviour:
   spawnParent: {fileID: 2862901466414042505}
   spawnRadius: 2
   itemWeight: 0
+  type: 0
 --- !u!1 &8771824824379274587
 GameObject:
   m_ObjectHideFlags: 0
