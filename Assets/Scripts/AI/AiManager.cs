@@ -6,16 +6,25 @@ using UnityEngine;
 public class AiManager : MonoBehaviour
 {
     public static AiManager instance;
+
+    public int maxAI;
+    public float secondsBeforeThirst;
+
+    [Range(0f, 1f)]
+    public float startingDirtynessHandling;
     
-    public int startingDrinkness;
-    public int startingDirtyness;
-    
+    public float timeBeforeLookForDirty;
+
     public AI prefabAI;
 
     public List<AI> ais;
     public Transform spawnPoint;
     public Transform danceFloorPosition;
-    
+
+    public Transform barPosition;
+
+    public Job_Cleaner cleaner;
+
     private void Awake()
     {
         if (!instance)
@@ -33,8 +42,8 @@ public class AiManager : MonoBehaviour
     public void SpawnAI()
     {
         AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
-        ai.Dirtyness = startingDirtyness;
-        ai.Drinkyness = startingDrinkness;
+        ai.Dirtyness = startingDirtynessHandling;
+        ai.Drinkyness = secondsBeforeThirst;
 
         ais.Add(ai);
     }

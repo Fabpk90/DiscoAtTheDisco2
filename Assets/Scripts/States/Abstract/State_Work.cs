@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum eSTATE_WORK { DJ, BARMAN, CLEANER };
-
 public class State_Work : State_Base
 {
 

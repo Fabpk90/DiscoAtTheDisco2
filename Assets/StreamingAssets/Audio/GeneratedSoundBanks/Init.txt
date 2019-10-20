@@ -1,0 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3128647864	Mood			\Default Work Unit\Mood	
+
+State	ID	Name	State Group			Notes
+	0	None	Mood			
+	1218563520	Mood_Level_02	Mood			
+	1218563521	Mood_Level_03	Mood			
+	1218563522	Mood_Level_00	Mood			
+	1218563523	Mood_Level_01	Mood			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	838047381	Non-World			\Default Work Unit\Master Audio Bus\Non-World	
+	2609808943	World			\Default Work Unit\Master Audio Bus\World	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
