@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 394b630c158e254a833440683f868099
     GuidInternal: 
-    m_lastTime: -8586300242380100160
+    m_lastTime: -8586300030328033393
     List:
     - name: All
       guid: 96a62b7a0fdaf44da1676cddd1427eb9
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 42459a4fbbc8ab45a02d2ef753c71191
     GuidInternal: 
-    m_lastTime: -8586300332217734054
+    m_lastTime: -8586300030327708831
     List:
     - name: Play_Backup
       guid: 5a1d7e431a442d40ab93cbe3b713f1dd
@@ -63,9 +63,27 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Barman_Action_00
+    - name: Play_Barman_Action_Fail
+      guid: de0e5f3d01b5a649b3c8ad088b1e918a
+      id: 3773469743
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Barman
+        ObjectType: 4
+      - ElementName: Play_Barman_Action_Fail
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_Fail
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Barman_Action_Success
       guid: e5efcfae25b9ff48a18034b0e77d1853
-      id: 4159239375
+      id: 4066361600
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -75,45 +93,9 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Barman
         ObjectType: 4
-      - ElementName: Play_Barman_Action_00
+      - ElementName: Play_Barman_Action_Success
         ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_00
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Barman_Action_01
-      guid: 6a6ee8e2e965f6469d4dcac205cbae50
-      id: 4159239374
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Jobs
-        ObjectType: 4
-      - ElementName: Barman
-        ObjectType: 4
-      - ElementName: Play_Barman_Action_01
-        ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_01
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Barman_Action_02
-      guid: 503dcc4cf0d76c4fbf19e71d069482d9
-      id: 4159239373
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Jobs
-        ObjectType: 4
-      - ElementName: Barman
-        ObjectType: 4
-      - ElementName: Play_Barman_Action_02
-        ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_02
+      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_Success
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -253,9 +235,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_DJ_Action
-      guid: b78ff797fc7a3140b2502ff1ea68a07b
-      id: 3272327121
+    - name: Play_DJ_Action_Fail
+      guid: 7702bdc1ae2d9044b20be6aeebc97447
+      id: 764177400
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -265,9 +247,27 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: DJ
         ObjectType: 4
-      - ElementName: Play_DJ_Action
+      - ElementName: Play_DJ_Action_Fail
         ObjectType: 3
-      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Action
+      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Action_Fail
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DJ_Action_Success
+      guid: b78ff797fc7a3140b2502ff1ea68a07b
+      id: 1287538821
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: DJ
+        ObjectType: 4
+      - ElementName: Play_DJ_Action_Success
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Action_Success
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -379,9 +379,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Jacky_Action
-      guid: 364c5c149743c747af8cf4b30826df45
-      id: 1985990985
+    - name: Play_Jacky_Action_Fail
+      guid: d1fcfba87f3a084fae00d5b244aef94e
+      id: 2738082960
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -391,9 +391,27 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Jacky
         ObjectType: 4
-      - ElementName: Play_Jacky_Action
+      - ElementName: Play_Jacky_Action_Fail
         ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action
+      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action_Fail
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Jacky_Action_Succes
+      guid: 364c5c149743c747af8cf4b30826df45
+      id: 1624586698
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Jacky
+        ObjectType: 4
+      - ElementName: Play_Jacky_Action_Succes
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action_Succes
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -497,6 +515,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_SpaceShip_Destroyed
+      guid: 5b28a5fea9b5ac4b82a686eadf105be4
+      id: 3663410986
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: SpaceShip
+        ObjectType: 4
+      - ElementName: Play_SpaceShip_Destroyed
+        ObjectType: 3
+      Path: Default Work Unit\World\SpaceShip\Play_SpaceShip_Destroyed
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -581,7 +615,10 @@ MonoBehaviour:
   - /Disco at the DISCO - PreWork
   - /Disco at the DISCO - PreWork/Events
   - /Disco at the DISCO - PreWork/Events/Default Work Unit
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/Music
   - /Disco at the DISCO - PreWork/Events/Default Work Unit/World
-  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Meteor
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs/DJ
+  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs/Generic
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
