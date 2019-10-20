@@ -1078,6 +1078,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.49
       objectReference: {fileID: 0}
+    - target: {fileID: 6456549825535864143, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: waveObject
+      value: 
+      objectReference: {fileID: 2575011021175017401, guid: bbbb32b615d96bf4eb46c6f1b03028fe,
+        type: 3}
     - target: {fileID: 6729309847590161019, guid: a950e06a5fd15fb4d96b090d580ab544,
         type: 3}
       propertyPath: m_Enabled

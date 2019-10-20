@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 public class Ship : MonoBehaviour
@@ -8,10 +9,11 @@ public class Ship : MonoBehaviour
     public float waveRefresh;
 
     [Header("REFERNCES")]
-    public GameObject wave;
-
+    public Wave waveObject;
     //STORAGE
     private List<Meteor> meteors;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,16 +26,15 @@ public class Ship : MonoBehaviour
 
         while (true)
         {
-            wave.transform.localScale = Vector3.one;
             yield return new WaitForSeconds(waveRefresh);
+            float moodPercentage = 0.0f;
+            
             if ( GameManager.instance.CalculateMood() > 0)
             {
-                float moodPercentage = GameManager.instance.CalculateMood() / GameManager.instance.GetMaxMood();
-            
-                float scale = 2.1f + 4 * moodPercentage;
-            
-                wave.transform.localScale = new Vector3(scale, scale, 1);
+                moodPercentage = GameManager.instance.CalculateMood() / GameManager.instance.GetMaxMood();
             }
+
+            Instantiate<Wave>(waveObject).alpha = moodPercentage;
           
 
             int increment = (int)(1/(1 - GameManager.instance.CalculateMood()));
