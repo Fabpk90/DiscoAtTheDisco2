@@ -12,7 +12,6 @@ public class StateFree_Move : State_Free
 
     public override void Enter() {
         Debug.Log("Entering Move state");
-        machine.controller.render.material.color = Color.blue;
     }
 
     public override void Update() {

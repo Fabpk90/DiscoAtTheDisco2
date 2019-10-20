@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 {
     //PARAMETERS
     public float movementSpeed;
+    private static int nbplayer = 0;
 
     //STORAGE
     private Vector2 movement;
@@ -51,8 +52,28 @@ public class PlayerController : MonoBehaviour
         inputs.currentActionMap["PossessJob"].started += OnJobPossess;
 
         machineState = new MachineState(this);
+        
     }
-
+    private void Start()
+    {
+        switch (nbplayer)
+        {
+            case 0:
+                transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.blue;
+                break;
+            case 1:
+                transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
+                break;
+            case 2:
+                transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.green;
+                break;
+            default:
+                transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.magenta;
+                break;
+        }
+        
+        ++nbplayer;
+    }
     private void OnJobPossess(InputAction.CallbackContext obj)
     {
         if (jobInRange.jobObject)
