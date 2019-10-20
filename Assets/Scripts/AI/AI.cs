@@ -94,6 +94,10 @@ public class AI : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else
+        {
+            drinkyness -= Time.deltaTime;
+        }
     }
 
     IEnumerator LookForADrink()
@@ -106,14 +110,16 @@ public class AI : MonoBehaviour
             {
                 while (!isEnteringBar && !isEntering)
                 {
-                    print("moooving");
                     transform.position = Vector3.MoveTowards(transform.position, AiManager.instance.barPosition.position,
                         0.05f);
                     yield return new WaitForEndOfFrame();
                 }
+                
+                yield return new WaitForSeconds(3.0f);
             }
+            
 
-            drinkyness -= Time.deltaTime;
+            
             yield return new WaitForEndOfFrame();
             
         }
