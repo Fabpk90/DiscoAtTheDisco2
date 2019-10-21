@@ -695,7 +695,7 @@ MonoBehaviour:
   - {fileID: 22100000, guid: 01a80bc78098d834f93de63a6c65f421, type: 2}
   - {fileID: 22100000, guid: c4d0360b0173f144b9040dac6b0ad2b0, type: 2}
   maxAI: 10
-  secondsBeforeThirst: 15
+  secondsBeforeThirst: 40
   startingDirtynessHandling: 1
   timeBeforeLookForDirty: 2.5
   prefabAI: {fileID: 5701188749285259059, guid: 887e6970cd024d440a969f84326b2954,
