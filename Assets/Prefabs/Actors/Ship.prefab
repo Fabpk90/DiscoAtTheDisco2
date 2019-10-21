@@ -436,6 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2299335168784045449}
   - component: {fileID: 2529879105992243266}
+  - component: {fileID: 7188117678392860004}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Untagged
@@ -507,6 +508,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7188117678392860004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2935588787072099924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0872abcb83bc67940878d2e9e9564dca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4838605555634276402
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7730039081763136301}
   - component: {fileID: 5531120799673082137}
+  - component: {fileID: 8458443113537325601}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -612,7 +633,7 @@ SpriteRenderer:
   m_SortingLayerID: -1968300943
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4940164788634514371, guid: b9b5a53d88c03ce4d85d5efbb227ccbe,
+  m_Sprite: {fileID: 9143271217714984799, guid: 787ddbf6c63d08548a539bfbc8ae88d5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -624,6 +645,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8458443113537325601
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4880652767173050840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30fff629159af99409e227529e7bcd9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5065490030859696904
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +786,7 @@ Animator:
   m_GameObject: {fileID: 5678520611351241508}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc7fb48090dd4204eb889f3f32057ba5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
