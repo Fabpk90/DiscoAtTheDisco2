@@ -14,9 +14,12 @@ public class GameManager : MonoBehaviour
 
     [Header("REFERENCES")]
     public GameObject meteor;
+    public Job_Cleaner cleaner;
+    public Job_Barman barman;
+    public Job_DJ DJ;
 
     //STORAGE
-    private float mood;
+    public float mood { get; private set; }
     public float hp { get; private set; }
 
     public delegate void Beat();
@@ -34,15 +37,34 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnMeteor());
-        mood = 1f;
+        StartCoroutine(SpawnDrink());
+        //StartCoroutine(SpawnJunk());
         hp = 1f;
     }
     
     void Update()
     {
         if(mood > 0) {
-            mood -= moodPerSec * Time.deltaTime;
+            //Calculate Psy power
+            print(CalculateMood());
+            float decPsyPower = 1-CalculateMood();
+
+            mood -= moodPerSec * decPsyPower * Time.deltaTime;
+            mood += CalculateMood() * DJ.efficiency * Time.deltaTime;
+            print(DJ.efficiency);
         }
+    }
+
+    private IEnumerator SpawnJunk() {
+        yield return new WaitForSeconds(5f);
+        cleaner.SpawnItem();
+        StartCoroutine(SpawnJunk());
+    }
+
+    private IEnumerator SpawnDrink() {
+        yield return new WaitForSeconds(0.5f);
+        barman.SpawnItem();
+        StartCoroutine(SpawnDrink());
     }
 
     public IEnumerator SpawnMeteor() {
@@ -52,12 +74,12 @@ public class GameManager : MonoBehaviour
     }
 
     public float CalculateMood() {
-        return mood * AiManager.instance.ais.Count;
+        return AiManager.instance.ais.Count/GetMaxMood();
     }
 
     public float GetMaxMood()
     {
-        return AiManager.instance.ais.Count;
+        return AiManager.instance.maxAI;
     }
 
     public void AddMood(float value) {

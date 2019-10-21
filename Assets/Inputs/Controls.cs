@@ -214,7 +214,7 @@ public class Controls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""deec37a3-da47-4e00-863b-e272fa62199a"",
-                    ""path"": ""<Keyboard>/z"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

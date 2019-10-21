@@ -8,9 +8,5 @@ public class Job_Cleaner : Job_Spawner
     public float itemWeight;
     protected override void Start() {
         base.Start();
-        items = new List<GameObject>();
-        for (int i = 0; i < 8; ++i) {
-            SpawnItem();
-        }
     }
 }

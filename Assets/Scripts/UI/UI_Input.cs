@@ -8,6 +8,7 @@ public class UI_Input : MonoBehaviour
     public Sprite[] inputs;
     public Image imgButton;
     public Image anim;
+    public Vector2 offset;
     private Transform follow;
     private Job jobReference;
 
@@ -15,7 +16,7 @@ public class UI_Input : MonoBehaviour
         follow = ToFollow;
         ShowImage(false);
         jobReference = follow.GetComponent<Job>();
-        transform.position = Camera.main.WorldToScreenPoint(follow.position);
+        transform.position = Camera.main.WorldToScreenPoint(follow.position)+ (Vector3)offset;
 
         jobReference.newInput += ShowInput;
         jobReference.onDetection += ShowImage;

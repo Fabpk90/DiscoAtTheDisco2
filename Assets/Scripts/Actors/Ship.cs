@@ -31,7 +31,7 @@ public class Ship : MonoBehaviour
             
             if ( GameManager.instance.CalculateMood() > 0)
             {
-                moodPercentage = GameManager.instance.CalculateMood() / GameManager.instance.GetMaxMood();
+                moodPercentage = GameManager.instance.CalculateMood();
             }
 
             Instantiate<Wave>(waveObject).alpha = moodPercentage;

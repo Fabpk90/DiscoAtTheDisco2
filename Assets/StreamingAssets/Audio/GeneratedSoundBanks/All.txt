@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	273422311	Play_Meteor_Reduce			\Default Work Unit\World\Meteor\Play_Meteor_Reduce	
 	500632261	Play_Cleaner_Get_In			\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_In	
 	710392401	Play_CoreGame			\Default Work Unit\Music\Play_CoreGame	
+	764177400	Play_DJ_Action_Fail			\Default Work Unit\World\Jobs\DJ\Play_DJ_Action_Fail	
 	950314379	Play_BeatCallback			\Default Work Unit\Music\Play_BeatCallback	
 	1235252603	Play_SpaceShip_Damage_000			\Default Work Unit\World\SpaceShip\Play_SpaceShip_Damage_000	
 	1287538821	Play_DJ_Action_Success			\Default Work Unit\World\Jobs\DJ\Play_DJ_Action_Success	
@@ -13,11 +14,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	2053058505	Play_DJ_Get_In			\Default Work Unit\World\Jobs\DJ\Play_DJ_Get_In	
 	2084885510	Play_Generic_Get_In			\Default Work Unit\World\Jobs\Generic\Play_Generic_Get_In	
 	2174041464	Play_Barman_Get_In			\Default Work Unit\World\Jobs\Barman\Play_Barman_Get_In	
+	2738082960	Play_Jacky_Action_Fail			\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action_Fail	
 	3244882441	Play_Generic_Get_Out			\Default Work Unit\World\Jobs\Generic\Play_Generic_Get_Out	
 	3327247393	Play_Jacky_Get_In			\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_In	
 	3549765580	Play_Cleaner_Get_Out			\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_Out	
 	3644223421	Play_Cleaner_Action			\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action	
-	3675512654	Play_Meteor_Move			\Default Work Unit\World\Meteor\Play_Meteor_Move	
+	3663410986	Play_SpaceShip_Destroyed			\Default Work Unit\World\SpaceShip\Play_SpaceShip_Destroyed	
+	3773469743	Play_Barman_Action_Fail			\Default Work Unit\World\Jobs\Barman\Play_Barman_Action_Fail	
 	3800239409	Play_Generic_Action_Fail			\Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Fail	
 	3950732764	Play_Meteor_Hit			\Default Work Unit\World\Meteor\Play_Meteor_Hit	
 	4066361600	Play_Barman_Action_Success			\Default Work Unit\World\Jobs\Barman\Play_Barman_Action_Success	
@@ -67,7 +70,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	723774473	Crowd_Boo_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Crowd_Boo_001_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stingers\Music_Stingers_Low\Crowd_Boo_001		1115020
 	742445045	Meteor_Hit_003	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Meteor_Hit_003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Meteors\Meteor_Hit\Meteor_Hit_003		795752
 	776083523	Music_OpenHH	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_OpenHH_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_02\Variation_01\Music_OpenHH		3456064
+	777641258	SpaceShip_Destroyed	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\SpaceShip_Destroyed_000_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Space Ship\SpaceShip_Destroyed		841560
 	797694622	Music_Pad_002	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_Pad_002_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_03\Variation_01\Music_Pad_002		3840064
+	801998266	DJ_Action_Fail_000	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\DJ_Action_Fail_000_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\DJ\DJ_Action_Fail\DJ_Action_Fail_000		43100
 	816585607	Crowd_Cheers_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Crowd_Cheers_001_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Stingers\Music_Stingers_High\Crowd_Cheers_001		1119672
 	825116115	Music_Pad_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_Pad_001_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_03\Variation_01\Music_Pad_001		3456064
 	837119444	Jacky_Action_000	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Jacky_Action_000_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\Jacky\Jacky_Action\Jacky_Action_000		592060
