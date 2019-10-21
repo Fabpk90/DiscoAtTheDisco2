@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4971214381994937366}
   - component: {fileID: 4971214381994937367}
+  - component: {fileID: 1219957672}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -43,10 +44,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7e87876c70c114f998a136da84dc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moodPerSec: 0.05
-  meteorPerSec: 0.5
+  moodPerSec: 0.01
+  meteorPerSec: 0.1
   meteorScales:
   - 0.25
   - 0.5
   - 0.75
   meteor: {fileID: 1613603991751148280, guid: f9819f505bd59404eb7bc133684d6c98, type: 3}
+  cleaner: {fileID: 0}
+  barman: {fileID: 0}
+  DJ: {fileID: 0}
+--- !u!114 &1219957672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971214381994937449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658dbd6342d2ca947ad6663ad677a595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getInSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+      type: 2}

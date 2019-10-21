@@ -373,7 +373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825960698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0.53, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -476,23 +476,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4971214380702777174}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1219957672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219957671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 658dbd6342d2ca947ad6663ad677a595, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  getInSound:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
-      type: 2}
 --- !u!1 &1494425190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,35 +1084,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: actionSuccess.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: actionFail.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: getIn.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: getOut.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: valuePerSuccess
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 2788714849152153044, guid: a950e06a5fd15fb4d96b090d580ab544,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1185,30 +1139,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
-        type: 3}
-      propertyPath: Meteor_Hit.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 3b729a0d7974d9246be81f2b08d52d27,
-        type: 2}
-    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: actionSuccess.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 334900c30e3c978438bf835b2e742e40,
-        type: 2}
-    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: getIn.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
-        type: 2}
-    - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: getOut.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a950e06a5fd15fb4d96b090d580ab544, type: 3}
 --- !u!1001 &4971214380702777174
@@ -1230,19 +1160,9 @@ PrefabInstance:
       objectReference: {fileID: 575034500}
     - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
         type: 3}
-      propertyPath: moodPerSec
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
-        type: 3}
       propertyPath: barman
       value: 
       objectReference: {fileID: 409303171}
-    - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
-        type: 3}
-      propertyPath: meteorPerSec
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
         type: 3}
       propertyPath: DJ

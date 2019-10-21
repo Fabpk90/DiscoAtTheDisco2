@@ -508,8 +508,8 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
       type: 2}
-  valuePerSuccess: 0.5
-  valuePerSec: 0.05
+  valuePerSuccess: 1
+  valuePerSec: 0.01
 --- !u!1 &2896383398005905004
 GameObject:
   m_ObjectHideFlags: 0
