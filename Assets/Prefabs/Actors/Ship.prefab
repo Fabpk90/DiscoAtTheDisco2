@@ -326,7 +326,7 @@ MonoBehaviour:
   actionNextSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+    WwiseObjectReference: {fileID: 11400000, guid: 07a1ee19cf8f287478e976108195f0b3,
       type: 2}
   actionFailSound:
     idInternal: 0
