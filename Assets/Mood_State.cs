@@ -10,7 +10,7 @@ public class Mood_State : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //AkSoundEngine.SetState("Mood", "Mood_Level_00");
+
     }
 
     // Update is called once per frame
@@ -34,5 +34,7 @@ public class Mood_State : MonoBehaviour
         {
             AkSoundEngine.SetState("Mood", "Mood_Level_03");
         }
+
+        print(currentMood);
     }
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0a2a0d4ff403a48b2a5e785198c39f, type: 3}
   m_Name: 145C4C36-4397-47C7-AF8C-F4B30826DF45
   m_EditorClassIdentifier: 
-  objectName: Play_Jacky_Action_Succes
-  id: 1624586698
+  objectName: Play_Jacky_Action_Success
+  id: 967440525
   guid: 145C4C36-4397-47C7-AF8C-F4B30826DF45

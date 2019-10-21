@@ -3238,135 +3238,299 @@
 										<MusicTransition Name="Transition" ID="{DB928C53-4BB7-4F3D-852C-2E5E8DB09667}">
 											<TransitionInfo/>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{E95321F4-4926-4A8E-A554-CB16F8C3BF65}">
+										<MusicTransition Name="From 01 Low" ID="{BF4C9346-2826-40A7-9B19-A84B50016F5C}">
 											<PropertyList>
-												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="5"/>
-												<Property Name="SourceContextType" Type="int16" Value="2"/>
-												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="SourceContextObject">
-													<ObjectRef Name="Mood_Level_01" ID="{24CC4903-9223-4060-8DCD-E77A5B434FFF}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-											</ReferenceList>
-											<TransitionInfo>
-												<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{09582F48-67BE-4D4F-978D-17D3FC87EF4B}">
-														<PropertyList>
-															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeType" Type="int16" Value="1"/>
-														</PropertyList>
-													</MusicFade>
-												</SourceFadeOut>
-											</TransitionInfo>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{E95321F4-4926-4A8E-A554-CB16F8C3BF65}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_00" ID="{283013BB-5DE5-40D6-9D69-8DAA54E041DB}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_01" ID="{24CC4903-9223-4060-8DCD-E77A5B434FFF}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{09582F48-67BE-4D4F-978D-17D3FC87EF4B}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{D062F441-024E-4263-916C-23E4BA129B59}">
+										<MusicTransition Name="From 02 Low" ID="{83C1A59C-A151-49A3-9592-FDC3BBC2BC5F}">
 											<PropertyList>
-												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="5"/>
-												<Property Name="SourceContextType" Type="int16" Value="2"/>
-												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="SourceContextObject">
-													<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-											</ReferenceList>
-											<TransitionInfo>
-												<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{83852092-9348-45C1-8E36-7429BD4CE774}">
-														<PropertyList>
-															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeType" Type="int16" Value="1"/>
-														</PropertyList>
-													</MusicFade>
-												</SourceFadeOut>
-											</TransitionInfo>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{D062F441-024E-4263-916C-23E4BA129B59}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_01" ID="{24CC4903-9223-4060-8DCD-E77A5B434FFF}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{83852092-9348-45C1-8E36-7429BD4CE774}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{92F62D87-35C5-4B1E-A380-08BC1E643D11}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_00" ID="{283013BB-5DE5-40D6-9D69-8DAA54E041DB}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{A66C7A1A-DE3F-47FE-80A8-5C21360C1DA6}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{DCDA7F97-30E8-47A4-A0F6-7A211206EFDD}">
+										<MusicTransition Name="From 03 Low" ID="{B35A8FF8-2E45-412E-9542-400F1EF83586}">
 											<PropertyList>
-												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="5"/>
-												<Property Name="SourceContextType" Type="int16" Value="2"/>
-												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="SourceContextObject">
-													<ObjectRef Name="Mood_Level_03" ID="{847EA6AC-0B0B-4DE5-8E75-1256E59B9B0B}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-											</ReferenceList>
-											<TransitionInfo>
-												<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{6155ECEF-9892-45D7-9E3A-59DB39266CE2}">
-														<PropertyList>
-															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeType" Type="int16" Value="1"/>
-														</PropertyList>
-													</MusicFade>
-												</SourceFadeOut>
-											</TransitionInfo>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{DCDA7F97-30E8-47A4-A0F6-7A211206EFDD}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_03" ID="{847EA6AC-0B0B-4DE5-8E75-1256E59B9B0B}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{6155ECEF-9892-45D7-9E3A-59DB39266CE2}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{1679B7C1-78DF-4862-809D-D042D5794DA1}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_01" ID="{24CC4903-9223-4060-8DCD-E77A5B434FFF}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_03" ID="{847EA6AC-0B0B-4DE5-8E75-1256E59B9B0B}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{9458AC17-7BA0-4F86-B9A0-1C83AF99F201}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{1B5B95AB-05C5-4C39-836B-A8F4D10200B1}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_00" ID="{283013BB-5DE5-40D6-9D69-8DAA54E041DB}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_03" ID="{847EA6AC-0B0B-4DE5-8E75-1256E59B9B0B}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_Low" ID="{420369EC-0F36-4A70-B144-B201DBF32B14}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{C929C129-95DA-4CD9-9AAC-CFEDB567B4A0}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{FD4496F7-40C5-46E7-93E8-42DF2984FADD}">
+										<MusicTransition Name="From 02 High" ID="{23629808-4537-4351-9F75-6C07AFFA0398}">
 											<PropertyList>
-												<Property Name="DestinationContextType" Type="int16" Value="2"/>
-												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="5"/>
-												<Property Name="SourceContextType" Type="int16" Value="2"/>
-												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="Mood_Level_03" ID="{847EA6AC-0B0B-4DE5-8E75-1256E59B9B0B}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-												<Reference Name="SourceContextObject">
-													<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-											</ReferenceList>
-											<TransitionInfo>
-												<TransitionObjectRef Name="Music_Stingers_High" ID="{550165C9-3D11-4D73-8EC6-D28EE1AEB7D2}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{DE81180D-68A4-4752-ADCC-BB7B795C9C19}">
-														<PropertyList>
-															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeType" Type="int16" Value="1"/>
-														</PropertyList>
-													</MusicFade>
-												</SourceFadeOut>
-											</TransitionInfo>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{FD4496F7-40C5-46E7-93E8-42DF2984FADD}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_03" ID="{847EA6AC-0B0B-4DE5-8E75-1256E59B9B0B}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_High" ID="{550165C9-3D11-4D73-8EC6-D28EE1AEB7D2}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{DE81180D-68A4-4752-ADCC-BB7B795C9C19}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{21BDE612-A22C-42CD-B0B7-F6A71AA0993C}">
+										<MusicTransition Name="From 01 High" ID="{6CAF636B-E5ED-40A6-9F52-0A6331947245}">
 											<PropertyList>
-												<Property Name="DestinationContextType" Type="int16" Value="2"/>
-												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="5"/>
-												<Property Name="SourceContextType" Type="int16" Value="2"/>
-												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-												<Reference Name="SourceContextObject">
-													<ObjectRef Name="Mood_Level_01" ID="{24CC4903-9223-4060-8DCD-E77A5B434FFF}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-											</ReferenceList>
-											<TransitionInfo>
-												<TransitionObjectRef Name="Music_Stingers_High" ID="{550165C9-3D11-4D73-8EC6-D28EE1AEB7D2}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{11E763B7-DEDA-4BD3-9118-13201C2836C1}">
-														<PropertyList>
-															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeType" Type="int16" Value="1"/>
-														</PropertyList>
-													</MusicFade>
-												</SourceFadeOut>
-											</TransitionInfo>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{21BDE612-A22C-42CD-B0B7-F6A71AA0993C}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_02" ID="{3EDC5D71-1F7F-454D-B887-82BE12DB366C}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_01" ID="{24CC4903-9223-4060-8DCD-E77A5B434FFF}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_High" ID="{550165C9-3D11-4D73-8EC6-D28EE1AEB7D2}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{11E763B7-DEDA-4BD3-9118-13201C2836C1}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{AEE144C3-78F0-4C5D-833D-7D5F2E0A953B}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Mood_Level_03" ID="{847EA6AC-0B0B-4DE5-8E75-1256E59B9B0B}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="Mood_Level_01" ID="{24CC4903-9223-4060-8DCD-E77A5B434FFF}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="Music_Stingers_High" ID="{550165C9-3D11-4D73-8EC6-D28EE1AEB7D2}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{47AB7794-5C3C-4188-A571-EECE376AE640}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{245C1E92-88E1-45AB-8CBA-A626370908ED}">
+										<MusicTransition Name="Transition" ID="{F6A78B89-1973-4EEF-95B4-8626B04B48EF}">
 											<PropertyList>
 												<Property Name="DestinationContextType" Type="int16" Value="2"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
@@ -3384,14 +3548,6 @@
 											</ReferenceList>
 											<TransitionInfo>
 												<TransitionObjectRef Name="Music_Stingers_High" ID="{550165C9-3D11-4D73-8EC6-D28EE1AEB7D2}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{5ECCFE49-EDB2-453E-8AEA-EFC06B88A22F}">
-														<PropertyList>
-															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeType" Type="int16" Value="1"/>
-														</PropertyList>
-													</MusicFade>
-												</SourceFadeOut>
 											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
@@ -3436,106 +3592,6 @@
 								</Entry>
 							</EntryList>
 						</MusicSwitchContainer>
-						<MusicPlaylistContainer Name="Backup" ID="{9CECC1AC-F79E-416A-9879-AD5C14C9A357}" ShortID="689325924">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicSegment Name="Music_LoopBackup" ID="{F8F602A8-B696-44D8-B335-75F49C418BAE}" ShortID="226265386">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="124000"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Music_LoopBackup" ID="{3BF72D51-E556-4EE0-B80F-72730845B39F}" ShortID="192332897">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Music_LoopBackup" ID="{B4DA13B1-B0B2-4D9D-BD54-E68D754A55C8}" ShortID="735041970">
-													<Language>SFX</Language>
-													<AudioFile>Music_LoopBackup.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{B1EF4F6A-1BFF-4741-828F-7E8369C97CE3}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{2C55A5C5-F623-4069-B340-976C2C6246A4}">
-													<ClipList>
-														<MusicClip Name="Music_LoopBackup" ID="{CE475990-575D-4167-AACC-40893F8390B0}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="124000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Music_LoopBackup" ID="{B4DA13B1-B0B2-4D9D-BD54-E68D754A55C8}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{42AD5437-88D8-41DC-88AC-2D67D8A2D116}"/>
-										<MusicCue Name="Exit Cue" ID="{EC08212E-C02F-4DC4-A56A-78F12CFD2A0A}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="120000"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{75B65F2F-D404-4847-8027-967C5D7A0FCE}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{820B265C-EC6A-4DBB-973E-1A441FCF1AD5}">
-											<TransitionInfo/>
-										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{623F4A09-2A35-41E5-A50F-DD699BB136DA}" ShortID="43148698">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{F959E8E8-7236-4DBE-B8DE-BEB23E7D5EF7}" ShortID="936070733">
-											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="Music_LoopBackup" ID="{F8F602A8-B696-44D8-B335-75F49C418BAE}"/>
-										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
 						<Folder Name="MultiTracks" ID="{41DE52BF-C833-4C00-AD24-DE5E337A0A86}" ShortID="842025907">
 							<ChildrenList>
 								<MusicSegment Name="Multitracks_ALL" ID="{8F338302-977F-49FB-9342-259395C26AB5}" ShortID="121057286">

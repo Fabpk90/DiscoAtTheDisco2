@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 394b630c158e254a833440683f868099
     GuidInternal: 
-    m_lastTime: -8586299968554790952
+    m_lastTime: -8586299369880103754
     List:
     - name: All
       guid: 96a62b7a0fdaf44da1676cddd1427eb9
@@ -47,19 +47,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 42459a4fbbc8ab45a02d2ef753c71191
     GuidInternal: 
-    m_lastTime: -8586299971673611053
+    m_lastTime: -8586299382239445319
     List:
-    - name: Play_Backup
-      guid: 5a1d7e431a442d40ab93cbe3b713f1dd
-      id: 632701952
+    - name: Pla_DJ_Action_Next
+      guid: 7e262569c47dd24da6dab3052f787e93
+      id: 1786392900
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Music
+      - ElementName: World
         ObjectType: 4
-      - ElementName: Play_Backup
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: DJ
+        ObjectType: 4
+      - ElementName: Pla_DJ_Action_Next
         ObjectType: 3
-      Path: Default Work Unit\Music\Play_Backup
+      Path: Default Work Unit\World\Jobs\DJ\Pla_DJ_Action_Next
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -78,24 +82,6 @@ MonoBehaviour:
       - ElementName: Play_Barman_Action_Fail
         ObjectType: 3
       Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_Fail
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Barman_Action_Fail_TEST
-      guid: 7a2015a8b3096849868acadbcc8c8c42
-      id: 3994308122
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Jobs
-        ObjectType: 4
-      - ElementName: Barman
-        ObjectType: 4
-      - ElementName: Play_Barman_Action_Fail_TEST
-        ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Barman\Play_Barman_Action_Fail_TEST
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -167,9 +153,27 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Cleaner_Action
+    - name: Play_Cleaner_Action_Fail
+      guid: ccdd77b0e6580c43a721123c33a50a33
+      id: 3674035588
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Jobs
+        ObjectType: 4
+      - ElementName: Cleaner
+        ObjectType: 4
+      - ElementName: Play_Cleaner_Action_Fail
+        ObjectType: 3
+      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action_Fail
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Cleaner_Action_Next
       guid: 0ec6d92f672fdb4bb6933b5cc8456f86
-      id: 3644223421
+      id: 1836015139
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -179,45 +183,9 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Cleaner
         ObjectType: 4
-      - ElementName: Play_Cleaner_Action
+      - ElementName: Play_Cleaner_Action_Next
         ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Cleaner_Get_In
-      guid: 178eac54876cf3478ec159d8b15cc3eb
-      id: 500632261
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Jobs
-        ObjectType: 4
-      - ElementName: Cleaner
-        ObjectType: 4
-      - ElementName: Play_Cleaner_Get_In
-        ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_In
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Cleaner_Get_Out
-      guid: b978e1467f49e54cbd662c2e1d1d09ab
-      id: 3549765580
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Jobs
-        ObjectType: 4
-      - ElementName: Cleaner
-        ObjectType: 4
-      - ElementName: Play_Cleaner_Get_Out
-        ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Get_Out
+      Path: Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action_Next
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -232,38 +200,6 @@ MonoBehaviour:
       - ElementName: Play_CoreGame
         ObjectType: 3
       Path: Default Work Unit\Music\Play_CoreGame
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Crowd_Boo
-      guid: 709110637b171a4cbb4e81027f566b12
-      id: 63524048
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Crowd
-        ObjectType: 4
-      - ElementName: Play_Crowd_Boo
-        ObjectType: 3
-      Path: Default Work Unit\World\Crowd\Play_Crowd_Boo
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Crowd_Cheer
-      guid: a59a450680352346a977b572771e1247
-      id: 555714483
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Crowd
-        ObjectType: 4
-      - ElementName: Play_Crowd_Cheer
-        ObjectType: 3
-      Path: Default Work Unit\World\Crowd\Play_Crowd_Cheer
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -303,42 +239,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_DJ_Get_In
-      guid: 5488d64eaa541147a2c8fea601453430
-      id: 2053058505
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Jobs
-        ObjectType: 4
-      - ElementName: DJ
-        ObjectType: 4
-      - ElementName: Play_DJ_Get_In
-        ObjectType: 3
-      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Get_In
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_DJ_Get_Out
-      guid: 82be60b3a383f547af4cfb0b1272b432
-      id: 1909703784
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Jobs
-        ObjectType: 4
-      - ElementName: DJ
-        ObjectType: 4
-      - ElementName: Play_DJ_Get_Out
-        ObjectType: 3
-      Path: Default Work Unit\World\Jobs\DJ\Play_DJ_Get_Out
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Generic_Action_Fail
       guid: b1f2d4d91d37364d83edeead3e92055a
       id: 3800239409
@@ -357,9 +257,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Generic_Action_Success
+    - name: Play_Generic_Action_Next
       guid: 6ed8b386f89717448749b908cc1eb8cf
-      id: 1701898702
+      id: 1354915090
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -369,9 +269,9 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Generic
         ObjectType: 4
-      - ElementName: Play_Generic_Action_Success
+      - ElementName: Play_Generic_Action_Next
         ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Success
+      Path: Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Next
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -429,9 +329,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Jacky_Action_Succes
+    - name: Play_Jacky_Action_Success
       guid: 364c5c149743c747af8cf4b30826df45
-      id: 1624586698
+      id: 967440525
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -441,9 +341,9 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Jacky
         ObjectType: 4
-      - ElementName: Play_Jacky_Action_Succes
+      - ElementName: Play_Jacky_Action_Success
         ObjectType: 3
-      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action_Succes
+      Path: Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action_Success
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -496,22 +396,6 @@ MonoBehaviour:
       - ElementName: Play_Meteor_Hit
         ObjectType: 3
       Path: Default Work Unit\World\Meteor\Play_Meteor_Hit
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Meteor_Move
-      guid: 90469724ac6b8b4bbc2de93b5b7775d4
-      id: 3675512654
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: World
-        ObjectType: 4
-      - ElementName: Meteor
-        ObjectType: 4
-      - ElementName: Play_Meteor_Move
-        ObjectType: 3
-      Path: Default Work Unit\World\Meteor\Play_Meteor_Move
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

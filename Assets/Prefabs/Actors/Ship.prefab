@@ -326,7 +326,7 @@ MonoBehaviour:
   actionNextSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 07a1ee19cf8f287478e976108195f0b3,
+    WwiseObjectReference: {fileID: 11400000, guid: f994deb766b184c439b4fda0f243b98c,
       type: 2}
   actionFailSound:
     idInternal: 0
@@ -1245,17 +1245,17 @@ MonoBehaviour:
   actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+    WwiseObjectReference: {fileID: 11400000, guid: 50da3d67788a5b84b9acdba7dcdb1043,
       type: 2}
   actionNextSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+    WwiseObjectReference: {fileID: 11400000, guid: 50da3d67788a5b84b9acdba7dcdb1043,
       type: 2}
   actionFailSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+    WwiseObjectReference: {fileID: 11400000, guid: 7eee85e495e95b941bbaf1fd743d4db9,
       type: 2}
   getInSound:
     idInternal: 0

@@ -6,58 +6,18 @@
 				<SoundcasterSession Name="Test" ID="{5861CF8C-F188-46B3-B8BB-894E58AF031C}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Meteor_Hit" ID="{4D6EC60C-20B3-4B39-B3CB-F18A4F4B5FCE}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Generic_Action_Fail" ID="{D9D4F2B1-371D-4D36-83ED-EEAD3E92055A}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_CoreGame" ID="{8C32AAC0-DA49-461D-BAC3-3E73DD04E5FD}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Meteor_Reduce" ID="{665F3649-AAFA-4B7C-9F33-C52146FFEB49}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Generic_Action_Success" ID="{86B3D86E-97F8-4417-8749-B908CC1EB8CF}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
 							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Jacky_Action_Succes" ID="{145C4C36-4397-47C7-AF8C-F4B30826DF45}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_SpaceShip_Damage_000" ID="{A4BA7552-F45D-4028-ABFA-E6F21B3D872A}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="2" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Generic_Get_In" ID="{88FFC279-CFC4-4A36-A43C-2C031DEFF35E}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="2" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_SpaceShip_Destroyed" ID="{FEA5285B-B5A9-4BAC-82A6-86EADF105BE4}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="2" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Generic_Get_Out" ID="{2204A887-C39B-4FF5-849F-61DB7B083C66}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_BeatCallback" ID="{3C7C9182-A3AF-486A-981A-5ED48309DDCA}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}"/>
-							<Position X="3" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Ship_Health" ID="{740D041C-BB6E-47ED-9109-51387C9945CA}"/>
-							<Value>14</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Mood_Level_01" ID="{34DC1F21-9E59-4ED1-81EA-2E407B956D20}"/>
+						<CurrentStateRef Name="Mood_Level_00" ID="{C35F21AE-95C9-4E24-B02D-51558895C57B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
