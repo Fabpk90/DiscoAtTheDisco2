@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
         
         ++nbplayer;
     }
+
     private void OnJobPossess(InputAction.CallbackContext obj)
     {
         InitControllerType(obj);

@@ -22,8 +22,8 @@ public abstract class State_Free : State_Base
     }
 
     public override void Move(Vector2 direction, float speed) {
+        base.Move(direction, speed);
         if (!machine.controller.jobInRange.possess) {
-            base.Move(direction, speed);
         }
     }
 
