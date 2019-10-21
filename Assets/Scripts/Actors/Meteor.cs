@@ -20,7 +20,7 @@ public class Meteor : MonoBehaviour
     public void Init(Vector2 direction, float speed, int tHp) {
         Debug.Log("Instantiate meteor " + tHp);
         rigidBody = this.GetComponent<Rigidbody2D>();
-        rigidBody.velocity = direction * speed;
+        rigidBody.velocity = direction * speed/2;
         hp = tHp;
         transform.localScale = new Vector3(GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp]);
         //moveSound.Post(gameObject);
