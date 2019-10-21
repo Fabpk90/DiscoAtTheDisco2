@@ -96,6 +96,7 @@ public class Job : MonoBehaviour
                     ++currentInput;
                     newInput?.Invoke(requiredInputs[currentInput]);
                     statut = eJOB_STATUT.NEXT;
+                    actionNextSound.Post(gameObject);
                 } else {
                     currentInput = 0;
                     newInput?.Invoke(requiredInputs[currentInput]);
