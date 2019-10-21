@@ -1084,6 +1084,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 8107460620202135576, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: maxItems
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2788714849152153044, guid: a950e06a5fd15fb4d96b090d580ab544,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1138,6 +1143,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369553094240166912, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369553094240166912, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a950e06a5fd15fb4d96b090d580ab544, type: 3}
