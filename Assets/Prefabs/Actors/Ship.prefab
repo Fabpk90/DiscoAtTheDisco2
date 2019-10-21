@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  requiredInputs: 000000000100000002000000
+  requiredInputs: 00000000010000000200000003000000
   actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
@@ -902,7 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 3
-  requiredInputs: 000000000100000002000000
+  requiredInputs: 0200000000000000
   actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 1
-  requiredInputs: 0000000001000000
+  requiredInputs: 000000000100000003000000
   actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 2
-  requiredInputs: 000000000100000003000000
+  requiredInputs: 0300000001000000
   actionSuccessSound:
     idInternal: 0
     valueGuidInternal: 
@@ -1274,7 +1274,6 @@ MonoBehaviour:
   spawnParent: {fileID: 2862901466414042505}
   spawnRadius: 2
   itemWeight: 0
-  type: 0
 --- !u!1 &8771824824379274587
 GameObject:
   m_ObjectHideFlags: 0

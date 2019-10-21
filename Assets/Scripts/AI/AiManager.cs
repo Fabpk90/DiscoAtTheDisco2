@@ -32,11 +32,14 @@ public class AiManager : MonoBehaviour
         {
             instance = this;
             SpawnAI();
-        }
-            
-        else
-        {
+        }else{
             Destroy(gameObject);
+        }
+    }
+
+    private void Start() {
+        for(int i = 0; i < maxAI; i++) {
+            //SpawnAI();
         }
     }
 
@@ -52,5 +55,15 @@ public class AiManager : MonoBehaviour
             ais.Add(ai);
         }
         
+    }
+
+    public float GetTotalMood() {
+        float tmp = 0f;
+
+        foreach(AI ai in ais) {
+            tmp += ai.moodAmount;
+        }
+
+        return tmp;
     }
 }
