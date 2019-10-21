@@ -40,7 +40,14 @@ public class UI_Input : MonoBehaviour
     }
 
     private void ShowInput(eINPUT_INTERACT input) {
-        imgButton.sprite = inputs[(int)input];
+        switch (jobReference.controller.controllerType) {
+            case eCONTROLLER.CONTROLLER:
+                imgButton.sprite = inputs[(int)input];
+                break;
+            case eCONTROLLER.KEYBOARD:
+                imgButton.sprite = inputs[(int)input+4];
+                break;
+        }
     }
 
 }

@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public enum eINPUT_INTERACT { BT1, BT2, BT3, BT4};
+public enum eCONTROLLER { KEYBOARD, CONTROLLER };
 
 public struct JobInfo {
     public Job jobObject;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     //STORAGE
     private Vector2 movement;
     private PlayerInput inputs;
+    public eCONTROLLER controllerType { get; private set; }
 
     //REFERENCES
     public Rigidbody2D rigidBody { get; private set; }
@@ -77,6 +79,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnJobPossess(InputAction.CallbackContext obj)
     {
+        InitControllerType(obj);
         if (jobInRange.jobObject)
         {
             if (!jobInRange.possess) {
@@ -94,33 +97,40 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnButton4(InputAction.CallbackContext obj) {
+        InitControllerType(obj);
         if (jobInRange.jobObject && jobInRange.possess) {
             machineState.Interact(eINPUT_INTERACT.BT4);
         }
     }
 
     private void OnButton3(InputAction.CallbackContext obj) {
+        InitControllerType(obj);
         if (jobInRange.jobObject && jobInRange.possess) {
             machineState.Interact(eINPUT_INTERACT.BT3);
         }
     }
 
-    private void OnButton2(InputAction.CallbackContext obj)
-    {
+    private void OnButton2(InputAction.CallbackContext obj) {
+        InitControllerType(obj);
         if (jobInRange.jobObject && jobInRange.possess) {
             machineState.Interact(eINPUT_INTERACT.BT2);
         }
     }
 
     private void OnButton1(InputAction.CallbackContext obj) {
+        InitControllerType(obj);
         if (jobInRange.jobObject && jobInRange.possess) {
             machineState.Interact(eINPUT_INTERACT.BT1);
         }
     }
 
+    private void InitControllerType(InputAction.CallbackContext obj) {
+        controllerType = (obj.control.ToString().Contains("Keyboard") ? eCONTROLLER.KEYBOARD : eCONTROLLER.CONTROLLER);
+    }
+
     //Called by unity (sendMessage)
-    private void OnMovement(InputAction.CallbackContext value)
-    {
+    private void OnMovement(InputAction.CallbackContext value) {
+        InitControllerType(value);
         movement = value.ReadValue<Vector2>();
         machineState?.Move(movement, movementSpeed);
     }
