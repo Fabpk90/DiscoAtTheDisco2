@@ -37,16 +37,15 @@ public class Ship : MonoBehaviour
             Instantiate<Wave>(waveObject).alpha = moodPercentage;
           
 
-            int increment = (int)(1/(1-GameManager.instance.CalculateMood()));
+            float increment = Mathf.Floor(GameManager.instance.CalculateMood() * 5);
             Debug.Log(increment);
-
             for (var i = meteors.Count - 1; i > -1; i--) {
                 if (meteors[i] == null)
                     meteors.RemoveAt(i);
             }
 
             for (int i = meteors.Count-1; i >= 0; --i) {
-                if (!meteors[i].Damage(increment)) {
+                if (!meteors[i].Damage((int)increment)) {
                     GameObject tmp = meteors[i].gameObject;
                     meteors.RemoveAt(i);
                     Destroy(tmp);
