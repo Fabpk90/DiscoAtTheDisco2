@@ -160,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imgDrink: {fileID: 8903279105993477831}
   imgDirt: {fileID: 4142874574311313055}
-  offset: {x: 0, y: 25}
+  offset: {x: 0, y: 35}
 --- !u!1 &1701522475468521665
 GameObject:
   m_ObjectHideFlags: 0

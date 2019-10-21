@@ -20,7 +20,7 @@ public class UI_AI : MonoBehaviour {
 
     private void Update() {
         transform.position = Camera.main.WorldToScreenPoint(follow.position) + (Vector3)offset;
-        imgDrink.value = aiReference.Drinkyness;
+        imgDrink.value = aiReference.GetDrinkPercent();
         imgDirt.value = aiReference.Dirtyness;
     }
 

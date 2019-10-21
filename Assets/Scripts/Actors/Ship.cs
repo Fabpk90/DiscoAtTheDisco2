@@ -37,7 +37,7 @@ public class Ship : MonoBehaviour
             Instantiate<Wave>(waveObject).alpha = moodPercentage;
           
 
-            int increment = (int)(1/(1 - GameManager.instance.CalculateMood()));
+            int increment = (int)(1/(1-GameManager.instance.CalculateMood()));
 
 
             for (var i = meteors.Count - 1; i > -1; i--) {
@@ -52,8 +52,6 @@ public class Ship : MonoBehaviour
                     Destroy(tmp);
                 }
             }
-            
-            yield return new WaitForSeconds(waveRefresh);
         }
     }
 

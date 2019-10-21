@@ -186,4 +186,8 @@ public class AI : MonoBehaviour
     private void OnDestroy() {
         onDestroy?.Invoke();
     }
+
+    public float GetDrinkPercent() {
+        return drinkyness / AiManager.instance.secondsBeforeThirst;
+    }
 }

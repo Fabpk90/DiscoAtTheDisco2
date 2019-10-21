@@ -37,22 +37,20 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnMeteor());
-        StartCoroutine(SpawnDrink());
-        //StartCoroutine(SpawnJunk());
+        //StartCoroutine(SpawnDrink());
+        StartCoroutine(SpawnJunk());
         hp = 1f;
     }
     
-    void Update()
-    {
-        if(mood > 0) {
+    void Update() {
+
+        mood = ( CalculateMood() <= 1f) ? CalculateMood() : 1f;
+        /*if (mood > 0) {
             //Calculate Psy power
             print(CalculateMood());
-            float decPsyPower = 1-CalculateMood();
-
-            mood -= moodPerSec * decPsyPower * Time.deltaTime;
-            mood += CalculateMood() * DJ.efficiency * Time.deltaTime;
+            
             print(DJ.efficiency);
-        }
+        }*/
     }
 
     private IEnumerator SpawnJunk() {
@@ -74,7 +72,7 @@ public class GameManager : MonoBehaviour
     }
 
     public float CalculateMood() {
-        return AiManager.instance.ais.Count/GetMaxMood();
+        return AiManager.instance.ais.Count/GetMaxMood() * DJ.efficiency;
     }
 
     public float GetMaxMood()
