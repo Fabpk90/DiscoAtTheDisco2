@@ -186,6 +186,10 @@ MonoBehaviour:
   - {fileID: 5929083931345638886, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
   - {fileID: -8800858028368179747, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
   - {fileID: 3176152940333316248, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
+  - {fileID: 5239928766925831176, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
+  - {fileID: -8391080564312243701, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
+  - {fileID: -7911504850521546450, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
+  - {fileID: 6998736316467393989, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
   imgButton: {fileID: 995833455816752371}
   anim: {fileID: 5737657764563851829}
   offset: {x: -10, y: 30}
