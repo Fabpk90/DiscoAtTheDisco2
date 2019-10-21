@@ -25,6 +25,7 @@
 						<ObjectRef Name="Play_Cleaner_Action_Next" ID="{2FD9C60E-2F67-4BDB-B693-3B5CC8456F86}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Jacky_Get_Out" ID="{6F223519-D14B-4D34-BFB9-6D7084FDA1A9}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Generic_Action_Fail" ID="{D9D4F2B1-371D-4D36-83ED-EEAD3E92055A}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Meteor_Move" ID="{2FD19D52-C140-4D81-9E2C-8FCC6DD46E25}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pla_DJ_Action_Next" ID="{6925267E-7DC4-4DD2-A6DA-B3052F787E93}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Jacky_Action_Fail" ID="{A8FBFCD1-3A7F-4F08-AE00-D5B244AEF94E}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Generic_Get_Out" ID="{2204A887-C39B-4FF5-849F-61DB7B083C66}" WorkUnitID="{4F9A4542-C8BB-45AB-A02D-2EF753C71191}" Filter="7" Origin="Manual"/>

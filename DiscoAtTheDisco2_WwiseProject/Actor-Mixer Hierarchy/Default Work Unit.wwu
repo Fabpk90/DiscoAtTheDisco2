@@ -49,6 +49,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -145,6 +150,11 @@
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -309,9 +319,18 @@
 										<Position Name="" ID="{CA7D1128-F75F-4774-93AC-DA71FA1896C7}"/>
 									</PositioningInfo>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Meteor_Move" ID="{573F5086-C218-43C9-AF58-3A47C9D03574}" ShortID="886536543">
+								<Sound Name="Meteor_Move" ID="{30F1EC35-B1FD-4875-BB5B-7E2C01A2A815}" ShortID="223212225">
 									<PropertyList>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -321,7 +340,16 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
 										</Reference>
 									</ReferenceList>
-								</RandomSequenceContainer>
+									<ChildrenList>
+										<AudioFileSource Name="Meteor_Move_000" ID="{A5745500-C332-4D4A-B2BD-5BB114DB34EF}" ShortID="220352144">
+											<Language>SFX</Language>
+											<AudioFile>Meteor_Move_000.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Meteor_Move_000" ID="{A5745500-C332-4D4A-B2BD-5BB114DB34EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<PositioningInfo>
 								<Panner Name="" ID="{76C2752F-62E9-4C32-A479-D74C18FC1FDD}">

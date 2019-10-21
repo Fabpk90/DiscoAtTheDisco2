@@ -36,6 +36,7 @@
 				<Event Id="3327247393" Name="Play_Jacky_Get_In" ObjectPath="\Events\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_In" DurationType="OneShot" DurationMin="2.012875" DurationMax="2.012875"/>
 				<Event Id="1756586912" Name="Play_Jacky_Get_Out" ObjectPath="\Events\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_Out" DurationType="OneShot" DurationMin="1.162750" DurationMax="1.162750"/>
 				<Event Id="3950732764" Name="Play_Meteor_Hit" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Hit" DurationType="OneShot" DurationMin="2.493145" DurationMax="4.390636"/>
+				<Event Id="3675512654" Name="Play_Meteor_Move" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Move" DurationType="OneShot" DurationMin="5.904930" DurationMax="5.904930"/>
 				<Event Id="273422311" Name="Play_Meteor_Reduce" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Reduce" DurationType="OneShot" DurationMin="1.443498" DurationMax="1.620272"/>
 				<Event Id="1235252603" Name="Play_SpaceShip_Damage_000" ObjectPath="\Events\Default Work Unit\World\SpaceShip\Play_SpaceShip_Damage_000" DurationType="Infinite"/>
 				<Event Id="3663410986" Name="Play_SpaceShip_Destroyed" ObjectPath="\Events\Default Work Unit\World\SpaceShip\Play_SpaceShip_Destroyed" DurationType="OneShot" DurationMin="4.382792" DurationMax="4.382792"/>
@@ -76,6 +77,10 @@
 				<File Id="185350583" Language="SFX">
 					<ShortName>Jacky_Action_Success_004.wav</ShortName>
 					<Path>SFX\Jacky_Action_Success_004_10C4C929.wem</Path>
+				</File>
+				<File Id="220352144" Language="SFX">
+					<ShortName>Meteor_Move_000.wav</ShortName>
+					<Path>SFX\Meteor_Move_000_10C4C929.wem</Path>
 				</File>
 				<File Id="222216638" Language="SFX">
 					<ShortName>Music_Plucks.wav</ShortName>
