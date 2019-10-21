@@ -23,7 +23,6 @@ namespace DefaultNamespace
             scale.y += Time.deltaTime*1.5f;
 
             transform.localScale = scale;
-            Debug.Log(alpha);
             timer -= Time.deltaTime;
             var spriteColor = sprite.color;
             spriteColor.a = alpha * timer;

@@ -48,7 +48,7 @@ public class Job : MonoBehaviour
     protected virtual void Start() {
         
         currentInput = 0;
-        UI_Manager.instance.AddInputWidget(transform);
+        UI_Manager.instance.AddInputWidget(this,playerPos.transform);
     }
 
     public bool Join(PlayerController tController) {
