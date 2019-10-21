@@ -23,7 +23,7 @@ public class Meteor : MonoBehaviour
         rigidBody.velocity = direction * speed/2;
         hp = tHp;
         transform.localScale = new Vector3(GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp]);
-        //moveSound.Post(gameObject);
+        moveSound.Post(gameObject);
     }
 
     private void FixedUpdate() {
@@ -34,6 +34,7 @@ public class Meteor : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Ship")) {
+            moveSound.Stop(gameObject);
             GameManager.instance.ApplyDamages(damages * hp);
             Destroy(gameObject);
             hitSound.Post(gameObject);

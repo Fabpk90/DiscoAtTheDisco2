@@ -364,16 +364,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{60015B96-A6F5-4822-AB4F-D950B7B3D46C}" ShortID="1035896962">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="CoreGame" ID="{F6DF53B9-DB94-4872-A36C-124B711FD8A7}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{B2AD9FE1-EEFD-4281-91C7-16F826E247F0}" ShortID="851144614">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>

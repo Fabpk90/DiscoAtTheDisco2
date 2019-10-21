@@ -18,7 +18,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3327247393	Play_Jacky_Get_In			\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_In	
 	3663410986	Play_SpaceShip_Destroyed			\Default Work Unit\World\SpaceShip\Play_SpaceShip_Destroyed	
 	3674035588	Play_Cleaner_Action_Fail			\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action_Fail	
-	3675512654	Play_Meteor_Move			\Default Work Unit\Play_Meteor_Move	
+	3675512654	Play_Meteor_Move			\Default Work Unit\World\Meteor\Play_Meteor_Move	
 	3773469743	Play_Barman_Action_Fail			\Default Work Unit\World\Jobs\Barman\Play_Barman_Action_Fail	
 	3800239409	Play_Generic_Action_Fail			\Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Fail	
 	3950732764	Play_Meteor_Hit			\Default Work Unit\World\Meteor\Play_Meteor_Hit	

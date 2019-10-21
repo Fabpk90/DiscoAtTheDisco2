@@ -199,7 +199,7 @@
 				<Property Name="Music Transition List\{EDFA6025-0A31-47E0-8FE4-E4B0CC2183B8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{EE2FE198-5795-47F1-874D-59F35ADF52E5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{F6614948-D74E-4D78-A12E-7F74AEA8553A}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Music Transition List\{F6DF53B9-DB94-4872-A36C-124B711FD8A7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{F6DF53B9-DB94-4872-A36C-124B711FD8A7}\x64_Expand States" Type="string" Value="RpNMvyYop0CbGahLUAFvXJylwYNRoaNJlZL9w7vCvF/4j1qzRS4uQZVCQA8e+DWGCJhiIzdFUUOfdWwHr/oDmGtjr2zt5aZAn1IKYzGUckU="/>
 				<Property Name="Music Transition List\{F73B5074-17FB-4AF8-8A3A-1BA53ED5FF28}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{F922EDDC-C0EE-4052-8528-CB6A6D9B460C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
@@ -208,8 +208,8 @@
 				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
-				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{2FD9C60E-2F67-4BDB-B693-3B5CC8456F86}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{B8386CB2-6E51-4ECE-A9C8-AD1D37CB66FB}"/>
+				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{8DDC3F98-652E-43A8-B2B2-B50ECE2AF9DA}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
