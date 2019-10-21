@@ -16,21 +16,17 @@ public class Mood_State : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentMood = GameManager.instance.CalculateMood() / GameManager.instance.GetMaxMood();
+        currentMood = GameManager.instance.CalculateMood();
 
-        if (currentMood < 0.1f)
-        {
+        if (currentMood < 0.1f) {
             AkSoundEngine.SetState("Mood", "Mood_Level_00");
-        }
-        if (currentMood >= 0.1f && currentMood < 0.40f)
+        } else if (currentMood >= 0.1f && currentMood < 0.40f)
         {
             AkSoundEngine.SetState("Mood", "Mood_Level_01");
-        }
-        if (currentMood >= 0.40f && currentMood < 0.70f)
+        }else if (currentMood >= 0.40f && currentMood < 0.70f)
         {
             AkSoundEngine.SetState("Mood", "Mood_Level_02");
-        }
-        if (currentMood >= 0.70)
+        }else if (currentMood >= 0.70)
         {
             AkSoundEngine.SetState("Mood", "Mood_Level_03");
         }

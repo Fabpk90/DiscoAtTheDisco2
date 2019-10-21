@@ -17,8 +17,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Mob
+  - Job
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1434602191
+    locked: 0
+  - name: Wave
+    uniqueID: 720177277
     locked: 0

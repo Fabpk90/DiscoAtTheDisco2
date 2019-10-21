@@ -18,10 +18,12 @@ public class Meteor : MonoBehaviour
     public AK.Wwise.Event moveSound;
 
     public void Init(Vector2 direction, float speed, int tHp) {
+        Debug.Log("Instantiate meteor " + tHp);
         rigidBody = this.GetComponent<Rigidbody2D>();
-        rigidBody.velocity = direction * speed;
+        rigidBody.velocity = direction * speed/2;
         hp = tHp;
         transform.localScale = new Vector3(GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp]);
+        //moveSound.Post(gameObject);
     }
 
     private void FixedUpdate() {
@@ -40,11 +42,14 @@ public class Meteor : MonoBehaviour
 
     public bool Damage(int value) {
         hp -= value;
+
+        print(hp);
         if(hp >= 0) {
             transform.localScale = new Vector3(GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp]);
             reduceSound.Post(gameObject);
             return true;
         } else {
+            print("destroyed");
             return false;
         }
     }

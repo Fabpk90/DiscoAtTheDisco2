@@ -44,6 +44,6 @@ public class StateFree_Move : State_Free
     }
 
     public override void Exit() {
-
+        machine.controller.rigidBody.velocity = Vector2.zero;
     }
 }
