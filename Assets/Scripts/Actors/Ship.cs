@@ -38,7 +38,6 @@ public class Ship : MonoBehaviour
           
 
             float increment = Mathf.Floor(GameManager.instance.CalculateMood() * 5);
-            Debug.Log(increment);
             for (var i = meteors.Count - 1; i > -1; i--) {
                 if (meteors[i] == null)
                     meteors.RemoveAt(i);

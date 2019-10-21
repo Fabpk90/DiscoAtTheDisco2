@@ -7,6 +7,7 @@ public class Job_Spawner : Job
     [Header("PARAMETERS")]
     public int maxItems;
     public GameObject itemPrefab;
+    public GameObject feedback;
     public bool spawnIfSucceed;
     
     //STORAGE
@@ -44,9 +45,15 @@ public class Job_Spawner : Job
 
     public void SpawnItem() {
         items.Add(Instantiate(itemPrefab, (Vector2)spawnParent.position + Random.insideUnitCircle * spawnRadius, Quaternion.identity, spawnParent));
+        if(items.Count == maxItems) {
+            feedback?.SetActive(true);
+        }
     }
 
     public void DestroyItem() {
+        if (items.Count == maxItems) {
+            feedback?.SetActive(false);
+        }
         GameObject tmp = items[0];
 
         items.RemoveAt(0);

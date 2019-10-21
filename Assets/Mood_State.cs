@@ -30,7 +30,5 @@ public class Mood_State : MonoBehaviour
         {
             AkSoundEngine.SetState("Mood", "Mood_Level_03");
         }
-
-        print(currentMood);
     }
 }
