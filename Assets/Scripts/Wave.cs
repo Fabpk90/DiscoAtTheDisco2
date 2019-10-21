@@ -5,7 +5,8 @@ namespace DefaultNamespace
 {
     public class Wave : MonoBehaviour
     {
-        public float alpha = 1.0f;
+        public float alpha = 0;
+        private float timer = 1.0f;
         private SpriteRenderer sprite;
 
         private void Awake()
@@ -22,10 +23,10 @@ namespace DefaultNamespace
             scale.y += Time.deltaTime*1.5f;
 
             transform.localScale = scale;
-
-            alpha -= Time.deltaTime/2 ;
+            Debug.Log(alpha);
+            timer -= Time.deltaTime;
             var spriteColor = sprite.color;
-            spriteColor.a = alpha;
+            spriteColor.a = alpha * timer;
             sprite.color = spriteColor;
         }
     }
