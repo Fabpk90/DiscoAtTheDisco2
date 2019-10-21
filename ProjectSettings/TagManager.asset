@@ -47,6 +47,9 @@ TagManager:
   - name: Background
     uniqueID: 2326666353
     locked: 0
+  - name: Wave
+    uniqueID: 720177277
+    locked: 0
   - name: Ground
     uniqueID: 3543336595
     locked: 0
@@ -58,7 +61,4 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1434602191
-    locked: 0
-  - name: Wave
-    uniqueID: 720177277
     locked: 0
