@@ -38,7 +38,7 @@ public class Ship : MonoBehaviour
           
 
             int increment = (int)(1/(1-GameManager.instance.CalculateMood()));
-
+            Debug.Log(increment);
 
             for (var i = meteors.Count - 1; i > -1; i--) {
                 if (meteors[i] == null)

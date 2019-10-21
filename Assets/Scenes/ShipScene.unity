@@ -349,7 +349,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 10.79
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -695,7 +695,7 @@ MonoBehaviour:
   - {fileID: 22100000, guid: 01a80bc78098d834f93de63a6c65f421, type: 2}
   - {fileID: 22100000, guid: c4d0360b0173f144b9040dac6b0ad2b0, type: 2}
   maxAI: 10
-  secondsBeforeThirst: 15
+  secondsBeforeThirst: 40
   startingDirtynessHandling: 1
   timeBeforeLookForDirty: 2.5
   prefabAI: {fileID: 5701188749285259059, guid: 887e6970cd024d440a969f84326b2954,
@@ -1101,6 +1101,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionSuccess.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: actionFail.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getIn.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: getOut.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
+        type: 2}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: valuePerSuccess
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
+        type: 3}
+      propertyPath: valuePerSec
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 2788714849152153044, guid: a950e06a5fd15fb4d96b090d580ab544,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1162,40 +1196,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3b729a0d7974d9246be81f2b08d52d27,
         type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: actionSuccess.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: fea21bd897f892a4bb8851944fe257a9,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: actionFail.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 7ff3f4728853e9145bd6f02dc757c911,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: getIn.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f14dfffb6fb16142a92c2a416a3a2d1,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: getOut.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
-        type: 2}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: valuePerSuccess
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7578505642140905135, guid: a950e06a5fd15fb4d96b090d580ab544,
-        type: 3}
-      propertyPath: valuePerSec
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4365810858621691014, guid: a950e06a5fd15fb4d96b090d580ab544,
         type: 3}
       propertyPath: actionSuccess.WwiseObjectReference
@@ -1236,7 +1236,7 @@ PrefabInstance:
     - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
         type: 3}
       propertyPath: moodPerSec
-      value: 0.05
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4971214381994937367, guid: b3dffd1580f813649a1122af43f045fa,
         type: 3}

@@ -121,7 +121,7 @@ RectTransform:
   m_GameObject: {fileID: 995833455816752365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 6183179428358629710}
   m_Father: {fileID: 0}
@@ -192,4 +192,5 @@ MonoBehaviour:
   - {fileID: 6998736316467393989, guid: 967230e57ac6e0742a40aaca3b4af66a, type: 3}
   imgButton: {fileID: 995833455816752371}
   anim: {fileID: 5737657764563851829}
-  offset: {x: 0, y: 25}
+  offset: {x: -10, y: 30}
+  jobReference: {fileID: 0}

@@ -10,12 +10,11 @@ public class UI_Input : MonoBehaviour
     public Image anim;
     public Vector2 offset;
     private Transform follow;
-    private Job jobReference;
+    public Job jobReference;
 
     public void Init(Transform ToFollow) {
         follow = ToFollow;
         ShowImage(false);
-        jobReference = follow.GetComponent<Job>();
         transform.position = Camera.main.WorldToScreenPoint(follow.position)+ (Vector3)offset;
 
         jobReference.newInput += ShowInput;

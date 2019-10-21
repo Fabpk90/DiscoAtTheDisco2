@@ -19,9 +19,10 @@ public class UI_Manager : MonoBehaviour
     }
 
 
-    public void AddInputWidget(Transform target) {
+    public void AddInputWidget(Job job, Transform target) {
 
         UI_Input uiInput = Instantiate(inputPrefab, transform).GetComponent<UI_Input>();
+        uiInput.jobReference = job;
         uiInput.Init(target);
     }
 

@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     }
 
     private IEnumerator SpawnJunk() {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1/moodPerSec);
         cleaner.SpawnItem();
         StartCoroutine(SpawnJunk());
     }
