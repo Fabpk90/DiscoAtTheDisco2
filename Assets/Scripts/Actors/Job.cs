@@ -53,8 +53,30 @@ public class Job : MonoBehaviour
 
     public bool Join(PlayerController tController) {
         if (!controller) {
+
             onDetection?.Invoke(true);
             controller = tController;
+            controller.animator.SetBool("Move", false);
+            controller.animator.SetBool("Iddle", false);
+            controller.animator.SetBool("DJ", false);
+            controller.animator.SetBool("Bar", false);
+            controller.animator.SetBool("Tech", false);
+            controller.animator.SetBool("Jacky", false);
+            switch (state) {
+                case eSTATE_WORK.BARMAN:
+                    controller.animator.SetBool("Bar", true);
+                    break;
+                case eSTATE_WORK.CLEANER:
+                    controller.animator.SetBool("Tech", true);
+                    break;
+                case eSTATE_WORK.DJ:
+                    controller.animator.SetBool("DJ", true);
+                    break;
+                case eSTATE_WORK.JACKY:
+                    controller.animator.SetBool("Jacky", true);
+                    break;
+            }
+
             newInput?.Invoke(requiredInputs[currentInput]);
             getInSound.Post(gameObject);
             return true;

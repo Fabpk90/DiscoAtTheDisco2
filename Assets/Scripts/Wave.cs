@@ -18,12 +18,12 @@ namespace DefaultNamespace
         private void Update()
         {
             Vector3 scale = transform.localScale;
-            scale.x += Time.deltaTime;
-            scale.y += Time.deltaTime;
+            scale.x += Time.deltaTime*1.5f;
+            scale.y += Time.deltaTime*1.5f;
 
             transform.localScale = scale;
 
-            alpha -= Time.deltaTime / 3;
+            alpha -= Time.deltaTime/2 ;
             var spriteColor = sprite.color;
             spriteColor.a = alpha;
             sprite.color = spriteColor;

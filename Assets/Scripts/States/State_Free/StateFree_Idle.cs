@@ -12,8 +12,13 @@ public class StateFree_Idle : State_Free {
 
     public override void Enter() {
         Debug.Log("Entering Idle state");
-        machine.controller.render.material.color = Color.blue;
         machine.controller.rigidBody.velocity = Vector2.zero;
+        machine.controller.animator.SetBool("Move", false);
+        machine.controller.animator.SetBool("Iddle", true);
+        machine.controller.animator.SetBool("DJ", false);
+        machine.controller.animator.SetBool("Bar", false);
+        machine.controller.animator.SetBool("Tech", false);
+        machine.controller.animator.SetBool("Jacky", false);
     }
 
     public override void Update() {

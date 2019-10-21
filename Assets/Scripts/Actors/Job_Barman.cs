@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class Job_Barman : Job_Spawner
 {
+    protected override void Start() {
+        base.Start();
 
+    }
 }

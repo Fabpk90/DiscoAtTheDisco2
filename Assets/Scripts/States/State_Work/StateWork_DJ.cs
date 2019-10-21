@@ -12,7 +12,7 @@ public class StateWork_DJ : State_Work
     }
 
     public override void Enter() {
-        machine.controller.render.material.color = Color.blue;
+        
     }
 
     public override void Update() {

@@ -8,10 +8,12 @@ using Random = UnityEngine.Random;
 public class AI : MonoBehaviour
 {
     private SpriteRenderer spRenderer;
-    
 
     private bool isEntering;
     private bool isLeaving;
+
+    public delegate void tDestroy();
+    public event tDestroy onDestroy;
 
     private float dirtyness;
 
@@ -44,13 +46,12 @@ public class AI : MonoBehaviour
         isEntering = true;
         isEnteringBar = false;
 
-        
         //randomize dance floor position
-        danceFloorPosition = (Random.insideUnitCircle * 3) + Vector2.one;
+        danceFloorPosition = (Random.insideUnitCircle * 2.5f) + Vector2.one;
     }
 
-    private void Start()
-    {
+    private void Start() {
+        UI_Manager.instance.AddAIWidget(transform);
         StartCoroutine(FadeIn());
         StartCoroutine(LookForADrink());
         StartCoroutine(CheckTheFloor());
@@ -117,6 +118,7 @@ public class AI : MonoBehaviour
             {
                 while (!isEnteringBar && !isEntering)
                 {
+                    //Moving towards Bar
                     transform.position = Vector3.MoveTowards(transform.position,
                         AiManager.instance.barPosition.position,
                         0.05f);
@@ -179,5 +181,9 @@ public class AI : MonoBehaviour
         {
             isEnteringBar = false;
         }
+    }
+
+    private void OnDestroy() {
+        onDestroy?.Invoke();
     }
 }

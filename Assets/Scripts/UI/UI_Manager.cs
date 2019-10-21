@@ -8,6 +8,7 @@ public class UI_Manager : MonoBehaviour
 {
     public static UI_Manager instance;
     public GameObject inputPrefab;
+    public GameObject ai_ui_Prefab;
 
     private void Awake() {
         if (!instance) {
@@ -22,6 +23,12 @@ public class UI_Manager : MonoBehaviour
 
         UI_Input uiInput = Instantiate(inputPrefab, transform).GetComponent<UI_Input>();
         uiInput.Init(target);
+    }
+
+    public void AddAIWidget(Transform target) {
+
+        UI_AI uiAI = Instantiate(ai_ui_Prefab, transform).GetComponent<UI_AI>();
+        uiAI.Init(target);
     }
 
     // Start is called before the first frame update
