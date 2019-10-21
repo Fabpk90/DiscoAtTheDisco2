@@ -15,7 +15,6 @@ public class UI_Input : MonoBehaviour
     public void Init(Transform ToFollow) {
         follow = ToFollow;
         ShowImage(false);
-        transform.position = Camera.main.WorldToScreenPoint(follow.position)+ (Vector3)offset;
 
         jobReference.newInput += ShowInput;
         jobReference.onDetection += ShowImage;
@@ -26,6 +25,10 @@ public class UI_Input : MonoBehaviour
         jobReference.newInput -= ShowInput;
         jobReference.onDetection -= ShowImage;
         jobReference.onBeat -= ShowAnim;
+    }
+
+    private void Update() {
+        transform.position = Camera.main.WorldToScreenPoint(follow.position) + (Vector3)offset;
     }
 
     private void ShowImage(bool show) {
