@@ -11,7 +11,7 @@ public class Job : MonoBehaviour
     [Header("PARAMETERS")]
     public eSTATE_WORK state;
     public eINPUT_INTERACT[] requiredInputs;
-
+    public Transform playerPos;
     //STORAGE
     protected int currentInput;
     protected bool canPerform;
@@ -56,6 +56,8 @@ public class Job : MonoBehaviour
 
             onDetection?.Invoke(true);
             controller = tController;
+            controller.GetComponent<SpriteRenderer>().flipX = false;
+            controller.transform.position = playerPos.position;
             controller.animator.SetBool("Move", false);
             controller.animator.SetBool("Iddle", false);
             controller.animator.SetBool("DJ", false);
