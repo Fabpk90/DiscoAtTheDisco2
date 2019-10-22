@@ -126,10 +126,6 @@
 					<ShortName>Barman_Action_Fail_002.wav</ShortName>
 					<Path>SFX\Barman_Action_Fail_002_10C4C929.wem</Path>
 				</File>
-				<File Id="414832841" Language="SFX">
-					<ShortName>DJ_Action_Success_000.wav</ShortName>
-					<Path>SFX\DJ_Action_Success_000_10C4C929.wem</Path>
-				</File>
 				<File Id="416554489" Language="SFX">
 					<ShortName>Barman_Action_Fail_003.wav</ShortName>
 					<Path>SFX\Barman_Action_Fail_003_10C4C929.wem</Path>
@@ -205,6 +201,10 @@
 				<File Id="678995272" Language="SFX">
 					<ShortName>Cleaner_Action_Next_001.wav</ShortName>
 					<Path>SFX\Cleaner_Action_Next_001_10C4C929.wem</Path>
+				</File>
+				<File Id="687228022" Language="SFX">
+					<ShortName>DJ_Action_Next_000.wav</ShortName>
+					<Path>SFX\DJ_Action_Next_000_10C4C929.wem</Path>
 				</File>
 				<File Id="687964416" Language="SFX">
 					<ShortName>Cleaner_Action_Next_002.wav</ShortName>
