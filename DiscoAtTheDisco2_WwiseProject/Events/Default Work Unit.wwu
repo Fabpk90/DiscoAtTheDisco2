@@ -329,6 +329,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Meteor_Move" ID="{2FD19D52-C140-4D81-9E2C-8FCC6DD46E25}">
+									<ChildrenList>
+										<Action Name="" ID="{3D8D436F-5261-4F24-B624-C21787B6D1A7}" ShortID="920407236">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Meteor_Move" ID="{30F1EC35-B1FD-4875-BB5B-7E2C01A2A815}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="SpaceShip" ID="{2D43696A-5A93-4D7E-83C9-A90E58CAC3D1}" ShortID="1054817486">
@@ -350,16 +361,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SpaceShip_Destroyed" ID="{B96BDCE2-6C65-457F-BB7E-DF251DD144E3}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{60015B96-A6F5-4822-AB4F-D950B7B3D46C}" ShortID="1035896962">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="CoreGame" ID="{F6DF53B9-DB94-4872-A36C-124B711FD8A7}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -45,6 +46,9 @@ public class GameManager : MonoBehaviour
     void Update() {
 
         mood = ( CalculateMood() <= 1f) ? CalculateMood() : 1f;
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
         /*if (mood > 0) {
             //Calculate Psy power
             print(CalculateMood());
@@ -86,6 +90,9 @@ public class GameManager : MonoBehaviour
 
     public void ApplyDamages(float value) {
         hp -= value;
+        if(hp <= 0) {
+            SceneManager.LoadScene(1);
+        }
     }
 
     [ContextMenu("Spawn")]
