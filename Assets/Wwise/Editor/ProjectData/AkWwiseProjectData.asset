@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ec989527cf27a6448eeb0df93d4501d0
     GuidInternal: 
-    m_lastTime: -8586301038500507391
+    m_lastTime: -8586298413074343008
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 1b18c2e73db5db4c9fd8adbceb89c5d8
     GuidInternal: 
-    m_lastTime: -8586300237575664800
+    m_lastTime: -8586298413096991268
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 394b630c158e254a833440683f868099
     GuidInternal: 
-    m_lastTime: -8586299369880103754
+    m_lastTime: -8586298317830139791
     List:
     - name: All
       guid: 96a62b7a0fdaf44da1676cddd1427eb9
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 42459a4fbbc8ab45a02d2ef753c71191
     GuidInternal: 
-    m_lastTime: -8586299382239445319
+    m_lastTime: -8586298321979563334
     List:
     - name: Pla_DJ_Action_Next
       guid: 7e262569c47dd24da6dab3052f787e93
@@ -399,6 +399,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Meteor_Move_000
+      guid: 22096dae8a3c1c41850d60aba0418573
+      id: 1013039639
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Meteor
+        ObjectType: 4
+      - ElementName: Play_Meteor_Move_000
+        ObjectType: 3
+      Path: Default Work Unit\World\Meteor\Play_Meteor_Move_000
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Meteor_Reduce
       guid: 49365f66faaa7c4b9f33c52146ffeb49
       id: 273422311
@@ -447,12 +463,58 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_CoreGame
+      guid: d7b15e59e0fffb4a945133a1bc21a9e8
+      id: 2261592927
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Stop_CoreGame
+        ObjectType: 3
+      Path: Default Work Unit\Music\Stop_CoreGame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Meteor_Move
+      guid: 8fb5f6925ed00a4f968b8cd528a44399
+      id: 1576021084
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: Meteor
+        ObjectType: 4
+      - ElementName: Stop_Meteor_Move
+        ObjectType: 3
+      Path: Default Work Unit\World\Meteor\Stop_Meteor_Move
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_SpaceShip_Damage
+      guid: 59ba99c985706c459b72fddccb7c1aea
+      id: 2920761796
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: World
+        ObjectType: 4
+      - ElementName: SpaceShip
+        ObjectType: 4
+      - ElementName: Stop_SpaceShip_Damage
+        ObjectType: 3
+      Path: Default Work Unit\World\SpaceShip\Stop_SpaceShip_Damage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: dd1bacea294385459d004b61efc6365a
     GuidInternal: 
-    m_lastTime: -8586300332217214931
+    m_lastTime: -8586298305812675961
     List:
     - name: Ship_Health
       guid: 1c040d746ebbed47910951387c9945ca
@@ -468,7 +530,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e813fb3d555dc04f881586456d2c912f
     GuidInternal: 
-    m_lastTime: -8586300280617135270
+    m_lastTime: -8586298413074372931
     List:
     - name: Mood
       guid: 17a1897fe3a7e64fab34bc12b1e74c87
@@ -518,21 +580,16 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: f77687b3c1739a4c954749c54afdcea7
     GuidInternal: 
-    m_lastTime: -8586300254816659440
+    m_lastTime: -8586298413074362964
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2b6c625a5725574aa8242ea7f0099456
     GuidInternal: 
-    m_lastTime: -8586300332217304660
+    m_lastTime: -8586298413074352981
     List: []
   ExpandedItems:
   - /Disco at the DISCO - PreWork
-  - /Disco at the DISCO - PreWork/Events
-  - /Disco at the DISCO - PreWork/Events/Default Work Unit
-  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World
-  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs
-  - /Disco at the DISCO - PreWork/Events/Default Work Unit/World/Jobs/DJ
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

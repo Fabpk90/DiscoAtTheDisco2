@@ -147,5 +147,10 @@ MonoBehaviour:
   moveSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3bb9dc43300570548a9b8eed2d52f8b9,
+    WwiseObjectReference: {fileID: 11400000, guid: c287afd55613bd441a89d52b39841ac3,
+      type: 2}
+  stopMoveSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ed0409db30da8a5499c67f4f1d726357,
       type: 2}

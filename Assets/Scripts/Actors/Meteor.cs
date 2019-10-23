@@ -16,6 +16,7 @@ public class Meteor : MonoBehaviour
     public AK.Wwise.Event hitSound;
     public AK.Wwise.Event reduceSound;
     public AK.Wwise.Event moveSound;
+    public AK.Wwise.Event stopMoveSound;
 
     public void Init(Vector2 direction, float speed, int tHp) {
         Debug.Log("Instantiate meteor " + tHp);
@@ -23,7 +24,7 @@ public class Meteor : MonoBehaviour
         rigidBody.velocity = direction * speed/2;
         hp = tHp;
         transform.localScale = new Vector3(GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp]);
-        //moveSound.Post(gameObject);
+        moveSound.Post(gameObject);
     }
 
     private void FixedUpdate() {
@@ -34,9 +35,10 @@ public class Meteor : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Ship")) {
+            hitSound.Post(gameObject);
+            stopMoveSound.Post(gameObject);
             GameManager.instance.ApplyDamages(damages * hp);
             Destroy(gameObject);
-            hitSound.Post(gameObject);
         }
     }
 
@@ -49,6 +51,8 @@ public class Meteor : MonoBehaviour
             reduceSound.Post(gameObject);
             return true;
         } else {
+            stopMoveSound.Post(gameObject);
+            reduceSound.Post(gameObject);
             print("destroyed");
             return false;
         }

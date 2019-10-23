@@ -36,14 +36,22 @@
 				<Event Id="3327247393" Name="Play_Jacky_Get_In" ObjectPath="\Events\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_In" DurationType="OneShot" DurationMin="2.012875" DurationMax="2.012875"/>
 				<Event Id="1756586912" Name="Play_Jacky_Get_Out" ObjectPath="\Events\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_Out" DurationType="OneShot" DurationMin="1.162750" DurationMax="1.162750"/>
 				<Event Id="3950732764" Name="Play_Meteor_Hit" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Hit" DurationType="OneShot" DurationMin="2.493145" DurationMax="4.390636"/>
+				<Event Id="1013039639" Name="Play_Meteor_Move_000" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Move_000" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="273422311" Name="Play_Meteor_Reduce" ObjectPath="\Events\Default Work Unit\World\Meteor\Play_Meteor_Reduce" DurationType="OneShot" DurationMin="1.443498" DurationMax="1.620272"/>
 				<Event Id="1235252603" Name="Play_SpaceShip_Damage_000" ObjectPath="\Events\Default Work Unit\World\SpaceShip\Play_SpaceShip_Damage_000" DurationType="Infinite"/>
 				<Event Id="3663410986" Name="Play_SpaceShip_Destroyed" ObjectPath="\Events\Default Work Unit\World\SpaceShip\Play_SpaceShip_Destroyed" DurationType="OneShot" DurationMin="4.382792" DurationMax="4.382792"/>
+				<Event Id="2261592927" Name="Stop_CoreGame" ObjectPath="\Events\Default Work Unit\Music\Stop_CoreGame" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1576021084" Name="Stop_Meteor_Move" ObjectPath="\Events\Default Work Unit\World\Meteor\Stop_Meteor_Move" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2920761796" Name="Stop_SpaceShip_Damage" ObjectPath="\Events\Default Work Unit\World\SpaceShip\Stop_SpaceShip_Damage" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="14538183" Language="SFX">
 					<ShortName>Meteor_Reduce_002.wav</ShortName>
 					<Path>SFX\Meteor_Reduce_002_10C4C929.wem</Path>
+				</File>
+				<File Id="22793314" Language="SFX">
+					<ShortName>Meteor_Move_000.wav</ShortName>
+					<Path>SFX\Meteor_Move_000_D79FB2B7.wem</Path>
 				</File>
 				<File Id="103637727" Language="SFX">
 					<ShortName>Music_Lead.wav</ShortName>
@@ -120,10 +128,6 @@
 				<File Id="403830246" Language="SFX">
 					<ShortName>Barman_Action_Fail_002.wav</ShortName>
 					<Path>SFX\Barman_Action_Fail_002_10C4C929.wem</Path>
-				</File>
-				<File Id="414832841" Language="SFX">
-					<ShortName>DJ_Action_Success_000.wav</ShortName>
-					<Path>SFX\DJ_Action_Success_000_10C4C929.wem</Path>
 				</File>
 				<File Id="416554489" Language="SFX">
 					<ShortName>Barman_Action_Fail_003.wav</ShortName>
@@ -276,6 +280,10 @@
 				<File Id="856741483" Language="SFX">
 					<ShortName>Music_Stabs.wav</ShortName>
 					<Path>SFX\Music_Stabs_D79FB2B7.wem</Path>
+				</File>
+				<File Id="857358141" Language="SFX">
+					<ShortName>DJ_Action_Next_000.wav</ShortName>
+					<Path>SFX\DJ_Action_Next_000_10C4C929.wem</Path>
 				</File>
 				<File Id="870439918" Language="SFX">
 					<ShortName>Meteor_Reduce_001.wav</ShortName>

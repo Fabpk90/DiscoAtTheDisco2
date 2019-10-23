@@ -4,16 +4,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	764177400	Play_DJ_Action_Fail			\Default Work Unit\World\Jobs\DJ\Play_DJ_Action_Fail	
 	950314379	Play_BeatCallback			\Default Work Unit\Music\Play_BeatCallback	
 	967440525	Play_Jacky_Action_Success			\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action_Success	
+	1013039639	Play_Meteor_Move_000			\Default Work Unit\World\Meteor\Play_Meteor_Move_000	
 	1235252603	Play_SpaceShip_Damage_000			\Default Work Unit\World\SpaceShip\Play_SpaceShip_Damage_000	
 	1287538821	Play_DJ_Action_Success			\Default Work Unit\World\Jobs\DJ\Play_DJ_Action_Success	
 	1354915090	Play_Generic_Action_Next			\Default Work Unit\World\Jobs\Generic\Play_Generic_Action_Next	
+	1576021084	Stop_Meteor_Move			\Default Work Unit\World\Meteor\Stop_Meteor_Move	
 	1756586912	Play_Jacky_Get_Out			\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_Out	
 	1786392900	Pla_DJ_Action_Next			\Default Work Unit\World\Jobs\DJ\Pla_DJ_Action_Next	
 	1827943071	Play_Barman_Get_Out			\Default Work Unit\World\Jobs\Barman\Play_Barman_Get_Out	
 	1836015139	Play_Cleaner_Action_Next			\Default Work Unit\World\Jobs\Cleaner\Play_Cleaner_Action_Next	
 	2084885510	Play_Generic_Get_In			\Default Work Unit\World\Jobs\Generic\Play_Generic_Get_In	
 	2174041464	Play_Barman_Get_In			\Default Work Unit\World\Jobs\Barman\Play_Barman_Get_In	
+	2261592927	Stop_CoreGame			\Default Work Unit\Music\Stop_CoreGame	
 	2738082960	Play_Jacky_Action_Fail			\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Action_Fail	
+	2920761796	Stop_SpaceShip_Damage			\Default Work Unit\World\SpaceShip\Stop_SpaceShip_Damage	
 	3244882441	Play_Generic_Get_Out			\Default Work Unit\World\Jobs\Generic\Play_Generic_Get_Out	
 	3327247393	Play_Jacky_Get_In			\Default Work Unit\World\Jobs\Jacky\Play_Jacky_Get_In	
 	3663410986	Play_SpaceShip_Destroyed			\Default Work Unit\World\SpaceShip\Play_SpaceShip_Destroyed	
@@ -38,6 +42,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14538183	Meteor_Reduce_002	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Meteor_Reduce_002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Meteors\Meteor_Reduce\Meteor_Reduce_002		293696
+	22793314	Meteor_Move_000	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Meteor_Move_000_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Meteors\Meteor_Move_000		1153628
 	103637727	Music_Lead	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_Lead_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_02\Variation_03\Music_Lead		3840064
 	108870373	Music_Claps_002	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_Claps_002_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_02\Variation_03\Music_Claps_002		3456064
 	125295215	Cleaner_Action_Fail_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Cleaner_Action_Fail_001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\Cleaner\Cleaner_Action_Fail\Cleaner_Action_Fail_001		221008
@@ -57,7 +62,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	377620984	Jacky_Action_Fail_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Jacky_Action_Fail_001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\Jacky\Jacky_Action_Fail\Jacky_Action_Fail_001		440492
 	399901834	Music_Shakers	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_Shakers_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_02\Variation_01\Music_Shakers		3456064
 	403830246	Barman_Action_Fail_002	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Barman_Action_Fail_002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\Barman\Barman_Action_Fail\Barman_Action_Fail_002		160092
-	414832841	DJ_Action_Success_000	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\DJ_Action_Success_000_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\DJ\DJ_Action_Next\DJ_Action_Success_000		33944
 	416554489	Barman_Action_Fail_003	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Barman_Action_Fail_003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\Barman\Barman_Action_Fail\Barman_Action_Fail_003		199952
 	420879243	Music_Bass_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_Bass_001_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_01\Variation_01\Music_Bass_001		3456064
 	422562431	Music_DiscoArp	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_DiscoArp_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_01\Variation_02\Music_DiscoArp		3456064
@@ -96,6 +100,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	852166026	Generic_Get_In_000	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Generic_Get_In_000_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\Generic\Generic_Get_In\Generic_Get_In_000		293696
 	856439384	Meteor_Hit_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Meteor_Hit_001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Meteors\Meteor_Hit\Meteor_Hit_001		719816
 	856741483	Music_Stabs	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Music_Stabs_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\CoreGame\Mood_Level_02\Variation_01\Music_Stabs		3840064
+	857358141	DJ_Action_Next_000	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\DJ_Action_Next_000_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\DJ\DJ_Action_Next\DJ_Action_Next_000		53780
 	870439918	Meteor_Reduce_001	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Meteor_Reduce_001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Meteors\Meteor_Reduce\Meteor_Reduce_001		293696
 	905867592	Meteor_Hit_002	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Meteor_Hit_002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Meteors\Meteor_Hit\Meteor_Hit_002		507212
 	980014843	Generic_Get_Out_000	D:\Documents\- ENJMIN\- PROJETS\Disco at the DISCO\Repo\DiscoAtTheDisco2\DiscoAtTheDisco2_WwiseProject\.cache\Windows\SFX\Generic_Get_Out_000_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Jobs\Generic\Generic_Get_Out\Generic_Get_Out_000		293696

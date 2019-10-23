@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public Job_Barman barman;
     public Job_DJ DJ;
 
+    [Header("SOUND")]
+    public AK.Wwise.RTPC hpRTPC;
+
     //STORAGE
     public float mood { get; private set; }
     public float hp { get; private set; }
@@ -55,6 +58,7 @@ public class GameManager : MonoBehaviour
             
             print(DJ.efficiency);
         }*/
+        hpRTPC.SetGlobalValue(hp);
     }
 
     private IEnumerator SpawnJunk() {

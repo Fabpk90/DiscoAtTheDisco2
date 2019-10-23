@@ -27,6 +27,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_CoreGame" ID="{595EB1D7-FFE0-4AFB-9451-33A1BC21A9E8}">
+							<ChildrenList>
+								<Action Name="" ID="{746DF477-35F5-4CB9-BDDA-27380D3C5411}" ShortID="105332012">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CoreGame" ID="{F6DF53B9-DB94-4872-A36C-124B711FD8A7}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="World" ID="{75D2217C-8403-40E3-85C0-2FACCB9A5159}" ShortID="264962580">
@@ -329,6 +343,31 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Meteor_Move_000" ID="{AE6D0922-3C8A-411C-850D-60ABA0418573}">
+									<ChildrenList>
+										<Action Name="" ID="{064410C7-8C6D-4910-8C9A-466F927BC105}" ShortID="742304926">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Meteor_Move_000" ID="{9DDE2ABC-A589-4D31-B7A8-DE6C35D93AFE}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Meteor_Move" ID="{92F6B58F-D05E-4F0A-968B-8CD528A44399}">
+									<ChildrenList>
+										<Action Name="" ID="{B5B45F45-F48D-4528-9D7C-A0B0E04C55B8}" ShortID="240613630">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Meteor_Move_000" ID="{9DDE2ABC-A589-4D31-B7A8-DE6C35D93AFE}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="SpaceShip" ID="{2D43696A-5A93-4D7E-83C9-A90E58CAC3D1}" ShortID="1054817486">
@@ -353,9 +392,10 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{60015B96-A6F5-4822-AB4F-D950B7B3D46C}" ShortID="1035896962">
+										<Action Name="" ID="{875AB352-5F7F-4591-8FFF-3813508C4487}" ShortID="618731724">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -363,10 +403,33 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{B2AD9FE1-EEFD-4281-91C7-16F826E247F0}" ShortID="851144614">
+										<Action Name="" ID="{D7DB4E3C-6BB3-4D09-9977-C28BA25CB381}" ShortID="1021323855">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BeatCallback" ID="{2686E850-116C-43BE-87C3-E9639CC80263}" WorkUnitID="{EC7BE651-5CE3-46D3-8CEC-49FBA30FFB65}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EE77C25F-6C8D-4FC5-823D-2584B03986A4}" ShortID="485989697">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SpaceShip_Damage_000" ID="{ADC46D35-F877-4C5E-BCBD-F2E871E565A2}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_SpaceShip_Damage" ID="{C999BA59-7085-456C-9B72-FDDCCB7C1AEA}">
+									<ChildrenList>
+										<Action Name="" ID="{03480733-A240-4E43-BB97-54F8BC0F7B43}" ShortID="593911090">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SpaceShip_Damage_000" ID="{ADC46D35-F877-4C5E-BCBD-F2E871E565A2}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>

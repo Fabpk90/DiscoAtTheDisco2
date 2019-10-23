@@ -5,7 +5,8 @@
 			<ChildrenList>
 				<GameParameter Name="Ship_Health" ID="{740D041C-BB6E-47ED-9109-51387C9945CA}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

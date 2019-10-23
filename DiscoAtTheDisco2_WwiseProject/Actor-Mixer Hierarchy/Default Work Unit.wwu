@@ -309,11 +309,80 @@
 										<Position Name="" ID="{CA7D1128-F75F-4774-93AC-DA71FA1896C7}"/>
 									</PositioningInfo>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Meteor_Move" ID="{573F5086-C218-43C9-AF58-3A47C9D03574}" ShortID="886536543">
+								<Sound Name="Meteor_Move_000" ID="{9DDE2ABC-A589-4D31-B7A8-DE6C35D93AFE}" ShortID="838557480">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{06F5A46C-B5CB-49F3-97D6-E11F41D58CFD}" ShortID="860593870">
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{94862BE5-3B78-48DE-8523-2D9255655B1B}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>10.65831</XPos>
+																			<YPos>-2.32519</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>17.86834</XPos>
+																			<YPos>-14.71503</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>26.95925</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
 										</Reference>
@@ -321,7 +390,16 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E7C2181B-B53D-4CDB-9FD8-ADBCEB89C5D8}"/>
 										</Reference>
 									</ReferenceList>
-								</RandomSequenceContainer>
+									<ChildrenList>
+										<AudioFileSource Name="Meteor_Move_000" ID="{5C815588-2C3A-4062-8E71-E7A5772AD475}" ShortID="22793314">
+											<Language>SFX</Language>
+											<AudioFile>Meteor_Move_000.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Meteor_Move_000" ID="{5C815588-2C3A-4062-8E71-E7A5772AD475}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<PositioningInfo>
 								<Panner Name="" ID="{76C2752F-62E9-4C32-A479-D74C18FC1FDD}">
@@ -579,6 +657,27 @@
 															<Language>SFX</Language>
 															<AudioFile>Barman_Action_Fail_000.wav</AudioFile>
 														</AudioFileSource>
+														<AudioFileSource Name="Barman_Action_Fail_001" ID="{9EF6208E-C63E-4398-85C9-2AB93C2B5FE2}" ShortID="690394422">
+															<Language>SFX</Language>
+															<AudioFile>Barman_Action_Fail_001.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="694454145"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Barman_Action_Fail_002" ID="{86D59985-9318-4A45-888D-347910D9F5C4}" ShortID="200328833">
+															<Language>SFX</Language>
+															<AudioFile>Barman_Action_Fail_002.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="403830246"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Barman_Action_Fail_003" ID="{10ACD562-4511-4933-B693-474E145F81F8}" ShortID="870529616">
+															<Language>SFX</Language>
+															<AudioFile>Barman_Action_Fail_003.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="416554489"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
 													</ChildrenList>
 													<PositioningInfo>
 														<Panner Name="" ID="{56641392-8099-40F2-9CF4-9BC61AF1CCEA}">
@@ -795,10 +894,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="DJ_Action_Success_000" ID="{B28678C4-0B75-4E91-B649-0AF7E385C11C}" ShortID="369173401">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-													</PropertyList>
+												<Sound Name="DJ_Action_Next_000" ID="{981C33EA-56C4-439F-A0FD-BFA5E26A7153}" ShortID="996958106">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{32B57320-5B60-4C73-8B5B-EF768EC6B43F}"/>
@@ -808,16 +904,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="DJ_Action_Success_000" ID="{79556A80-AF35-4C87-9E8B-C64D839D8461}" ShortID="933830354">
+														<AudioFileSource Name="DJ_Action_Next_000" ID="{95392B8F-25E7-42AB-AF6E-E350C2EB7DA2}" ShortID="857358141">
 															<Language>SFX</Language>
-															<AudioFile>DJ_Action_Success_000.wav</AudioFile>
-															<ConvertedFileIDList>
-																<File ID="414832841"/>
-															</ConvertedFileIDList>
+															<AudioFile>DJ_Action_Next_000.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="DJ_Action_Success_000" ID="{79556A80-AF35-4C87-9E8B-C64D839D8461}" Platform="Linked"/>
+														<ActiveSource Name="DJ_Action_Next_000" ID="{95392B8F-25E7-42AB-AF6E-E350C2EB7DA2}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -913,6 +1006,11 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Jacky_Action_Success" ID="{941FC7AF-4685-4A8E-BAF6-B30F85F9B62A}" ShortID="1064352361">
 											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -942,6 +1040,48 @@
 														<AudioFileSource Name="Jacky_Action_Success_000" ID="{48950889-4CBA-4EC3-8915-40AD82C7D60B}" ShortID="442748298">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_Success_000.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Success_001" ID="{70EF002A-A531-421B-8778-D645C5B42542}" ShortID="274549903">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Success_001.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="360817098"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Success_002" ID="{0C64103C-4201-4CD2-83EB-404D023A9097}" ShortID="821755634">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Success_002.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="730386851"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Success_003" ID="{B9AE2650-5C83-41B8-B2F4-50C84F021463}" ShortID="514711957">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Success_003.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="489528315"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Success_004" ID="{A70F5FF9-B760-4265-8C67-5666AF13C237}" ShortID="265258785">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Success_004.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="185350583"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Success_005" ID="{D73CFA56-B0EC-45FB-9560-B8B1495C728A}" ShortID="890905250">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Success_005.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="449473503"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Success_006" ID="{F8A97D5C-ED3A-422C-AB9C-96147F73DCBB}" ShortID="586807133">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Success_006.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="1057801145"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1066,6 +1206,11 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Jacky_Action_Fail" ID="{65A8845C-30E7-442C-AC3C-6E160F5F8D35}" ShortID="1065364582">
 											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-5</Value>
@@ -1094,6 +1239,20 @@
 														<AudioFileSource Name="Jacky_Action_Fail_000" ID="{D51D1E68-07F8-4CCA-9BC4-54A0E9C3C3D0}" ShortID="156807123">
 															<Language>SFX</Language>
 															<AudioFile>Jacky_Action_Fail_000.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Fail_001" ID="{3005FC35-CC1B-4D21-89A7-8480332F077B}" ShortID="399249289">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Fail_001.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="377620984"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Jacky_Action_Fail_002" ID="{3B00BD0A-2D3A-4EA7-9418-9492B5277201}" ShortID="19155778">
+															<Language>SFX</Language>
+															<AudioFile>Jacky_Action_Fail_002.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="251921891"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1196,6 +1355,27 @@
 														<AudioFileSource Name="Cleaner_Action_Next_000" ID="{F6EC47AB-B197-4386-97AC-82CBE7D2D766}" ShortID="794305698">
 															<Language>SFX</Language>
 															<AudioFile>Cleaner_Action_Next_000.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="Cleaner_Action_Next_001" ID="{9E3836D8-AFE1-4D84-BBF0-0E1A2EAE1F2F}" ShortID="430863770">
+															<Language>SFX</Language>
+															<AudioFile>Cleaner_Action_Next_001.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="678995272"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Cleaner_Action_Next_002" ID="{3B287F4D-02CE-4DE7-9501-C401A92B2DD2}" ShortID="985627823">
+															<Language>SFX</Language>
+															<AudioFile>Cleaner_Action_Next_002.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="687964416"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Cleaner_Action_Next_003" ID="{F63FC638-A466-40E7-A056-81D601A9D6E9}" ShortID="949656037">
+															<Language>SFX</Language>
+															<AudioFile>Cleaner_Action_Next_003.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="287873741"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1306,6 +1486,20 @@
 														<AudioFileSource Name="Cleaner_Action_Fail_000" ID="{EB6957EB-3AE6-460B-87DC-45B6BF2A6E64}" ShortID="468451823">
 															<Language>SFX</Language>
 															<AudioFile>Cleaner_Action_Fail_000.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="Cleaner_Action_Fail_001" ID="{92A03848-02A9-49D1-A13F-F7B1535464C2}" ShortID="756121152">
+															<Language>SFX</Language>
+															<AudioFile>Cleaner_Action_Fail_001.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="125295215"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="Cleaner_Action_Fail_002" ID="{F51C5540-6186-4144-AB3C-4646F0FED6FF}" ShortID="470100574">
+															<Language>SFX</Language>
+															<AudioFile>Cleaner_Action_Fail_002.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="699785125"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -1621,7 +1815,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>-5</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{1FA286EF-615B-47DE-ABD4-447225C566DE}" ShortID="536062363">
@@ -1641,22 +1835,22 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>12.82481</XPos>
+																<XPos>0.1282481</XPos>
 																<YPos>-4.34182</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>26.99078</XPos>
-																<YPos>-8.92661</YPos>
+																<XPos>0.26823</XPos>
+																<YPos>-11.54162</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>79.96647</XPos>
+																<XPos>0.49874</XPos>
 																<YPos>-200</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>100</XPos>
+																<XPos>1</XPos>
 																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
