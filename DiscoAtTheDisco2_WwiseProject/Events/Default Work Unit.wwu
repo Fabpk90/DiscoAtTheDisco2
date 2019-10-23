@@ -265,6 +265,18 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{96BB3D6C-2D0F-4957-964F-08E53537ECD4}" ShortID="232373986">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Jacky_Action_Success" ID="{941FC7AF-4685-4A8E-BAF6-B30F85F9B62A}" WorkUnitID="{65A0A463-10B2-4A31-AF90-B8430BFBE487}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 											</ChildrenList>
 										</Event>
 									</ChildrenList>
