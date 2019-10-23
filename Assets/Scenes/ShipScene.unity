@@ -687,14 +687,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animators:
+  - {fileID: 9100000, guid: 461600c47b1ef5843aa80a34560e890f, type: 2}
+  - {fileID: 9100000, guid: 7b8b166c201c1634694cb2ef19f772a3, type: 2}
+  - {fileID: 9100000, guid: f5f3b8de91752f54696b726ccb242b27, type: 2}
+  - {fileID: 9100000, guid: e653b9e362d66054285b188d1b47bbae, type: 2}
+  - {fileID: 9100000, guid: 49b66fa155465394dbc62ae8a935485f, type: 2}
+  - {fileID: 9100000, guid: a0d9ce901aeb355468f84e6da7bc9e80, type: 2}
+  - {fileID: 9100000, guid: 22c799eb3f49e934dade559ce71a0358, type: 2}
   - {fileID: 9100000, guid: 247f18457d1e75842a2a87750c2ac8da, type: 2}
-  - {fileID: 22100000, guid: 5bc298f47e3bfec468a7ab9db099dd93, type: 2}
-  - {fileID: 22100000, guid: cff9d177521627045bee089d73f5effe, type: 2}
-  - {fileID: 22100000, guid: 46380e9f7bb6bcc4797ddf380e757043, type: 2}
-  - {fileID: 22100000, guid: c57962801dac8e94da5a3aded58daa9d, type: 2}
-  - {fileID: 22100000, guid: b002e3d0abcc783419a9280367a202e2, type: 2}
-  - {fileID: 22100000, guid: 01a80bc78098d834f93de63a6c65f421, type: 2}
-  - {fileID: 22100000, guid: c4d0360b0173f144b9040dac6b0ad2b0, type: 2}
   maxAI: 10
   secondsBeforeThirst: 40
   startingDirtynessHandling: 1
