@@ -85,6 +85,10 @@
 					<ShortName>Jacky_Action_Success_004.wav</ShortName>
 					<Path>SFX\Jacky_Action_Success_004_10C4C929.wem</Path>
 				</File>
+				<File Id="220352144" Language="SFX">
+					<ShortName>Meteor_Move_000.wav</ShortName>
+					<Path>SFX\Meteor_Move_000_10C4C929.wem</Path>
+				</File>
 				<File Id="222216638" Language="SFX">
 					<ShortName>Music_Plucks.wav</ShortName>
 					<Path>SFX\Music_Plucks_D79FB2B7.wem</Path>
@@ -204,6 +208,10 @@
 				<File Id="678995272" Language="SFX">
 					<ShortName>Cleaner_Action_Next_001.wav</ShortName>
 					<Path>SFX\Cleaner_Action_Next_001_10C4C929.wem</Path>
+				</File>
+				<File Id="687228022" Language="SFX">
+					<ShortName>DJ_Action_Next_000.wav</ShortName>
+					<Path>SFX\DJ_Action_Next_000_10C4C929.wem</Path>
 				</File>
 				<File Id="687964416" Language="SFX">
 					<ShortName>Cleaner_Action_Next_002.wav</ShortName>

@@ -49,6 +49,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -145,6 +150,11 @@
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -581,6 +591,13 @@
 														<AudioFileSource Name="Barman_Action_Success_000" ID="{396436BB-3D31-437D-AC05-EDC05C4A6466}" ShortID="763583600">
 															<Language>SFX</Language>
 															<AudioFile>Barman_Action_Success_000.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="Barman_Action_Success_001" ID="{9C618F5B-BDBC-40B6-ADEF-1405CCD69C39}" ShortID="463818133">
+															<Language>SFX</Language>
+															<AudioFile>Barman_Action_Success_001.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="724836029"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>

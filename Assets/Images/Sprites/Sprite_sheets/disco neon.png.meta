@@ -8,6 +8,21 @@ TextureImporter:
   - first:
       213: 8108148138957947167
     second: disco neon_1
+  - first:
+      213: -8571833547372251697
+    second: disco neon_2
+  - first:
+      213: -6264299557697886471
+    second: disco neon_3
+  - first:
+      213: 8152644130259677616
+    second: disco neon_4
+  - first:
+      213: 3466585916432782241
+    second: disco neon_5
+  - first:
+      213: -814647844556899377
+    second: disco neon_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -167,10 +182,10 @@ TextureImporter:
       name: disco neon_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 75
-        width: 59
-        height: 71
+        x: 0
+        y: 444
+        width: 60
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328894d66058c6247a5293a38639da40
+      spriteID: 276f519537f37b74a9afb5c48ffdd1bf
       internalID: -1600035881981152502
       vertices: []
       indices: 
@@ -188,10 +203,10 @@ TextureImporter:
       name: disco neon_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 59
-        height: 71
+        x: 0
+        y: 370
+        width: 60
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,8 +214,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63ced98aca7285645b578a38f0d64cdc
+      spriteID: d58e6756f7d23784d9bba14496732336
       internalID: 8108148138957947167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disco neon_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223f1e9997a58644e8efeed2cd4021cd
+      internalID: -8571833547372251697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disco neon_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e101ff1003a0804eb258b75d3a33b3a
+      internalID: -6264299557697886471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disco neon_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929cbe840a4aa1d4089bbc0c6f243069
+      internalID: 8152644130259677616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disco neon_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356a9f2b4a66e3647b2e6c6fd40d2042
+      internalID: 3466585916432782241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disco neon_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef873203b18d4b4cbee4b9a76b01141
+      internalID: -814647844556899377
       vertices: []
       indices: 
       edges: []
