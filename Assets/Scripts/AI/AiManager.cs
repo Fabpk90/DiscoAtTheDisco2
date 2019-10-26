@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AiManager : MonoBehaviour
 {
@@ -11,16 +12,18 @@ public class AiManager : MonoBehaviour
 
     public int maxAI;
     public float secondsBeforeThirst;
+    public float rangeBetweenAIs;
 
     [Range(0f, 1f)]
     public float startingDirtynessHandling;
     
     public float timeBeforeLookForDirty;
-
+    
     public AI prefabAI;
 
     public List<AI> ais;
     public Transform spawnPoint;
+    public float spawnRadius;
 
     public Transform barPosition;
 
@@ -43,15 +46,40 @@ public class AiManager : MonoBehaviour
         }
     }
 
+    private Vector2 GetFreshLocation() {
+        int count = 0;
+        Vector2 pos = Random.insideUnitCircle * spawnRadius + (Vector2)spawnPoint.position;
+
+        while (TooClose(pos)) {
+            ++count;
+            if (count == 1500) {
+                print("Aborts loop");
+                break;
+            }
+            pos = Random.insideUnitCircle * spawnRadius + (Vector2)spawnPoint.position;
+        }
+        return pos;
+    }
+
+    private bool TooClose(Vector2 pos) {
+        foreach(AI ai in ais) {
+            if(Vector2.Distance(pos, ai.danceFloorPosition) < rangeBetweenAIs) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void SpawnAI()
     {
         if (maxAI >= ais.Count)
         {
             AI ai = Instantiate<AI>(prefabAI, spawnPoint.position, Quaternion.identity);
+            ai.danceFloorPosition = GetFreshLocation();
             ai.Dirtyness = startingDirtynessHandling;
             ai.Drinkyness = secondsBeforeThirst;
             ai.GetComponent<Animator>().runtimeAnimatorController = animators[(int)UnityEngine.Random.Range(0, animators.Length)];
-            ai.GetComponent<Animator>().SetFloat("speed", .25f);
+            ai.GetComponent<Animator>().SetFloat("speed", (Random.Range(0, 3)%2 == 0) ? 1f : .5f);
             ais.Add(ai);
         }
         

@@ -45,9 +45,9 @@ public class Meteor : MonoBehaviour
     public bool Damage(int value) {
         hp -= value;
 
-        if (value > 0) reduceSound.Post(gameObject);
-
-        print(hp);
+        if (value > 0) {
+            reduceSound.Post(gameObject);
+        }
         if(hp >= 0) {
             transform.localScale = new Vector3(GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp], GameManager.instance.meteorScales[hp]);
             return true;
