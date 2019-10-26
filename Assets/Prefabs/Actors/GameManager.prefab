@@ -43,15 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7e87876c70c114f998a136da84dc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moodPerSec: 0.01
-  meteorPerSec: 0.1
+  junkPerSec: 0.1
+  meteorPerSec: 0.2
   meteorScales:
   - 0.25
   - 0.5
   - 0.75
   meteor: {fileID: 1613603991751148280, guid: f9819f505bd59404eb7bc133684d6c98, type: 3}
   cleaner: {fileID: 0}
-  barman: {fileID: 0}
   DJ: {fileID: 0}
   hpRTPC:
     idInternal: 0

@@ -38,7 +38,6 @@ public class Job : MonoBehaviour
     public AK.Wwise.Event getOutSound;
 
     private void OnEnable() {
-        GameManager.instance.onMusicBeat += InputWindow;
     }
 
     private void OnDisable() {
@@ -46,9 +45,10 @@ public class Job : MonoBehaviour
     }
 
     protected virtual void Start() {
-        
+
         currentInput = 0;
         UI_Manager.instance.AddInputWidget(this,playerPos.transform);
+        GameManager.instance.onMusicBeat += InputWindow;
     }
 
     public bool Join(PlayerController tController) {
@@ -133,7 +133,7 @@ public class Job : MonoBehaviour
     }
 
     private IEnumerator NewDelay() {
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.15f);
 
         canPerform = false;
     }

@@ -9,14 +9,13 @@ public class GameManager : MonoBehaviour
     public static GameManager instance { get; private set; }
 
     [Header("PARAMETERS")]
-    public float moodPerSec;
+    public float junkPerSec;
     public float meteorPerSec;
     public float[] meteorScales;
 
     [Header("REFERENCES")]
     public GameObject meteor;
     public Job_Cleaner cleaner;
-    public Job_Barman barman;
     public Job_DJ DJ;
 
     [Header("SOUND")]
@@ -37,11 +36,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     void Start()
     {
         StartCoroutine(SpawnMeteor());
-        //StartCoroutine(SpawnDrink());
         StartCoroutine(SpawnJunk());
         hp = 1f;
     }
@@ -52,25 +49,13 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
         }
-        /*if (mood > 0) {
-            //Calculate Psy power
-            print(CalculateMood());
-            
-            print(DJ.efficiency);
-        }*/
         hpRTPC.SetGlobalValue(hp);
     }
 
     private IEnumerator SpawnJunk() {
-        yield return new WaitForSeconds(1/moodPerSec);
+        yield return new WaitForSeconds(1/junkPerSec*AiManager.instance.ais.Count);
         cleaner.SpawnItem();
         StartCoroutine(SpawnJunk());
-    }
-
-    private IEnumerator SpawnDrink() {
-        yield return new WaitForSeconds(0.5f);
-        barman.SpawnItem();
-        StartCoroutine(SpawnDrink());
     }
 
     public IEnumerator SpawnMeteor() {
@@ -88,14 +73,11 @@ public class GameManager : MonoBehaviour
         return AiManager.instance.maxAI;
     }
 
-    public void AddMood(float value) {
-        mood = Mathf.Clamp01(mood + value);
-    }
-
     public void ApplyDamages(float value) {
         hp -= value;
         if(hp <= 0) {
             SceneManager.LoadScene(1);
+            StopAllCoroutines();
         }
     }
 

@@ -15,7 +15,7 @@ public class Job_Spawner : Job
 
     //REFERENCES
     [SerializeField]
-    private Transform spawnParent;
+    protected Transform spawnParent;
     public float spawnRadius;
 
     // Start is called before the first frame update
@@ -43,7 +43,7 @@ public class Job_Spawner : Job
         return statut;
     }
 
-    public void SpawnItem() {
+    public virtual void SpawnItem() {
         items.Add(Instantiate(itemPrefab, (Vector2)spawnParent.position + Random.insideUnitCircle * spawnRadius, Quaternion.identity, spawnParent));
         if(items.Count == maxItems) {
             feedback?.SetActive(true);

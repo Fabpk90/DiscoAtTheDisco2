@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,7 +35,7 @@ public class AI : MonoBehaviour
 
     private bool isEnteringBar;
 
-    private Vector3 danceFloorPosition;
+    public Vector3 danceFloorPosition;
 
     private void Awake()
     {
@@ -47,7 +47,7 @@ public class AI : MonoBehaviour
         isEnteringBar = false;
 
         //randomize dance floor position
-        danceFloorPosition = (Random.insideUnitCircle * 2.5f) + Vector2.one;
+        //danceFloorPosition = (Random.insideUnitCircle * 2.5f + Vector2.one);
     }
 
     private void Start() {
@@ -89,8 +89,9 @@ public class AI : MonoBehaviour
             transform.position =
                 Vector3.MoveTowards(transform.position, danceFloorPosition, 0.05f);
 
-            if ((transform.position - danceFloorPosition).magnitude < 0.5f)
+            if ((transform.position - danceFloorPosition).magnitude < 0.5f) {
                 isEntering = false;
+            }
         }
         else if (isLeaving)
         {
@@ -106,7 +107,7 @@ public class AI : MonoBehaviour
         {
             drinkyness -= Time.deltaTime;
         }
-        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
+        //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
     }
 
     IEnumerator LookForADrink()
@@ -129,10 +130,7 @@ public class AI : MonoBehaviour
                 yield return new WaitForSeconds(3.0f);
             }
             
-
-            
             yield return new WaitForEndOfFrame();
-            
         }
 
         print("Ai leaving because there's no drink");
