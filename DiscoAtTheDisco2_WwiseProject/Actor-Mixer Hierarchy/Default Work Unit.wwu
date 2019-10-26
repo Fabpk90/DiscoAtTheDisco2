@@ -783,6 +783,7 @@
 								<ActorMixer Name="DJ" ID="{AE2D3D58-916D-4969-A8D4-A19F61AA76F1}" ShortID="822786849">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
