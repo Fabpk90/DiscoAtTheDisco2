@@ -14,7 +14,9 @@ public class Job_Cleaner : Job_Spawner
 
         items.Add(Instantiate(itemPrefab, (Vector2)spawnParent.position + new Vector2(Random.Range(-spawnRadius, spawnRadius), Random.Range(-spawnRadius, spawnRadius)), Quaternion.identity, spawnParent));
         if (items.Count == maxItems) {
-            feedback?.SetActive(true);
+            if (feedback) {
+                feedback.SetActive(true);
+            }
         }
     }
 }

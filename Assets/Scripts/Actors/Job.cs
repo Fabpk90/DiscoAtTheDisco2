@@ -133,7 +133,7 @@ public class Job : MonoBehaviour
     }
 
     private IEnumerator NewDelay() {
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.18f);
 
         canPerform = false;
     }

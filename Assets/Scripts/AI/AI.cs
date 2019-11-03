@@ -69,8 +69,9 @@ public class AI : MonoBehaviour
         }
     }
 
-    IEnumerator FadeOut()
-    {
+    IEnumerator FadeOut() {
+        StopCoroutine(LookForADrink());
+        StopCoroutine(CheckTheFloor());
         for (int i = 10; i >= 0; i--)
         {
             Color color = spRenderer.color;
@@ -95,6 +96,10 @@ public class AI : MonoBehaviour
         }
         else if (isLeaving)
         {
+            if(spRenderer.color.a <= 0f) {
+                AiManager.instance.ais.Remove(this);
+                Destroy(gameObject);
+            }
             transform.position =
                 Vector3.MoveTowards(transform.position, AiManager.instance.spawnPoint.position, Time.deltaTime);
             if ((transform.position - AiManager.instance.spawnPoint.position).magnitude < 0.5f)
