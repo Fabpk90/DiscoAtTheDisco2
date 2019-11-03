@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     }
 
     private IEnumerator SpawnJunk() {
-        yield return new WaitForSeconds(1/junkPerSec*AiManager.instance.ais.Count);
+        yield return new WaitForSeconds(10/(junkPerSec*AiManager.instance.ais.Count));
         cleaner.SpawnItem();
         StartCoroutine(SpawnJunk());
     }

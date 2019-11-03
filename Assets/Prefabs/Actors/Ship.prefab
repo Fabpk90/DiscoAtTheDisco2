@@ -609,7 +609,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 51d3e4d8f317c2f489799ecd5819d1a9,
       type: 2}
-  valuePerSuccess: 0.3
+  valuePerSuccess: 0.18
   valuePerSec: 0.025
 --- !u!114 &1304852299075733406
 MonoBehaviour:
