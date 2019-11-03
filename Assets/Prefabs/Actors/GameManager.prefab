@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7e87876c70c114f998a136da84dc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  junkPerSec: 0.1
+  junkPerSec: 0.25
   meteorPerSec: 0.2
   meteorScales:
   - 0.25
